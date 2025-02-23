@@ -71,6 +71,9 @@ nextButton.addEventListener("click", () => {
 
 startAutoplay();
 
+
+
+
 /*
 <!-- Menu section -->
       <section class="menu-section" id="menu">
