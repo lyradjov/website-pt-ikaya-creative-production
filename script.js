@@ -8,68 +8,68 @@ menuOpenButton.addEventListener("click", () => {
 // Close menu when the close button is clicked
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
 // Close menu when nav link is clicked
-const slideshow = document.querySelector(".slideshow");
-const slides = document.querySelectorAll(".slide");
-const thumbnails = document.querySelectorAll(".thumbnail");
-const prevButton = document.querySelector(".prev-button");
-const nextButton = document.querySelector(".next-button");
+const galeriSlideshow = document.querySelector(".slideshow");
+const galeriSlides = document.querySelectorAll(".slide");
+const galeriThumbnails = document.querySelectorAll(".thumbnail");
+const galeriPrevButton = document.querySelector(".prev-button");
+const galeriNextButton = document.querySelector(".next-button");
 
-let counter = 0;
-const slideWidth = slides[0].clientWidth;
-let interval;
+let galeriCounter = 0;
+const galeriSlideWidth = galeriSlides[0].clientWidth;
+let galeriInterval;
 
-function nextSlide() {
-    counter++;
-    if (counter >= slides.length) {
-        counter = 0;
+function galeriNextSlide() {
+    galeriCounter++;
+    if (galeriCounter >= galeriSlides.length) {
+        galeriCounter = 0;
     }
-    slideshow.style.transform = `translateX(${-slideWidth * counter}px)`;
-    thumbnails.forEach((thumb) => thumb.classList.remove("active"));
-    thumbnails[counter].classList.add("active");
+    galeriSlideshow.style.transform = `translateX(${-galeriSlideWidth * galeriCounter}px)`;
+    galeriThumbnails.forEach((thumb) => thumb.classList.remove("active"));
+    galeriThumbnails[galeriCounter].classList.add("active");
 }
 
-function prevSlide() {
-    counter--;
-    if (counter < 0) {
-        counter = slides.length - 1;
+function galeriPrevSlide() {
+    galeriCounter--;
+    if (galeriCounter < 0) {
+        galeriCounter = galeriSlides.length - 1;
     }
-    slideshow.style.transform = `translateX(${-slideWidth * counter}px)`;
-    thumbnails.forEach((thumb) => thumb.classList.remove("active"));
-    thumbnails[counter].classList.add("active");
+    galeriSlideshow.style.transform = `translateX(${-galeriSlideWidth * galeriCounter}px)`;
+    galeriThumbnails.forEach((thumb) => thumb.classList.remove("active"));
+    galeriThumbnails[galeriCounter].classList.add("active");
 }
 
-function startAutoplay() {
-    interval = setInterval(nextSlide, 3000);
+function galeriStartAutoplay() {
+    galeriInterval = setInterval(galeriNextSlide, 3000);
 }
 
-function stopAutoplay() {
-    clearInterval(interval);
+function galeriStopAutoplay() {
+    clearInterval(galeriInterval);
 }
 
-thumbnails.forEach((thumbnail) => {
+galeriThumbnails.forEach((thumbnail) => {
     thumbnail.addEventListener("click", () => {
-        stopAutoplay();
-        counter = parseInt(thumbnail.dataset.index);
-        slideshow.style.transform = `translateX(${-slideWidth * counter}px)`;
-        thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+        galeriStopAutoplay();
+        galeriCounter = parseInt(thumbnail.dataset.index);
+        galeriSlideshow.style.transform = `translateX(${-galeriSlideWidth * galeriCounter}px)`;
+        galeriThumbnails.forEach((thumb) => thumb.classList.remove("active"));
         thumbnail.classList.add("active");
-        startAutoplay();
+        galeriStartAutoplay();
     });
 });
 
-prevButton.addEventListener("click", () => {
-    stopAutoplay();
-    prevSlide();
-    startAutoplay();
+galeriPrevButton.addEventListener("click", () => {
+    galeriStopAutoplay();
+    galeriPrevSlide();
+    galeriStartAutoplay();
 });
 
-nextButton.addEventListener("click", () => {
-    stopAutoplay();
-    nextSlide();
-    startAutoplay();
+galeriNextButton.addEventListener("click", () => {
+    galeriStopAutoplay();
+    galeriNextSlide();
+    galeriStartAutoplay();
 });
 
-startAutoplay();
+galeriStartAutoplay();
 
 
 

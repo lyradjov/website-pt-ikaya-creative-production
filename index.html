@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Header / Navbar -->
-    <header>
+    <header id="">
       <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex justify-between">
@@ -23,7 +23,7 @@
               <div>
                 <a class="flex items-center py-4 px-2" href="#">
                   <img alt="I'Kaya Creative Production Logo" class="h-8 w-auto mr-2" height="100" src="gambar/ikaya.jpg" width="100"/>
-                  <span class="font-semibold text-gray-500 text-lg " style="white-space: nowrap; font-family: 'Playfair Display', serif; color: #ffd700;" >
+                  <span class="font-semibold text-gray-500 text-lg " style="white-space: nowrap; font-family: 'Playfair Display', serif; color: #CFB53B;" >
                     I'Kaya Creative Production
                   </span>
                 </a>
@@ -64,7 +64,7 @@
         <div class="hidden mobile-menu">
           <ul>
             <li class="active text-white">
-              <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="index.html">
+              <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="#home">
                 Home
               </a>
             </li>
@@ -90,7 +90,7 @@
     </header>
     <main>
       <!-- Hero section -->
-       <section>
+       <section id="home">
         <div class="relative">
           <img src="" alt="">
           <div class="hero-slide">
@@ -159,7 +159,7 @@
          </div>
 
           <script>
-             const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
         const mobileMenu = document.querySelector('.mobile-menu');
 
         mobileMenuButton.addEventListener('click', () => {
@@ -200,7 +200,7 @@
             <img src="gambar/ikaya.jpg" alt="About" class="about-image" />
           </div>
           <div class="about-details">
-            <h2 class="section-title" >About Us</h2>
+            <h2 class="section-title" style="color: #CFB53B;;">About Us</h2>
             <p class="text">Kami adalah Creative Agency  yang menyediakan solusi bisnis dan kreatif terpadu untuk membantu bisnis Anda tumbuh dan berkembang. Kami menawarkan berbagai layanan, mulai dari perencanaan acara, pameran, pernikahan, manajemen media sosial, manajemen bisnis, hingga manajemen acara.</p>
             <div class="social-link-list">
               <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
@@ -214,11 +214,11 @@
       <!--Layanan Kami-->
       <section id="services" class="py-12 bg-black">
         <div class="container mx-auto px-4">
-            <h2 class="section-title text-center text-3xl font-bold mb-8" style="font-family: 'Playfair Display', serif;">Layanan Kami</h2>
+            <h2 class="section-title text-center text-3xl font-bold mb-8" style="font-family: 'Playfair Display', serif; color: #CFB53B;">Layanan Kami</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white">
                     <i class="fas fa-bullhorn text-4xl mb-4 text-yellow-500"></i>
-                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">Event Advertising</h3>
+                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif; ">Event Advertising</h3>
                     <p>Kami membantu Anda membuat iklan acara yang menarik dan efektif untuk menjangkau target audiens Anda..</p>
                 </div>
                 <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white">
@@ -253,11 +253,11 @@
        <img alt="A cozy living room with a beige armchair, footrest, and decorative items including framed pictures, a wicker basket, and a plant." class="w-full h-auto object-cover" height="800" src="gambar/ikapalet.jpg" width="600"/>
       </div>
       <div class="lg:w-1/2 bg-black p-8 flex flex-col justify-center">
-       <h1 class="text-4xl font-bold text-white mb-8" style="color: #ffd700; font-family: 'Playfair Display', serif;">
+       <h1 class="text-4xl font-bold text-white mb-8" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
         Mengapa Memilih Kami ?
        </h1>
        <div class="mb-8">
-        <h2 class="text-xl font-bold text-white mb-2 " style="color: #ffd700; font-family: 'Playfair Display', serif;">
+        <h2 class="text-xl font-bold text-white mb-2 " style="color: #CFB53B; font-family: 'Playfair Display', serif;">
           Integrated Creative
         </h2>
         <p class="text-white" style="font-family: 'Playfair Display', serif;" >
@@ -266,7 +266,7 @@
        </div>
 
        <div class="mb-8">
-        <h2 class="text-xl font-bold text-white mb-2" style="color: #ffd700; font-family: 'Playfair Display', serif;">
+        <h2 class="text-xl font-bold text-white mb-2" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
           Tim Profesional
         </h2>
         <p class="text-white" style="font-family: 'Playfair Display', serif;" >
@@ -275,7 +275,7 @@
        </div>
        
        <div class="mb-8" >
-        <h2 class="text-xl font-bold text-white mb-2" style="color: #ffd700; font-family: 'Playfair Display', serif;">
+        <h2 class="text-xl font-bold text-white mb-2" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
           Kreativitas Tanpa Batas
         </h2>
         <p class="text-white" style="font-family: 'Playfair Display', serif;" >
@@ -284,7 +284,7 @@
        </div>
 
        <div class="mb-8">
-        <h2 class="text-xl font-bold text-white mb-2" style="color: #ffd700; font-family: 'Playfair Display', serif;">
+        <h2 class="text-xl font-bold text-white mb-2" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
           Pelayanan Terbaik
         </h2>
         <p class="text-white" style="font-family: 'Playfair Display', serif;">
@@ -302,7 +302,7 @@
      <!--Management Sosial Media-->
      <section class="team-section py-12" id="team">
       <div class="container mx-auto px-4">
-          <h2 class="section-title text-center text-3xl font-bold mb-8" style="font-family: 'Playfair Display', serif;">Management Sosial Media</h2>
+          <h2 class="section-title text-center text-3xl font-bold mb-8" style="font-family: 'Playfair Display', serif; color: #CFB53B;">Management Sosial Media</h2>
          
           
 
@@ -360,16 +360,16 @@
                       <span>Tidak Mampu Update Setiap Hari</span>
                   </div>
               </div>
-              <p class="mt-8 text-lg md:text-xl lg:text-2xl text-yellow-500" style="font-family: 'Playfair Display', serif;">Awali Bisnis Sukses Anda Bersama KAYA PRODUCTION</p>
+              <p class="mt-8 text-lg md:text-xl lg:text-2xl text-yellow-500" style="font-family: 'Playfair Display', serif; color: #CFB53B;">Awali Bisnis Sukses Anda Bersama KAYA PRODUCTION</p>
           </div>
 
           <div class="text-center mb-12">
               <h1 class="text-xl font-semibold mb-2" style="font-family: 'Playfair Display', serif;">TENANG..................</h1>
-              <h2 class="text-lg font-semibold text-yellow-500 mb-4" style="font-family: 'Playfair Display', serif;">KAYA PRODUCTION dapat menjadi solusi bagi social media management bisnis anda, MENGAPA?</h2>
+              <h2 class="text-lg font-semibold text-yellow-500 mb-4" style="font-family: 'Playfair Display', serif; color: #CFB53B;">KAYA PRODUCTION dapat menjadi solusi bagi social media management bisnis anda, MENGAPA?</h2>
           </div>
 
           <div class="text-center">
-              <h1 class="text-xl md:text-2xl lg:text-3xl mb-6" style="font-family: 'Playfair Display', serif;">Apakah anda mengalami kendala dalam <br> mengelola media sosial seperti ini:</h1>
+              <h1 class="text-xl md:text-2xl lg:text-3xl mb-6" style="font-family: 'Playfair Display', serif; color: #CFB53B;">Apakah anda mengalami kendala dalam <br> mengelola media sosial seperti ini:</h1>
               <div class="problem-list space-y-4" style="font-family: 'Playfair Display', serif;">
                   <div class="problem-item flex items-center justify-center">
                       <i class="fas fa-users text-2xl text-orange-500 mr-2"></i>
@@ -540,7 +540,7 @@
       
       <!-- Gallery section -->
       <section class="gallery-section bg-black" id="gallery">
-        <h2 class="section-title text-white" style="font-family: 'Playfair Display', serif;">PROYEK KAMI</h2>
+        <h2 class="section-title text-white" style="font-family: 'Playfair Display', serif; color: #CFB53B;">PROYEK KAMI</h2>
         <div class="section-content">
             <ul class="gallery-list flex flex-col md:flex-row">
                 <li class="gallery-item md:w-1/3">
@@ -578,7 +578,7 @@
     </section>
 <!--Testi-->
 <section class="slideshow-section" id="slideshow">
-  <h2 class="section-title">Dokumentasi Kegiatan</h2>
+  <h2 class="section-title" style="color: #CFB53B;">Dokumentasi Kegiatan</h2>
   <div class="slideshow-container">
       <div class="slideshow">
           <div class="slide">
@@ -649,12 +649,77 @@
           
       </div>
       <button class="prev-button">&lt;</button>  <button class="next-button">&gt;</button>  </div>
+      <script>
+        const galeriSlideshow = document.querySelector(".slideshow");
+const galeriSlides = document.querySelectorAll(".slide");
+const galeriThumbnails = document.querySelectorAll(".thumbnail");
+const galeriPrevButton = document.querySelector(".prev-button");
+const galeriNextButton = document.querySelector(".next-button");
+
+let galeriCounter = 0;
+const galeriSlideWidth = galeriSlides[0].clientWidth;
+let galeriInterval;
+
+function galeriNextSlide() {
+    galeriCounter++;
+    if (galeriCounter >= galeriSlides.length) {
+        galeriCounter = 0;
+    }
+    galeriSlideshow.style.transform = `translateX(${-galeriSlideWidth * galeriCounter}px)`;
+    galeriThumbnails.forEach((thumb) => thumb.classList.remove("active"));
+    galeriThumbnails[galeriCounter].classList.add("active");
+}
+
+function galeriPrevSlide() {
+    galeriCounter--;
+    if (galeriCounter < 0) {
+        galeriCounter = galeriSlides.length - 1;
+    }
+    galeriSlideshow.style.transform = `translateX(${-galeriSlideWidth * galeriCounter}px)`;
+    galeriThumbnails.forEach((thumb) => thumb.classList.remove("active"));
+    galeriThumbnails[galeriCounter].classList.add("active");
+}
+
+function galeriStartAutoplay() {
+    galeriInterval = setInterval(galeriNextSlide, 3000);
+}
+
+function galeriStopAutoplay() {
+    clearInterval(galeriInterval);
+}
+
+galeriThumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener("click", () => {
+        galeriStopAutoplay();
+        galeriCounter = parseInt(thumbnail.dataset.index);
+        galeriSlideshow.style.transform = `translateX(${-galeriSlideWidth * galeriCounter}px)`;
+        galeriThumbnails.forEach((thumb) => thumb.classList.remove("active"));
+        thumbnail.classList.add("active");
+        galeriStartAutoplay();
+    });
+});
+
+galeriPrevButton.addEventListener("click", () => {
+    galeriStopAutoplay();
+    galeriPrevSlide();
+    galeriStartAutoplay();
+});
+
+galeriNextButton.addEventListener("click", () => {
+    galeriStopAutoplay();
+    galeriNextSlide();
+    galeriStartAutoplay();
+});
+
+galeriStartAutoplay();
+
+      </script>
 </section>
 
 <!--List Paket IKAYA--> 
 <div class="flex flex-col lg:flex-row min-h-screen px-4 py-8 lg:py-12 bg-black" id="list-paket">
   <div class="lg:w-2/5 bg-black p-6 lg:p-10 flex flex-col justify-center rounded-lg shadow-lg">
-    <h1 class="text-3xl font-bold text-white mb-6 text-center" style="color: #ffd700; font-family: 'Playfair Display', serif; ">
+    <h1 class="text-3xl font-bold text-white mb-6 text-center" style="color: #CFB53B; font-family: 'Playfair Display', serif; ">
       List Paket I'KAYA ->>>>
     </h1>
     <div>
@@ -673,7 +738,7 @@
     
       <!-- Contact section -->
       <section class="contact-section bg-black" id="contact">
-        <h2 class="section-title text-white">Contact Us</h2>
+        <h2 class="section-title text-white" style="color: #CFB53B;">Contact Us</h2>
         <div class="section-content" >
             <ul class="contact-info-list text-white">
                 <li class="contact-info text-white">
