@@ -194,106 +194,179 @@
           
       </section>
       <!-- About section -->
-      <section class="about-section" id="about">
-        <div class="section-content">
-          <div class="about-image-wrapper">
-            <img src="gambar/ikaya.jpg" alt="About" class="about-image" />
+      <section class="about-section py-12" id="about">
+        <div class="container mx-auto px-4">
+         <div class="section-content flex flex-col md:flex-row items-center">
+          <div class="about-image-wrapper md:w-1/2 mb-8 md:mb-0">
+           <img alt="A creative agency team working together in a modern office space" class="about-image w-full h-auto rounded-lg shadow-lg fade-in-left" height="400" src="gambar/ikaya.jpg" width="600"/>
           </div>
-          <div class="about-details">
-            <h2 class="section-title" style="color: #CFB53B;;">About Us</h2>
-            <p class="text">Kami adalah Creative Agency  yang menyediakan solusi bisnis dan kreatif terpadu untuk membantu bisnis Anda tumbuh dan berkembang. Kami menawarkan berbagai layanan, mulai dari perencanaan acara, pameran, pernikahan, manajemen media sosial, manajemen bisnis, hingga manajemen acara.</p>
-            <div class="social-link-list">
-              <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
+          <div class="about-details md:w-1/2 md:pl-12 fade-in-right">
+           <h2 class="section-title text-3xl font-bold mb-4" style="color: #CFB53B;">
+            About Us
+           </h2>
+           <p class="text mb-6">
+            Kami adalah Creative Agency yang menyediakan solusi bisnis dan kreatif terpadu untuk membantu bisnis Anda tumbuh dan berkembang. Kami menawarkan berbagai layanan, mulai dari perencanaan acara, pameran, pernikahan, manajemen media sosial, manajemen bisnis, hingga manajemen acara.
+           </p>
+           <div class="social-link-list flex space-x-4">
+            <a class="social-link text-2xl text-gray-600 hover:text-gray-800" href="#">
+             <i class="fab fa-facebook">
+             </i>
+            </a>
+            <a class="social-link text-2xl text-gray-600 hover:text-gray-800" href="#">
+             <i class="fab fa-instagram">
+             </i>
+            </a>
+            <a class="social-link text-2xl text-gray-600 hover:text-gray-800" href="#">
+             <i class="fab fa-twitter">
+             </i>
+            </a>
+           </div>
           </div>
+         </div>
         </div>
-      </section>
+        <style>
+           .fade-in-left {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .fade-in-left.visible, .fade-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        </style>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const leftElements = document.querySelectorAll('.fade-in-left');
+            const rightElements = document.querySelectorAll('.fade-in-right');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            leftElements.forEach(element => {
+                observer.observe(element);
+            });
+
+            rightElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+        </script>
+       </section>
 
       <!--Layanan Kami-->
-      <section id="services" class="py-12 bg-black">
+      <section class="py-12 bg-black" id="services">
         <div class="container mx-auto px-4">
-            <h2 class="section-title text-center text-3xl font-bold mb-8" style="font-family: 'Playfair Display', serif; color: #CFB53B;">Layanan Kami</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white">
-                    <i class="fas fa-bullhorn text-4xl mb-4 text-yellow-500"></i>
-                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif; ">Event Advertising</h3>
-                    <p>Kami membantu Anda membuat iklan acara yang menarik dan efektif untuk menjangkau target audiens Anda..</p>
-                </div>
-                <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white">
-                    <i class="fas fa-calendar-alt text-4xl mb-4 text-yellow-500"></i>
-                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">Event Organizer</h3>
-                    <p>We plan and execute various types of events, from corporate events to personal celebrations.</p>
-                </div>
-                <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white">
-                    <i class="fas fa-chart-line text-4xl mb-4 text-yellow-500"></i>
-                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">Marketing Strategies</h3>
-                    <p>We develop effective marketing strategies to help you achieve your business goals.</p>
-                </div>
-                <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white">
-                    <i class="fas fa-search text-4xl mb-4 text-yellow-500"></i>
-                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">Planning Target Market</h3>
-                    <p>We help you identify and understand your target market to ensure your marketing message reaches the right people.</p>
-                </div>
-                <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white">
-                    <i class="fas fa-users text-4xl mb-4 text-yellow-500"></i>
-                    <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">Social Media Management</h3>
-                    <p>We manage your social media accounts to increase brand awareness and engagement with your customers.</p>
-                </div>
-            </div>
+         <h2 class="section-title text-center text-3xl font-bold mb-8" style="font-family: 'Playfair Display', serif; color: #CFB53B;">
+          Layanan Kami
+         </h2>
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white fade-in-left">
+           <i class="fas fa-bullhorn text-4xl mb-4 text-yellow-500">
+           </i>
+           <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">
+            Event Advertising
+           </h3>
+           <p>
+            Kami membantu Anda membuat iklan acara yang menarik dan efektif untuk menjangkau target audiens Anda.
+           </p>
+          </div>
+          <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white fade-in-right">
+           <i class="fas fa-calendar-alt text-4xl mb-4 text-yellow-500">
+           </i>
+           <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">
+            Event Organizer
+           </h3>
+           <p>
+            Kami merencanakan dan melaksanakan berbagai jenis acara, mulai dari acara korporat, peluncuran produk, hingga acara pribadi seperti pernikahan dan ulang tahun.
+           </p>
+          </div>
+          <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white fade-in-left">
+           <i class="fas fa-chart-line text-4xl mb-4 text-yellow-500">
+           </i>
+           <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">
+            Marketing Strategies
+           </h3>
+           <p>
+            Kami mengembangkan strategi pemasaran yang efektif untuk membantu Anda mencapai tujuan bisnis Anda.
+           </p>
+          </div>
+          <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white fade-in-right">
+           <i class="fas fa-search text-4xl mb-4 text-yellow-500">
+           </i>
+           <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">
+            Planning Target Market
+           </h3>
+           <p>
+            Kami membantu Anda mengidentifikasi dan memahami target pasar Anda untuk memastikan pesan pemasaran Anda sampai kepada orang yang tepat.
+           </p>
+          </div>
+          <div class="service-item flex flex-col items-center text-center p-6 bg-gray-900 rounded-lg shadow-lg text-white fade-in-left">
+           <i class="fas fa-users text-4xl mb-4 text-yellow-500">
+           </i>
+           <h3 class="text-xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">
+            Social Media Management
+           </h3>
+           <p>
+            Kami mengelola akun media sosial Anda untuk meningkatkan brand awareness dan engagement dengan pelanggan Anda.
+           </p>
+          </div>
+         </div>
         </div>
-    </section>
+       </section>
 
 
 
     <!--Mengapa memilih kami-->
     <div class="flex flex-col lg:flex-row min-h-screen bg-black">
       <div class="lg:w-1/2 flex items-center justify-center p-8">
-       <img alt="A cozy living room with a beige armchair, footrest, and decorative items including framed pictures, a wicker basket, and a plant." class="w-full h-auto object-cover" height="800" src="gambar/ikapalet.jpg" width="600"/>
+       <img alt="A cozy living room with a beige armchair, footrest, and decorative items including framed pictures, a wicker basket, and a plant." class="w-full h-auto object-cover fade-in-left" height="800" src="gambar/ikapalet.jpg" width="600"/>
       </div>
-      <div class="lg:w-1/2 bg-black p-8 flex flex-col justify-center">
+      <div class="lg:w-1/2 bg-black p-8 flex flex-col justify-center fade-in-right">
        <h1 class="text-4xl font-bold text-white mb-8" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
         Mengapa Memilih Kami ?
        </h1>
        <div class="mb-8">
-        <h2 class="text-xl font-bold text-white mb-2 " style="color: #CFB53B; font-family: 'Playfair Display', serif;">
-          Integrated Creative
-        </h2>
-        <p class="text-white" style="font-family: 'Playfair Display', serif;" >
-          Kami menyediakan solusi lengkap untuk semua kebutuhan bisnis dan kreatif Anda, sehingga Anda tidak perlu mencari vendor lain.
-        </p>
-       </div>
-
-       <div class="mb-8">
         <h2 class="text-xl font-bold text-white mb-2" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
-          Tim Profesional
-        </h2>
-        <p class="text-white" style="font-family: 'Playfair Display', serif;" >
-          Tim kami terdiri dari para ahli yang berpengalaman di bidangnya masing-masing.
-        </p>
-       </div>
-       
-       <div class="mb-8" >
-        <h2 class="text-xl font-bold text-white mb-2" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
-          Kreativitas Tanpa Batas
-        </h2>
-        <p class="text-white" style="font-family: 'Playfair Display', serif;" >
-          Kami selalu menghasilkan ide-ide kreatif dan inovatif untuk membantu bisnis Anda tampil beda.
-        </p>
-       </div>
-
-       <div class="mb-8">
-        <h2 class="text-xl font-bold text-white mb-2" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
-          Pelayanan Terbaik
+         Integrated Creative
         </h2>
         <p class="text-white" style="font-family: 'Playfair Display', serif;">
-          Kami memberikan pelayanan yang ramah dan profesional untuk memastikan kepuasan Anda.
+         Kami menyediakan solusi lengkap untuk semua kebutuhan bisnis dan kreatif Anda, sehingga Anda tidak perlu mencari vendor lain.
         </p>
        </div>
-
-       <div>
-        
+       <div class="mb-8">
+        <h2 class="text-xl font-bold text-white mb-2" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
+         Tim Profesional
+        </h2>
+        <p class="text-white" style="font-family: 'Playfair Display', serif;">
+         Tim kami terdiri dari para ahli yang berpengalaman di bidangnya masing-masing.
+        </p>
+       </div>
+       <div class="mb-8">
+        <h2 class="text-xl font-bold text-white mb-2" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
+         Kreativitas Tanpa Batas
+        </h2>
+        <p class="text-white" style="font-family: 'Playfair Display', serif;">
+         Kami selalu menghasilkan ide-ide kreatif dan inovatif untuk membantu bisnis Anda tampil beda.
+        </p>
+       </div>
+       <div class="mb-8">
+        <h2 class="text-xl font-bold text-white mb-2" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
+         Pelayanan Terbaik
+        </h2>
+        <p class="text-white" style="font-family: 'Playfair Display', serif;">
+         Kami memberikan pelayanan yang ramah dan profesional untuk memastikan kepuasan Anda.
+        </p>
        </div>
       </div>
      </div>
@@ -302,236 +375,441 @@
      <!--Management Sosial Media-->
      <section class="team-section py-12" id="team">
       <div class="container mx-auto px-4">
-          <h2 class="section-title text-center text-3xl font-bold mb-8" style="font-family: 'Playfair Display', serif; color: #CFB53B;">Management Sosial Media</h2>
-         
-          
-
-          <div class="text-center mb-12">
-              <h1 class="text-xl md:text-2xl lg:text-3xl mb-6" style="font-family: 'Playfair Display', serif;">Apakah anda mengalami kendala dalam <br> mengelola media sosial seperti ini:</h1>
-              <div class="space-y-4 text-left inline-block" style="font-family: 'Playfair Display', serif;">
-                  <div class="flex items-center">
-                      <span class="mr-2">1.</span>
-                      <i class="fas fa-cogs mr-2"></i>
-                      <span>Kurang Optimal Dalam Mengelola Sosmed</span>
-                  </div>
-                  <div class="flex items-center">
-                      <span class="mr-2">2.</span>
-                      <i class="fas fa-paint-brush mr-2"></i>
-                      <span>Tidak Bisa Desain Kreatif</span>
-                  </div>
-                  <div class="flex items-center">
-                      <span class="mr-2">3.</span>
-                      <i class="fas fa-shopping-cart mr-2"></i>
-                      <span>Kurang Menjual Barang di Media Sosial</span>
-                  </div>
-                  <div class="flex items-center">
-                      <span class="mr-2">4.</span>
-                      <i class="fas fa-bullhorn mr-2"></i>
-                      <span>Bisnis Kurang Dikenal Dalam Media Sosial</span>
-                  </div>
-                  <div class="flex items-center">
-                      <span class="mr-2">5.</span>
-                      <i class="fas fa-share-alt mr-2"></i>
-                      <span>Hanya Sekedar Posting</span>
-                  </div>
-                  <div class="flex items-center">
-                      <span class="mr-2">6.</span>
-                      <i class="fas fa-clock mr-2"></i>
-                      <span>Tidak Ada Waktu</span>
-                  </div>
-                  <div class="flex items-center">
-                      <span class="mr-2">7.</span>
-                      <i class="fas fa-users mr-2"></i>
-                      <span>Keterbatasan SDM</span>
-                  </div>
-                  <div class="flex items-center">
-                      <span class="mr-2">8.</span>
-                      <i class="fas fa-lightbulb mr-2"></i>
-                      <span>Ide Konten Kurang Kreatif</span>
-                  </div>
-                  <div class="flex items-center">
-                      <span class="mr-2">9.</span>
-                      <i class="fas fa-brain mr-2"></i>
-                      <span>Kendala Dalam Ide</span>
-                  </div>
-                  <div class="flex items-center">
-                      <span class="mr-2">10.</span>
-                      <i class="fas fa-calendar-alt mr-2"></i>
-                      <span>Tidak Mampu Update Setiap Hari</span>
-                  </div>
-              </div>
-              <p class="mt-8 text-lg md:text-xl lg:text-2xl text-yellow-500" style="font-family: 'Playfair Display', serif; color: #CFB53B;">Awali Bisnis Sukses Anda Bersama KAYA PRODUCTION</p>
-          </div>
-
-          <div class="text-center mb-12">
-              <h1 class="text-xl font-semibold mb-2" style="font-family: 'Playfair Display', serif;">TENANG..................</h1>
-              <h2 class="text-lg font-semibold text-yellow-500 mb-4" style="font-family: 'Playfair Display', serif; color: #CFB53B;">KAYA PRODUCTION dapat menjadi solusi bagi social media management bisnis anda, MENGAPA?</h2>
-          </div>
-
-          <div class="text-center">
-              <h1 class="text-xl md:text-2xl lg:text-3xl mb-6" style="font-family: 'Playfair Display', serif; color: #CFB53B;">Apakah anda mengalami kendala dalam <br> mengelola media sosial seperti ini:</h1>
-              <div class="problem-list space-y-4" style="font-family: 'Playfair Display', serif;">
-                  <div class="problem-item flex items-center justify-center">
-                      <i class="fas fa-users text-2xl text-orange-500 mr-2"></i>
-                      <p>Satu Akun Bisnis akan di-<span class="font-semibold">Handle</span> Oleh Tiga Orang</p>
-                  </div>
-                  <div class="problem-item flex items-center justify-center">
-                      <i class="fas fa-lightbulb text-2xl text-blue-500 mr-2"></i>
-                      <p>Kami Buatkan Ide Konten Fresh dan sesuai karakteristik bisnis setiap bulan</p>
-                  </div>
-                  <div class="problem-item flex items-center justify-center">
-                      <i class="fas fa-bullhorn text-2xl text-red-500 mr-2"></i>
-                      <p>Kami Bantu Iklan dan Campaign Social Media</p>
-                  </div>
-                  <div class="problem-item flex items-center justify-center">
-                      <i class="fas fa-clock text-2xl text-orange-500 mr-2"></i>
-                      <p>Hemat waktu tanpa repot! Kami akan mengurus postingan Anda setiap hari.</p>
-                  </div>
-                  <div class="problem-item flex items-center justify-center">
-                      <i class="fas fa-pen text-2xl text-green-500 mr-2"></i>
-                      <p>Tidak perlu pusing memikirkan caption. Kami siap membuatkan caption yang menarik, sesuai kebutuhan.</p>
-                  </div>
-                  <div class="problem-item flex items-center justify-center">
-                      <i class="fas fa-palette text-2xl text-purple-500 mr-2"></i>
-                      <p>Kami Buatkan design story hingga feed yang menarik dan sesuai karakteristik bisnis</p>
-                  </div>
-              </div>
-          </div>
+       <h2 class="section-title text-center text-3xl font-bold mb-8" style="font-family: 'Playfair Display', serif; color: #CFB53B;">
+        Management Sosial Media
+       </h2>
+       <div class="text-center mb-12 fade-in-left">
+        <h1 class="text-xl md:text-2xl lg:text-3xl mb-6" style="font-family: 'Playfair Display', serif;">
+         Apakah anda mengalami kendala dalam <br/> mengelola media sosial seperti ini:
+        </h1>
+        <div class="space-y-4 text-left inline-block" style="font-family: 'Playfair Display', serif;">
+         <div class="flex items-center">
+          <span class="mr-2">
+           1.
+          </span>
+          <i class="fas fa-cogs mr-2">
+          </i>
+          <span>
+           Kurang Optimal Dalam Mengelola Sosmed
+          </span>
+         </div>
+         <div class="flex items-center">
+          <span class="mr-2">
+           2.
+          </span>
+          <i class="fas fa-paint-brush mr-2">
+          </i>
+          <span>
+           Tidak Bisa Desain Kreatif
+          </span>
+         </div>
+         <div class="flex items-center">
+          <span class="mr-2">
+           3.
+          </span>
+          <i class="fas fa-shopping-cart mr-2">
+          </i>
+          <span>
+           Kurang Menjual Barang di Media Sosial
+          </span>
+         </div>
+         <div class="flex items-center">
+          <span class="mr-2">
+           4.
+          </span>
+          <i class="fas fa-bullhorn mr-2">
+          </i>
+          <span>
+           Bisnis Kurang Dikenal Dalam Media Sosial
+          </span>
+         </div>
+         <div class="flex items-center">
+          <span class="mr-2">
+           5.
+          </span>
+          <i class="fas fa-share-alt mr-2">
+          </i>
+          <span>
+           Hanya Sekedar Posting
+          </span>
+         </div>
+         <div class="flex items-center">
+          <span class="mr-2">
+           6.
+          </span>
+          <i class="fas fa-clock mr-2">
+          </i>
+          <span>
+           Tidak Ada Waktu
+          </span>
+         </div>
+         <div class="flex items-center">
+          <span class="mr-2">
+           7.
+          </span>
+          <i class="fas fa-users mr-2">
+          </i>
+          <span>
+           Keterbatasan SDM
+          </span>
+         </div>
+         <div class="flex items-center">
+          <span class="mr-2">
+           8.
+          </span>
+          <i class="fas fa-lightbulb mr-2">
+          </i>
+          <span>
+           Ide Konten Kurang Kreatif
+          </span>
+         </div>
+         <div class="flex items-center">
+          <span class="mr-2">
+           9.
+          </span>
+          <i class="fas fa-brain mr-2">
+          </i>
+          <span>
+           Kendala Dalam Ide
+          </span>
+         </div>
+         <div class="flex items-center">
+          <span class="mr-2">
+           10.
+          </span>
+          <i class="fas fa-calendar-alt mr-2">
+          </i>
+          <span>
+           Tidak Mampu Update Setiap Hari
+          </span>
+         </div>
+        </div>
+        <p class="mt-8 text-lg md:text-xl lg:text-2xl text-yellow-500" style="font-family: 'Playfair Display', serif; color: #CFB53B;">
+         Awali Bisnis Sukses Anda Bersama KAYA PRODUCTION
+        </p>
+       </div>
+       <div class="text-center mb-12 fade-in-right">
+        <h1 class="text-xl font-semibold mb-2" style="font-family: 'Playfair Display', serif;">
+         TENANG..................
+        </h1>
+        <h2 class="text-lg font-semibold text-yellow-500 mb-4" style="font-family: 'Playfair Display', serif; color: #CFB53B;">
+         KAYA PRODUCTION dapat menjadi solusi bagi social media management bisnis anda, MENGAPA?
+        </h2>
+       </div>
+       <div class="text-center fade-in-left">
+        <h1 class="text-xl md:text-2xl lg:text-3xl mb-6" style="font-family: 'Playfair Display', serif; color: #CFB53B;">
+         Apakah anda mengalami kendala dalam <br/> mengelola media sosial seperti ini:
+        </h1>
+        <div class="problem-list space-y-4" style="font-family: 'Playfair Display', serif;">
+         <div class="problem-item flex items-center justify-center">
+          <i class="fas fa-users text-2xl text-orange-500 mr-2">
+          </i>
+          <p>
+           Satu Akun Bisnis akan di-
+           <span class="font-semibold">
+            Handle
+           </span>
+           Oleh Tiga Orang
+          </p>
+         </div>
+         <div class="problem-item flex items-center justify-center">
+          <i class="fas fa-lightbulb text-2xl text-blue-500 mr-2">
+          </i>
+          <p>
+           Kami Buatkan Ide Konten Fresh dan sesuai karakteristik bisnis setiap bulan
+          </p>
+         </div>
+         <div class="problem-item flex items-center justify-center">
+          <i class="fas fa-bullhorn text-2xl text-red-500 mr-2">
+          </i>
+          <p>
+           Kami Bantu Iklan dan Campaign Social Media
+          </p>
+         </div>
+         <div class="problem-item flex items-center justify-center">
+          <i class="fas fa-clock text-2xl text-orange-500 mr-2">
+          </i>
+          <p>
+           Hemat waktu tanpa repot! Kami akan mengurus postingan Anda setiap hari.
+          </p>
+         </div>
+         <div class="problem-item flex items-center justify-center">
+          <i class="fas fa-pen text-2xl text-green-500 mr-2">
+          </i>
+          <p>
+           Tidak perlu pusing memikirkan caption. Kami siap membuatkan caption yang menarik, sesuai kebutuhan.
+          </p>
+         </div>
+         <div class="problem-item flex items-center justify-center">
+          <i class="fas fa-palette text-2xl text-purple-500 mr-2">
+          </i>
+          <p>
+           Kami Buatkan design story hingga feed yang menarik dan sesuai karakteristik bisnis
+          </p>
+         </div>
+        </div>
+       </div>
       </div>
-  </section>
+     </section>
 <!--paket pricelist-->
 <section class="paket bg-black">
-<div class="container mx-auto px-4 bg-black flex justify-center items-center min-h-screen">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-8 main-content ">
-      <!-- Paket Gold -->
-      <div class="bg-gray-800 p-8 rounded-lg shadow-lg mx-auto border-4 border-yellow-500">
-          <div class="text-center mb-6">
-              <h1 class="text-xl font-bold text-yellow-500" style="font-family: 'Playfair Display', serif;">SOCIAL MEDIA PRICE LIST</h1>
-              <h2 class="text-lg text-yellow-500" style="font-family: 'Playfair Display', serif;">PAKET GOLD</h2>
-          </div>
-          <div class="mb-4">
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Postingan</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>9 Feeds</li>
-                  <li>15 Video Reels (maksimal 1 menit)</li>
-                  <li>5 Story</li>
-              </ul>
-          </div>
-          <div class="mb-4">
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Maintance</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>Approval 1x/Minggu</li>
-                  <li>Visit Store 3x/Bulan</li>
-                  <li>Revisi Desain max 1x/Minggu</li>
-                  <li>Monthly Report</li>
-                  <li>Monitoring</li>
-              </ul>
-          </div>
-          <div class="mb-4">
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Brand Awareness</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>Ide dan Konsep Konten</li>
-                  <li>Feeds Sesuai Identitas Brand</li>
-                  <li>Strategi Konten Sesuai Kebutuhan</li>
-              </ul>
-          </div>
-          <div>
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Include</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>Admin Posting</li>
-                  <li>Cover Highlight</li>
-                  <li>Support Respon Komentar</li>
-                  <li>Copywriting</li>
-              </ul>
-          </div>
-      </div>
-      <!-- Paket Silver -->
-      <div class="bg-gray-800 p-8 rounded-lg shadow-lg mx-auto border-4 border-gray-400">
-          <div class="text-center mb-6">
-              <h1 class="text-xl font-bold text-gray-400" style="font-family: 'Playfair Display', serif;">SOCIAL MEDIA PRICE LIST</h1>
-              <h2 class="text-lg text-gray-400" style="font-family: 'Playfair Display', serif;">PAKET SILVER</h2>
-          </div>
-          <div class="mb-4">
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Postingan</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>20 Feeds</li>
-                  <li>4 Video Reels (maksimal 1 menit)</li>
-                  <li>5 Story</li>
-              </ul>
-          </div>
-          <div class="mb-4">
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Maintance</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>Approval 1x</li>
-                  <li>Visit Store 2x/Bulan</li>
-                  <li>Revisi Desain max 2x</li>
-                  <li>Monthly Report</li>
-                  <li>Monitoring</li>
-              </ul>
-          </div>
-          <div class="mb-4">
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Brand Awareness</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>Ide dan Konsep Konten</li>
-                  <li>Feeds Sesuai Identitas Brand</li>
-                  <li>Strategi Konten Sesuai Kebutuhan</li>
-              </ul>
-          </div>
-          <div>
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Include</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>Admin Posting</li>
-                  <li>Cover Highlight</li>
-                  <li>Support Respon Komentar</li>
-                  <li>Copywriting</li>
-              </ul>
-          </div>
-      </div>
-      <!-- Paket Rhodium -->
-      <div class="bg-gray-800 p-8 rounded-lg shadow-lg mx-auto border-4 border-gray-300">
-          <div class="text-center mb-6">
-              <h1 class="text-xl font-bold text-gray-300" style="font-family: 'Playfair Display', serif;">SOCIAL MEDIA PRICE LIST</h1>
-              <h2 class="text-lg text-gray-300" style="font-family: 'Playfair Display', serif;">PAKET RHODIUM</h2>
-          </div>
-          <div class="mb-4">
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Postingan</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>15 Feeds</li>
-                  <li>3 Video Reels (maksimal 1 menit)</li>
-                  <li>3 Story</li>
-              </ul>
-          </div>
-          <div class="mb-4">
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Maintance</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>Approval 1x</li>
-                  <li>Visit Store 1x</li>
-                  <li>Revisi Desain max 2x</li>
-                  <li>Monthly Report</li>
-                  <li>Monitoring</li>
-              </ul>
-          </div>
-          <div class="mb-4">
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Brand Awareness</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>Ide dan Konsep Konten</li>
-                  <li>Feeds Sesuai Identitas Brand</li>
-                  <li>Strategi Konten Sesuai Kebutuhan</li>
-              </ul>
-          </div>
-          <div>
-              <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">Include</h3>
-              <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
-                  <li>Admin Posting</li>
-                  <li>Cover Highlight</li>
-                  <li>Support Respon Komentar</li>
-                  <li>Copywriting</li>
-              </ul>
-          </div>
-      </div>
+  <div class="container mx-auto px-4 bg-black flex justify-center items-center min-h-screen">
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-8 main-content">
+    <!-- Paket Gold -->
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg mx-auto border-4 border-yellow-500 fade-in-left">
+     <div class="text-center mb-6">
+      <h1 class="text-xl font-bold text-yellow-500" style="font-family: 'Playfair Display', serif;">
+       SOCIAL MEDIA PRICE LIST
+      </h1>
+      <h2 class="text-lg text-yellow-500" style="font-family: 'Playfair Display', serif;">
+       PAKET GOLD
+      </h2>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Postingan
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        9 Feeds
+       </li>
+       <li>
+        15 Video Reels (maksimal 1 menit)
+       </li>
+       <li>
+        5 Story
+       </li>
+      </ul>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Maintance
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        Approval 1x/Minggu
+       </li>
+       <li>
+        Visit Store 3x/Bulan
+       </li>
+       <li>
+        Revisi Desain max 1x/Minggu
+       </li>
+       <li>
+        Monthly Report
+       </li>
+       <li>
+        Monitoring
+       </li>
+      </ul>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Brand Awareness
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        Ide dan Konsep Konten
+       </li>
+       <li>
+        Feeds Sesuai Identitas Brand
+       </li>
+       <li>
+        Strategi Konten Sesuai Kebutuhan
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Include
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        Admin Posting
+       </li>
+       <li>
+        Cover Highlight
+       </li>
+       <li>
+        Support Respon Komentar
+       </li>
+       <li>
+        Copywriting
+       </li>
+      </ul>
+     </div>
+    </div>
+    <!-- Paket Silver -->
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg mx-auto border-4 border-gray-400 fade-in-right">
+     <div class="text-center mb-6">
+      <h1 class="text-xl font-bold text-gray-400" style="font-family: 'Playfair Display', serif;">
+       SOCIAL MEDIA PRICE LIST
+      </h1>
+      <h2 class="text-lg text-gray-400" style="font-family: 'Playfair Display', serif;">
+       PAKET SILVER
+      </h2>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Postingan
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        20 Feeds
+       </li>
+       <li>
+        4 Video Reels (maksimal 1 menit)
+       </li>
+       <li>
+        5 Story
+       </li>
+      </ul>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Maintance
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        Approval 1x
+       </li>
+       <li>
+        Visit Store 2x/Bulan
+       </li>
+       <li>
+        Revisi Desain max 2x
+       </li>
+       <li>
+        Monthly Report
+       </li>
+       <li>
+        Monitoring
+       </li>
+      </ul>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Brand Awareness
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        Ide dan Konsep Konten
+       </li>
+       <li>
+        Feeds Sesuai Identitas Brand
+       </li>
+       <li>
+        Strategi Konten Sesuai Kebutuhan
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Include
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        Admin Posting
+       </li>
+       <li>
+        Cover Highlight
+       </li>
+       <li>
+        Support Respon Komentar
+       </li>
+       <li>
+        Copywriting
+       </li>
+      </ul>
+     </div>
+    </div>
+    <!-- Paket Rhodium -->
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg mx-auto border-4 border-gray-300 fade-in-left">
+     <div class="text-center mb-6">
+      <h1 class="text-xl font-bold text-gray-300" style="font-family: 'Playfair Display', serif;">
+       SOCIAL MEDIA PRICE LIST
+      </h1>
+      <h2 class="text-lg text-gray-300" style="font-family: 'Playfair Display', serif;">
+       PAKET RHODIUM
+      </h2>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Postingan
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        15 Feeds
+       </li>
+       <li>
+        3 Video Reels (maksimal 1 menit)
+       </li>
+       <li>
+        3 Story
+       </li>
+      </ul>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Maintance
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        Approval 1x
+       </li>
+       <li>
+        Visit Store 1x
+       </li>
+       <li>
+        Revisi Desain max 2x
+       </li>
+       <li>
+        Monthly Report
+       </li>
+       <li>
+        Monitoring
+       </li>
+      </ul>
+     </div>
+     <div class="mb-4">
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Brand Awareness
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        Ide dan Konsep Konten
+       </li>
+       <li>
+        Feeds Sesuai Identitas Brand
+       </li>
+       <li>
+        Strategi Konten Sesuai Kebutuhan
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="text-lg font-semibold text-white" style="font-family: 'Playfair Display', serif;">
+       Include
+      </h3>
+      <ul class="list-disc list-inside ml-4 text-white" style="font-family: 'Playfair Display', serif;">
+       <li>
+        Admin Posting
+       </li>
+       <li>
+        Cover Highlight
+       </li>
+       <li>
+        Support Respon Komentar
+       </li>
+       <li>
+        Copywriting
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
   </div>
-</div>
-</section>
+ </section>
 
       
       
@@ -539,43 +817,57 @@
 
       
       <!-- Gallery section -->
-      <section class="gallery-section bg-black" id="gallery">
-        <h2 class="section-title text-white" style="font-family: 'Playfair Display', serif; color: #CFB53B;">PROYEK KAMI</h2>
-        <div class="section-content">
-            <ul class="gallery-list flex flex-col md:flex-row">
-                <li class="gallery-item md:w-1/3">
-                    <figure class="gallery-figure">
-                        <img src="gambar/deslog.png" alt="Desain Logo" class="gallery-image" />
-                        <figcaption class="gallery-caption text-white" style="font-family: 'Playfair Display', serif;">Desain Logo</figcaption>
-                    </figure>
-                </li>
-                <li class="gallery-item md:w-1/3">
-                    <figure class="gallery-figure">
-                        <img src="gambar/Screenshot 2025-02-20 031935.png" alt="Aplikasi Saljay" class="gallery-image" />
-                        <figcaption class="gallery-caption text-white" style="font-family: 'Playfair Display', serif;">Social Marketing of Salem Jaya Store</figcaption>
-                    </figure>
-                </li>
-                <li class="gallery-item md:w-1/3">
-                    <figure class="gallery-figure">
-                        <img src="gambar/fotses-637.jpg" alt="Desain Buku" class="gallery-image" />
-                        <figcaption class="gallery-caption text-white" style="font-family: 'Playfair Display', serif;">Photo Session</figcaption>
-                    </figure>
-                </li>
-                <li class="gallery-item md:w-1/3">
-                    <figure class="gallery-figure">
-                        <img src="gambar/stikermasan.png" alt="Desain Buku" class="gallery-image" />
-                        <figcaption class="gallery-caption text-white" style="font-family: 'Playfair Display', serif;">Desain Stiker Kemasan</figcaption>
-                    </figure>
-                </li>
-                <li class="gallery-item md:w-1/3">
-                    <figure class="gallery-figure">
-                        <img src="gambar/des-buku.png" alt="Desain Buku" class="gallery-image" />
-                        <figcaption class="gallery-caption text-white" style="font-family: 'Playfair Display', serif;">Desain Buku</figcaption>
-                    </figure>
-                </li>
-            </ul>
+      <section class="gallery-section bg-black py-12" id="gallery">
+        <div class="container mx-auto px-4">
+         <h2 class="section-title text-center text-3xl font-bold mb-8 text-white" style="font-family: 'Playfair Display', serif; color: #CFB53B;">
+          PROYEK KAMI
+         </h2>
+         <div class="section-content">
+          <ul class="gallery-list flex flex-col md:flex-row flex-wrap">
+           <li class="gallery-item md:w-1/3 p-4 fade-in-left">
+            <figure class="gallery-figure">
+             <img alt="A creative logo design with vibrant colors and modern typography" class="gallery-image w-full h-auto rounded-lg shadow-lg" height="400" src="gambar/deslog.png" width="600"/>
+             <figcaption class="gallery-caption text-white text-center mt-2" style="font-family: 'Playfair Display', serif;">
+              Desain Logo
+             </figcaption>
+            </figure>
+           </li>
+           <li class="gallery-item md:w-1/3 p-4 fade-in-right">
+            <figure class="gallery-figure">
+             <img alt="A screenshot of the Salem Jaya Store social marketing campaign" class="gallery-image w-full h-auto rounded-lg shadow-lg" height="400" src="gambar/Screenshot 2025-02-20 031935.png" width="600"/>
+             <figcaption class="gallery-caption text-white text-center mt-2" style="font-family: 'Playfair Display', serif;">
+              Social Marketing of Salem Jaya Store
+             </figcaption>
+            </figure>
+           </li>
+           <li class="gallery-item md:w-1/3 p-4 fade-in-left">
+            <figure class="gallery-figure">
+             <img alt="A professional photo session setup with lighting and camera equipment" class="gallery-image w-full h-auto rounded-lg shadow-lg" height="400" src="gambar/fotses-637.jpg" width="600"/>
+             <figcaption class="gallery-caption text-white text-center mt-2" style="font-family: 'Playfair Display', serif;">
+              Photo Session
+             </figcaption>
+            </figure>
+           </li>
+           <li class="gallery-item md:w-1/3 p-4 fade-in-right">
+            <figure class="gallery-figure">
+             <img alt="A creative sticker design for packaging with vibrant colors and modern typography" class="gallery-image w-full h-auto rounded-lg shadow-lg" height="400" src="gambar/stikermasan.png" width="600"/>
+             <figcaption class="gallery-caption text-white text-center mt-2" style="font-family: 'Playfair Display', serif;">
+              Desain Stiker Kemasan
+             </figcaption>
+            </figure>
+           </li>
+           <li class="gallery-item md:w-1/3 p-4 fade-in-left">
+            <figure class="gallery-figure">
+             <img alt="A creative book cover design with modern typography and vibrant colors" class="gallery-image w-full h-auto rounded-lg shadow-lg" height="400" src="gambar/des-buku.png" width="600"/>
+             <figcaption class="gallery-caption text-white text-center mt-2" style="font-family: 'Playfair Display', serif;">
+              Desain Buku
+             </figcaption>
+            </figure>
+           </li>
+          </ul>
+         </div>
         </div>
-    </section>
+       </section>
 <!--Testi-->
 <section class="slideshow-section" id="slideshow">
   <h2 class="section-title" style="color: #CFB53B;">Dokumentasi Kegiatan</h2>
@@ -649,6 +941,10 @@
           
       </div>
       <button class="prev-button">&lt;</button>  <button class="next-button">&gt;</button>  </div>
+
+
+      
+
       <script>
         const galeriSlideshow = document.querySelector(".slideshow");
 const galeriSlides = document.querySelectorAll(".slide");
@@ -718,47 +1014,44 @@ galeriStartAutoplay();
 
 <!--List Paket IKAYA--> 
 <div class="flex flex-col lg:flex-row min-h-screen px-4 py-8 lg:py-12 bg-black" id="list-paket">
-  <div class="lg:w-2/5 bg-black p-6 lg:p-10 flex flex-col justify-center rounded-lg shadow-lg">
-    <h1 class="text-3xl font-bold text-white mb-6 text-center" style="color: #CFB53B; font-family: 'Playfair Display', serif; ">
-      List Paket I'KAYA ->>>>
-    </h1>
-    <div>
-      <!-- Add your content here -->
-    </div>
+  <div class="lg:w-2/5 bg-black p-6 lg:p-10 flex flex-col justify-center rounded-lg shadow-lg fade-in-left">
+   <h1 class="text-3xl font-bold text-white mb-6 text-center" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
+    List Paket I'KAYA -&gt;&gt;&gt;&gt;
+   </h1>
+   <div>
+    <!-- Add your content here -->
+   </div>
   </div>
-  <div class="lg:w-3/5 flex items-center justify-center p-6 lg:p-10 bg-black">
-    <img class="zoomable-image" alt="A cozy living room with a beige armchair, footrest, and decorative items including framed pictures, a wicker basket, and a plant." 
-      class="w-3/4 h-auto object-cover rounded-lg shadow-md" 
-      src="gambar/list-paket.png"/>
+  <div class="lg:w-3/5 flex items-center justify-center p-6 lg:p-10 bg-black fade-in-right">
+   <img alt="A cozy living room with a beige armchair, footrest, and decorative items including framed pictures, a wicker basket, and a plant." class="zoomable-image w-3/4 h-auto object-cover rounded-lg shadow-md" height="400" src="gambar/list-paket.png" width="600"/>
   </div>
-</div>
+ </div>
 
 
     
     
       <!-- Contact section -->
       <section class="contact-section bg-black" id="contact">
-        <h2 class="section-title text-white" style="color: #CFB53B;">Contact Us</h2>
-        <div class="section-content" >
-            <ul class="contact-info-list text-white">
-                <li class="contact-info text-white">
-                    <i class="fa-solid fa-location-crosshairs"></i>
-                    <p style="font-family: 'Playfair Display', serif;">Jl. B.W.Lapian, Tikala Ares, Kec. Wenang, Kota Manado, Sulawesi Utara</p>
+        <h2 class="section-title text-center text-4xl font-bold mb-8 text-white" style="color: #CFB53B;">Contact Us</h2>
+        <div class="section-content max-w-4xl mx-auto px-4">
+            <ul class="contact-info-list space-y-6 mb-8">
+                <li class="contact-info flex items-center space-x-4 fade-in-left text-white">
+                    <i class="fa-solid fa-location-crosshairs text-2xl"></i>
+                    <p class="text-lg" style="font-family: 'Playfair Display', serif;">Jl. B.W.Lapian, Tikala Ares, Kec. Wenang, Kota Manado, Sulawesi Utara</p>
                 </li>
-                <li class="contact-info text-white">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p style="font-family: 'Playfair Display', serif;">kayacreativeproduction@gmail.com</p>
+                <li class="contact-info flex items-center space-x-4 fade-in-right text-white">
+                    <i class="fa-regular fa-envelope text-2xl"></i>
+                    <p class="text-lg" style="font-family: 'Playfair Display', serif;">kayacreativeproduction@gmail.com</p>
                 </li>
-                <li class="contact-info text-white">
-                    <i class="fa-solid fa-phone"></i>
-                    <p style="font-family: 'Playfair Display', serif;">+62 821-9503-1456</p>
+                <li class="contact-info flex items-center space-x-4 fade-in-left text-white">
+                    <i class="fa-solid fa-phone text-2xl"></i>
+                    <p class="text-lg" style="font-family: 'Playfair Display', serif;">+62 821-9503-1456</p>
                 </li>
-               
             </ul>
-            <div class="map-container">
+            <div class="map-container fade-in-right">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1366.5290726186154!2d124.84775614516286!3d1.4855170106877378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328775005d429a63%3A0xe5fe0592ff88ec43!2sVANILLA%20Cake%20and%20Bakery%20Tikala!5e1!3m2!1sid!2sid!4v1740074462033!5m2!1sid!2sid"
-                    width="600"
+                    width="100%"
                     height="450"
                     style="border: 0"
                     allowfullscreen=""

@@ -711,3 +711,17 @@ section .section-title::after {
   }
 }
 
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in-left.visible, .fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
