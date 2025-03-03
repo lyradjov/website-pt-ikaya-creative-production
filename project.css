@@ -1,0 +1,36 @@
+relative {
+    position: relative;
+    overflow: hidden; /* Tambahkan overflow: hidden untuk mencegah gambar keluar dari wadah saat di-zoom */
+}
+
+.relative img {
+    transition: transform 0.3s ease; /* Tambahkan transisi untuk efek halus */
+}
+
+.relative:hover img {
+    transform: scale(1.03); /* Efek zoom saat dihover */
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    transition: transform 0.3s ease; /* Tambahkan transisi untuk efek halus */
+}
+
+.relative:hover .absolute {
+    transform: translateY(-5px); /* Efek pergeseran overlay saat dihover */
+}
+
+.nav-text-color a {
+    color: white; /* Warna menu navigasi */
+  }
+  
+  .nav-text-color a:hover {
+    color: #CFB53B; /* Warna hover */
+  }
+  
