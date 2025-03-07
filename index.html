@@ -123,102 +123,52 @@
     </header>
     <main>
       <!-- Hero section -->
-       <section id="home">
+      <section id="home">
         <div class="relative">
-          
-          <div class="hero-slide">
-              
-           <div class="absolute inset-0 bg-black opacity-30">
-           </div>
-           <img alt="Hero image 1 with a placeholder image of 1920x1080 pixels" class="w-full h-screen object-cover" height="1080" src="gambar/id-card.png" width="1920"/>
-           <div class="absolute inset-0 flex items-center justify-center">
-            <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded">
-             <h1 class="text-4xl md:text-6xl font-bold mb-4" style="font-family: 'Playfair Display', serif;">
-              Selamat datang di Website Kami
-             </h1>
-            
-             
-            
+            <div class="hero-slide">
+                <div class="absolute inset-0 bg-black opacity-30"></div>
+                <img class="w-full h-screen object-cover" src="gambar/id-card.png" alt="Hero image 1" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4 typewriter"></h1>
+                    </div>
+                </div>
             </div>
-           </div>
-          </div>
-          <div class="hero-slide hidden">
-           <div class="absolute inset-0 bg-black opacity-30">
-           </div>
-           <img alt="Hero image 2 with a placeholder image of 1920x1080 pixels" class="w-full h-screen object-cover" height="1080" src="gambar/deslog.png" width="1920"/>
-           <div class="absolute inset-0 flex items-center justify-center">
-            <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded">
-             <h1 class="text-4xl md:text-6xl font-bold mb-4" style="font-family: 'Playfair Display', serif;">
-              Selamat datang di Website Kami
-             </h1>
-            
-             
-            
+            <div class="hero-slide hidden">
+                <div class="absolute inset-0 bg-black opacity-30"></div>
+                <img class="w-full h-screen object-cover" src="gambar/deslog.png" alt="Hero image 2" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4 typewriter"></h1>
+                    </div>
+                </div>
             </div>
-           </div>
-          </div>
-          <div class="hero-slide hidden">
-           <div class="absolute inset-0 bg-black opacity-30">
-           </div>
-           <img alt="Hero image 3 with a placeholder image of 1920x1080 pixels" class="w-full h-screen object-cover" height="1080" src="gambar/slider16.jpg" width="1920"/>
-           <div class="absolute inset-0 flex items-center justify-center">
-            <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded">
-             <h1 class="text-4xl md:text-6xl font-bold mb-4" style="font-family: 'Playfair Display', serif;">
-              Selamat datang di Website Kami
-             </h1>
-             
-             
+            <div class="hero-slide hidden">
+                <div class="absolute inset-0 bg-black opacity-30"></div>
+                <img class="w-full h-screen object-cover" src="gambar/slider16.jpg" alt="Hero image 3" />
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4 typewriter"></h1>
+                    </div>
+                </div>
             </div>
-           </div>
-          </div>
-          <!-- Slideshow Controls -->
-          <div class="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
-           <button class="bg-white text-gray-800 rounded-full p-2 mx-2 focus:outline-none" id="prevSlide">
-            <i class="fas fa-chevron-left">
-            </i>
-           </button>
-           <button class="bg-white text-gray-800 rounded-full p-2 mx-2 focus:outline-none" id="nextSlide">
-            <i class="fas fa-chevron-right">
-            </i>
-           </button>
-          </div>
-         </div>
+    
+            <!-- Slideshow Controls -->
+            <div class="absolute bottom-0 left-0 right-0 flex justify-center mb-4">
+                <button class="bg-white text-gray-800 rounded-full p-2 mx-2 focus:outline-none" id="prevSlide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="bg-white text-gray-800 rounded-full p-2 mx-2 focus:outline-none" id="nextSlide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    
+       
+    </section>
+    
 
-          <script>
-        const mobileMenuButton = document.querySelector('.mobile-menu-button');
-        const mobileMenu = document.querySelector('.mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.hero-slide');
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.toggle('hidden', i !== index);
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        document.getElementById('nextSlide').addEventListener('click', nextSlide);
-        document.getElementById('prevSlide').addEventListener('click', prevSlide);
-
-        setInterval(nextSlide, 5000);
-
-  </script>
-          
-      </section>
+      
       <!-- About section -->
 <section class="ikaya-section py-12">
   
@@ -813,12 +763,14 @@
     <!-- Linking Swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Linking custom script -->
+    <script src="typewriter.js"></script>
     <script src="script.js"></script>
-
+   
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="popupcontact.js"></script>
     <script src="script.js"></script>
+   
   </body>
 </html>
