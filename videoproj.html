@@ -17,7 +17,7 @@
   <body>
     <!-- Header / Navbar -->
     <header id="">
-      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
+      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full" style="text-align: center;">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex justify-between">
             <div class="flex space-x-7">
@@ -121,6 +121,32 @@
   
   
           </script>
+          <style>
+                            .mobile-menu {
+                        background-color: rgba(0, 0, 0, 0); /* Transparan sepenuhnya */
+                        backdrop-filter: blur(30px); /* Efek blur agar lebih elegan */
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .mobile-menu ul li a {
+                        color: white; /* Pastikan teks tetap terlihat */
+                    }
+
+                    .mobile-menu-button {
+                        z-index: 60; /* Pastikan tombol hamburger selalu di atas */
+                    }
+
+                    @media (max-width: 768px) {
+                        .mobile-menu {
+                            position: absolute;
+                            top: 60px; /* Pastikan posisi di bawah navbar */
+                            left: 0;
+                            width: 100%;
+                            padding: 10px 0;
+                        }
+                    }
+
+          </style>
       </nav>
       
     </header>
@@ -182,7 +208,7 @@
       
         <!-- Video 2 -->
         <div class="relative group overflow-hidden">
-          <video class="w-full h-auto" controls>
+          <video loading="lazy" class="w-full h-auto" controls>
             <source src="video/WhatsApp Video 2025-03-01 at 09.55.31.mp4" type="video/mp4">
             Browser Anda tidak mendukung tag video.
           </video>
@@ -190,7 +216,7 @@
 
          <!-- Video 1 -->
          <div class="relative group overflow-hidden">
-          <video class="w-full h-auto" controls>
+          <video loading="lazy" class="w-full h-auto" controls>
             <source src="video/WhatsApp Video 2025-03-01 at 09.55.31 (1).mp4" type="video/mp4">
             Browser Anda tidak mendukung tag video.
           </video>
@@ -198,7 +224,7 @@
       
         <!-- Video 3 -->
         <div class="relative group overflow-hidden">
-          <video class="w-full h-auto" controls>
+          <video loading="lazy" class="w-full h-auto" controls>
             <source src="video/WhatsApp Video 2025-03-01 at 09.55.36.mp4" type="video/mp4">
             Browser Anda tidak mendukung tag video.
           </video>

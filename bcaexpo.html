@@ -62,7 +62,7 @@
             </div>
           </div>
         </div>
-        <div class="hidden mobile-menu">
+        <div class="hidden mobile-menu" style="text-align: center;">
             <ul>
                 <li class="active text-white">
                   <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="index.html">
@@ -125,6 +125,32 @@
   
   
           </script>
+          <style>
+            .mobile-menu {
+                background-color: rgba(0, 0, 0, 0); /* Transparan sepenuhnya */
+                backdrop-filter: blur(10px); /* Efek blur agar lebih elegan */
+                transition: all 0.3s ease-in-out;
+            }
+  
+            .mobile-menu ul li a {
+                color: white; /* Pastikan teks tetap terlihat */
+            }
+  
+            .mobile-menu-button {
+                z-index: 60; /* Pastikan tombol hamburger selalu di atas */
+            }
+  
+            @media (max-width: 768px) {
+                .mobile-menu {
+                    position: absolute;
+                    top: 60px; /* Pastikan posisi di bawah navbar */
+                    left: 0;
+                    width: 100%;
+                    padding: 10px 0;
+                }
+            }
+  
+          </style>
       </nav>
       
     </header>
@@ -167,7 +193,7 @@
       
         <!-- Video 2 -->
         <div class="relative group overflow-hidden">
-          <video class="w-full h-auto" controls>
+          <video class="w-full h-auto" loading="lazy" controls>
             <source src="video/bcaexpo.mp4" type="video/mp4">
             Browser Anda tidak mendukung tag video.
           </video>
@@ -234,6 +260,7 @@
     </main>
     <!-- Linking Swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
     <!-- Linking custom script -->
     <script src="script.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>

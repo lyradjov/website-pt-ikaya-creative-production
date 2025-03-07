@@ -28,7 +28,7 @@ li {
   <body>
     <!-- Header / Navbar -->
     <header id="" class="bg-black">
-      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
+      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full" style="text-align: center;">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex justify-between">
             <div class="flex space-x-7">
@@ -131,6 +131,33 @@ li {
   
   
           </script>
+
+          <style>
+                            .mobile-menu {
+                        background-color: rgba(0, 0, 0, 0); /* Transparan sepenuhnya */
+                        backdrop-filter: blur(30px); /* Efek blur agar lebih elegan */
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .mobile-menu ul li a {
+                        color: white; /* Pastikan teks tetap terlihat */
+                    }
+
+                    .mobile-menu-button {
+                        z-index: 60; /* Pastikan tombol hamburger selalu di atas */
+                    }
+
+                    @media (max-width: 768px) {
+                        .mobile-menu {
+                            position: absolute;
+                            top: 60px; /* Pastikan posisi di bawah navbar */
+                            left: 0;
+                            width: 100%;
+                            padding: 10px 0;
+                        }
+                    }
+
+          </style>
       </nav>
       
     </header>
@@ -179,133 +206,209 @@ li {
         });
         </script>
        </section>
+       
+       <section class="container mx-auto px-4 py-8 bg-black-900">
+        <div class="container mx-auto px-4 py-8">
+            <h2 class="section-title" style="color: #CFB53B;">OUR SERVICE</h2>
+            <div class="divider"></div>
+            <section class="bg-black p-6 rounded-lg ">
+                <div class="services-wrapper flex flex-wrap gap-5">
+                  
+                    <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)]">
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer">
+                                <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font">KONSULTASI PEMASARAN
+                                  <div class="divider"></div>
+                                </h2>
+                                
+                                <span class="text-yellow-400 group-open:rotate-180 transition-transform transform group-hover:scale-125 group-hover:text-yellow-500 hover:bg-yellow-900 p-2 rounded-full shadow-lg cursor-pointer">
+                                   <p style="font-weight: bold; font-size: 2.5rem;">&uarr;</p>
+                                  </span>
+                            </summary>
+                            <div class="divider"></div>
+                            <ul class="list-none p-0 mt-4">
+                                <li class="p-3 rounded-md mb-2">- Riset pasar dan analisis kompetitif</li>
+                                <li class="p-3 rounded-md mb-2">- Ide Kampanye</li>
+                            </ul>
+                            <div class="divider-bawah"></div>
+                        </details>
+                    </div>
 
-       <section class="container mx-auto px-4 py-8 bg-black-900"> <div class="container mx-auto px-4 py-8">
-        <h2 class="section-title" style="color: #CFB53B;">OUR SERVICE</h2>
-
-        <section class="bg-black p-6 rounded-lg border border-gray-700">
-            <div class="services-wrapper flex flex-wrap gap-5">
-                <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)] ">
-                    <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font"  >KONSULTASI PEMASARAN</h2>
-                    <div class="divider"></div>
-                    <ul class="list-none p-0">
-                        <li class="p-3 rounded-md mb-2">- Riset pasar dan analisis kompetitif
-
-                        </li>
-                        <li class="p-3 rounded-md mb-2">- Ide Kampanye</li>
-                    </ul>
-                    <div class="divider-bawah"></div>
+                    
+    
+                    <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)]">
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer">
+                                <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font">MANAJEMEN MEDIA SOSIAL
+                                    <div class="divider"></div>
+                                </h2>
+                                <span class="text-yellow-400 group-open:rotate-180 transition-transform transform group-hover:scale-125 group-hover:text-yellow-500 hover:bg-yellow-900 p-2 rounded-full shadow-lg cursor-pointer">
+                                  <p style="font-weight: bold; font-size: 2.5rem;">&uarr;</p>
+                                 </span>
+                            </summary>
+                            <div class="divider"></div>
+                            <ul class="list-none p-0 mt-4">
+                                <li class="p-3 rounded-md mb-2">- Kalender Konten</li>
+                                <li class="p-3 rounded-md mb-2">- Ideasi dan Pembuatan Konten</li>
+                                <li class="p-3 rounded-md mb-2">- Manajemen Komunitas</li>
+                                <li class="p-3 rounded-md mb-2">- Kemitraan Influencer</li>
+                                <li class="p-3 rounded-md mb-2">- Giveaways</li>
+                                <li class="p-3 rounded-md mb-2">- Analisis dan pelaporan</li>
+                            </ul>
+                            <div class="divider-bawah"></div>
+                        </details>
+                    </div>
+    
+                    <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)]">
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer">
+                                <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font">IKLAN BERBAYAR 
+                                  <div class="divider"></div>
+                                </h2>
+                                <span class="text-yellow-400 group-open:rotate-180 transition-transform transform group-hover:scale-125 group-hover:text-yellow-500 hover:bg-yellow-900 p-2 rounded-full shadow-lg cursor-pointer">
+                                  <p style="font-weight: bold; font-size: 2.5rem;">&uarr;</p>
+                                 </span>
+                            </summary>
+                            <div class="divider"></div>
+                            <ul class="list-none p-0 mt-4">
+                                <li class="p-3 rounded-md mb-2">- Meta</li>
+                                <li class="p-3 rounded-md mb-2">- Aplikasi TikTok</li>
+                                <li class="p-3 rounded-md mb-2">- Pinterest Campaign</li>
+                            </ul>
+                            <div class="divider-bawah"></div>
+                        </details>
+                    </div>
+    
+                    <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)]">
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer">
+                                <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font">CONTENT PRODUCTION
+                                  <div class="divider"></div>
+                                </h2>
+                                <span class="text-yellow-400 group-open:rotate-180 transition-transform transform group-hover:scale-125 group-hover:text-yellow-500 hover:bg-yellow-900 p-2 rounded-full shadow-lg cursor-pointer">
+                                  <p style="font-weight: bold; font-size: 2.5rem;">&uarr;</p>
+                                 </span>
+                            </summary>
+                            <div class="divider"></div>
+                            <ul class="list-none p-0 mt-4">
+                                <li class="p-3 rounded-md mb-2">- Layanan Fotografi/Videografi</li>
+                                <li class="p-3 rounded-md mb-2">- Art Direction</li>
+                            </ul>
+                            <div class="divider-bawah"></div>
+                        </details>
+                    </div>
+    
+                    <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)]">
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer">
+                                <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font">BRAND DESIGN
+                                  <div class="divider"></div>
+                                </h2>
+                                <span class="text-yellow-400 group-open:rotate-180 transition-transform transform group-hover:scale-125 group-hover:text-yellow-500 hover:bg-yellow-900 p-2 rounded-full shadow-lg cursor-pointer">
+                                  <p style="font-weight: bold; font-size: 2.5rem;">&uarr;</p>
+                                 </span>
+                            </summary>
+                            <div class="divider"></div>
+                            <ul class="list-none p-0 mt-4">
+                                <li class="p-3 rounded-md mb-2">- Brand Identity</li>
+                                <li class="p-3 rounded-md mb-2">- Brand Assets</li>
+                                <li class="p-3 rounded-md mb-2">- Brand Guidelines</li>
+                                <li class="p-3 rounded-md mb-2">- Naming</li>
+                                <li class="p-3 rounded-md mb-2">- Art Direction</li>
+                                <li class="p-3 rounded-md mb-2">- Tone of Voice</li>
+                            </ul>
+                            <div class="divider-bawah"></div>
+                        </details>
+                    </div>
+    
+                    <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)]">
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer">
+                                <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font">DESAIN GRAFIS
+                                  <div class="divider"></div>
+                                </h2>
+                                <span class="text-yellow-400 group-open:rotate-180 transition-transform transform group-hover:scale-125 group-hover:text-yellow-500 hover:bg-yellow-900 p-2 rounded-full shadow-lg cursor-pointer">
+                                  <p style="font-weight: bold; font-size: 2.5rem;">&uarr;</p>
+                                 </span>
+                            </summary>
+                            <div class="divider"></div>
+                            <ul class="list-none p-0 mt-4">
+                                <li class="p-3 rounded-md mb-2">- Desain Media Sosial</li>
+                                <li class="p-3 rounded-md mb-2">- Desain Kemasan</li>
+                                <li class="p-3 rounded-md mb-2">- dll.</li>
+                            </ul>
+                            <div class="divider-bawah"></div>
+                        </details>
+                    </div>
+    
+                    <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)]">
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer">
+                                <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font">CREATIVE DIRECTIONS
+                                  <div class="divider"></div>
+                                </h2>
+                                <span class="text-yellow-400 group-open:rotate-180 transition-transform transform group-hover:scale-125 group-hover:text-yellow-500 hover:bg-yellow-900 p-2 rounded-full shadow-lg cursor-pointer">
+                                  <p style="font-weight: bold; font-size: 2.5rem;">&uarr;</p>
+                                 </span>
+                            </summary>
+                            <div class="divider"></div>
+                            <ul class="list-none p-0 mt-4">
+                                <li class="p-3 rounded-md mb-2">- Sosial Media</li>
+                                <li class="p-3 rounded-md mb-2">- Kampanye</li>
+                                <li class="p-3 rounded-md mb-2">- dll.</li>
+                            </ul>
+                            <div class="divider-bawah"></div>
+                        </details>
+                    </div>
+    
+                    <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)]">
+                        <details class="group">
+                            <summary class="flex justify-between items-center cursor-pointer">
+                                <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font">DESAIN WEBSITE
+                                  <div class="divider"></div>
+                                </h2>
+                                <span class="text-yellow-400 group-open:rotate-180 transition-transform transform group-hover:scale-125 group-hover:text-yellow-500 hover:bg-yellow-900 p-2 rounded-full shadow-lg cursor-pointer">
+                                  <p style="font-weight: bold; font-size: 2.5rem;">&uarr;</p>
+                                 </span>
+                            </summary>
+                            <div class="divider"></div>
+                            <ul class="list-none p-0 mt-4">
+                                <li class="p-3 rounded-md mb-2">
+                                  - Mendesain Website dengan Front-end</li>
+                        </ul>
+                        <div class="divider-bawah"></div>
+                    </details>
                 </div>
 
-                <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)]">
-                    <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font" >MANAJEMEN MEDIA SOSIAL</h2>
-                    <div class="divider"></div>
-                    <ul class="list-none p-0">
-                        <li class=" p-3 rounded-md mb-2">- Kalender Konten</li>
-                        <li class=" p-3 rounded-md mb-2">- Ideasi dan Pembuatan Konten</li>
-                        <li class=" p-3 rounded-md mb-2">- Manajemen Komunitas</li>
-                        <li class=" p-3 rounded-md mb-2">- Kemitraan Influencer</li>
-                        <li class=" p-3 rounded-md mb-2">- Giveaways</li>
-                        <li class=" p-3 rounded-md mb-2">- Analisis dan pelaporan</li>
-                    </ul>
-                    <div class="divider-bawah"></div>
-                </div>
-
-
-                <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)] ">
-                    <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font" >IKLAN BERBAYAR</h2>
-                    <div class="divider"></div>
-                    <ul class="list-none p-0">
-                        <li class="p-3 rounded-md mb-2">- Meta</li>
-                        <li class=" p-3 rounded-md mb-2">- Aplikasi TikTok</li>
-                        <li class=" p-3 rounded-md mb-2">- Pinterest Campaign</li>
-                    </ul>
-                    <div class="divider-bawah"></div>
-                </div>
-
-                <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)] ">
-                    <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font" >PRODUKSI KONTEN</h2>
-                    <div class="divider"></div>
-                    <ul class="list-none p-0">
-                        <li class="p-3 rounded-md mb-2">- Layanan Fotografi/Videografi</li>
-                        <li class=" p-3 rounded-md mb-2">- Art Direction</li>
-                    </ul>
-                    <div class="divider-bawah"></div>
-                </div>
-
-                <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)] ">
-                    <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font" >DESAIN MEREK </h2>
-                    <div class="divider"></div>
-                    <ul class="list-none p-0">
-                        <li class="p-3 rounded-md mb-2">- Identitas Merek</li>
-                        <li class="p-3 rounded-md mb-2">- Aset Merek</li>
-                        <li class="p-3 rounded-md mb-2">- Pedoman Merek</li>
-                        <li class="p-3 rounded-md mb-2">- Penamaan</li>
-                        <li class="p-3 rounded-md mb-2">-Arahan Seni</li>
-                        <li class="p-3 rounded-md mb-2">- Nada Suara</li>
-                    </ul>
-                    <div class="divider-bawah"></div>
-                </div>
-
-                <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)] ">
-                    <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font" >DESAIN GRAFIS</h2>
-                    <div class="divider"></div>
-                    <ul class="list-none p-0">
-                        <li class="p-3 rounded-md mb-2">- Desain Media Sosial</li>
-                        <li class="p-3 rounded-md mb-2">- Desain Kemasan</li>
-                        <li class="p-3 rounded-md mb-2">- dll.</li>
-                    </ul>
-                    <div class="divider-bawah"></div>
-                </div>
-
-                <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)] ">
-                    <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font" >CREATIVE DIRECTIONS</h2>
-                    <div class="divider"></div>
-                    <ul class="list-none p-0">
-                        <li class="p-3 rounded-md mb-2">- Sosial Media</li>
-                        <li class="p-3 rounded-md mb-2">- Kampanye</li>
-                        <li class="p-3 rounded-md mb-2">- dll.</li>
-                    </ul>
-                    <div class="divider-bawah"></div>
-                </div>
-
-                <div class="service bg-black p-5 rounded-lg w-full md:w-[calc(50%-20px)] ">
-                    <h2 class="text-xl font-semibold text-yellow-400 mb-4" id="h2-font" >DESAIN WEBSITE</h2>
-                    <div class="divider"></div>
-                    <ul class="list-none p-0">
-                        <li class="p-3 rounded-md mb-2">- Mendesain Website dengan Front-end</li>
-
-                    </ul>
-                    <div class="divider-bawah"></div>
-                </div>
             </div>
         </section>
-        
+
         <style>
-            /* Custom styles for divider */
             .divider {
                 border-bottom: 1px solid #444;
                 margin: 20px 0;
             }
+
             .divider-bawah {
                 border-bottom: 5px solid #444;
                 margin: 20px 0;
             }
+
             body {
-                font-family: 'Playfair Display', serif;
+              font-family: 'Poppins', sans-serif;
             }
 
             h1, li {
-                font-family: 'Playfair Display', serif;
-                font-size: 1.5rem;
-            }
-            #h2-font{
-                font-family: 'Playfair Display', serif;
+              font-family: 'Poppins', sans-serif;
                 font-size: 1.5rem;
             }
 
+            #h2-font {
+              font-family: 'Poppins', sans-serif;
+                font-size: 1.5rem;
+            }
         </style>
-    </div> 
+    </div>
 </section>
 
 

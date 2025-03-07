@@ -18,14 +18,14 @@
   <body>
     <!-- Header / Navbar -->
     <header id="">
-      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
+      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full" style="text-align: center;">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex justify-between">
             <div class="flex space-x-7">
               <div>
                 <a class="flex items-center py-4 px-2" href="#">
                  
-                  <img alt="I'Kaya Creative Production Logo" l class="h-8 w-auto mr-2" height="100" src="gambar/logo I'KAYA ORI_20250217_153546_0000.png"  width="100"/>
+                  <img alt="I'Kaya Creative Production Logo" l class="h-8 w-auto mr-2" height="100" loading="lazy" src="gambar/logo I'KAYA ORI_20250217_153546_0000.png"  width="100"/>
                   <span class="font-semibold text-gray-500 text-lg " style="white-space: nowrap; font-family: 'Playfair Display', serif; color: #CFB53B;" >
                     I'Kaya Creative Production
                   </span>
@@ -89,7 +89,35 @@
             </li>
            
           </ul>
+          
         </div>
+        <style>
+          .mobile-menu {
+              background-color: rgba(0, 0, 0, 0); /* Transparan sepenuhnya */
+              backdrop-filter: blur(10px); /* Efek blur agar lebih elegan */
+              transition: all 0.3s ease-in-out;
+              width: 100%;
+          }
+
+          .mobile-menu ul li a {
+              color: white; /* Pastikan teks tetap terlihat */
+          }
+
+          .mobile-menu-button {
+              z-index: 60; /* Pastikan tombol hamburger selalu di atas */
+          }
+
+          @media (max-width: 768px) {
+              .mobile-menu {
+                  position: absolute;
+                  top: 60px; /* Pastikan posisi di bawah navbar */
+                  left: 0;
+                  width: 100%;
+                  padding: 10px 0;
+              }
+          }
+
+        </style>
       </nav>
       
     </header>
@@ -193,35 +221,36 @@
       </section>
       <!-- About section -->
 <section class="ikaya-section py-12">
+  
   <div class="container mx-auto flex flex-col lg:flex-row items-center gap-8">
       
       <!-- Bagian Teks (Muncul dari Kiri) -->
       <div class="lg:w-1/2 fade-in-left">
-          <p class="text-3x1 text-white" style="font-family: 'Winner Sans Cond Regular';">
-              KAMI ADALAH <span class="gold-text" style="font-family: 'Winner Sans Cond Regular';">CREATIVE AGENCY</span> YANG MENYEDIAKAN 
-              <span class="gold-text" style="font-family: 'Winner Sans Cond Regular';">BUSINESS SOLUTIONS & INTEGRATED CREATIVE</span> UNTUK 
+          <p class="text-3x1 text-white" style="font-family: 'Oswald', sans-serif;">
+              KAMI ADALAH <span class="gold-text" style="font-family: 'Oswald', sans-serif;">CREATIVE AGENCY</span> YANG MENYEDIAKAN 
+              <span class="gold-text" style="font-family: 'Oswald', sans-serif;">BUSINESS SOLUTIONS & INTEGRATED CREATIVE</span> UNTUK 
               MEMBANTU BISNIS ANDA TUMBUH DAN BERKEMBANG.
           </p>
-          <p class="text-3x1 text-white mt-4" style="font-family: 'Winner Sans Cond Regular';">
+          <p class="text-3x1 text-white mt-4" style="font-family: 'Oswald', sans-serif;">
               KAMI MENAWARKAN BERBAGAI LAYANAN, MULAI DARI 
-              <span class="gold-text" style="font-family: 'Winner Sans Cond Regular';">PERENCANAAN ACARA, PAMERAN, PERNIKAHAN, MANAJEMEN MEDIA 
+              <span class="gold-text" style="font-family: 'Oswald', sans-serif;">PERENCANAAN ACARA, PAMERAN, PERNIKAHAN, MANAJEMEN MEDIA 
               SOSIAL, MANAJEMEN BISNIS, HINGGA MANAJEMEN ACARA</span>.
           </p>
       </div>
 
       <!-- Bagian Gambar (Muncul dari Kanan) -->
       <div class="w-full md:w-1/2 grid-container">
-        <img src="gambar/gif/gold-brain.gif" alt="Golden Brain" class="w-full h-full object-cover" style="grid-area: 1 / 1 / 2 / 2;" />
-        <img src="gambar/gif/gold-bias.gif" alt="Golden Mouth" class="w-full h-full object-cover" style="grid-area: 1 / 2 / 2 / 3;" />
-        <img src="gambar/gif/gold-bird.gif" alt="Gold Bird" class="w-full h-full object-cover" style="grid-area: 1 / 3 / 2 / 4;" />
+        <img src="gambar/gif/gold-brain.gif" alt="Golden Brain" loading="lazy" class="w-full h-full object-cover" style="grid-area: 1 / 1 / 2 / 2;" />
+        <img src="gambar/gif/gold-bias.gif" alt="Golden Mouth" loading="lazy" class="w-full h-full object-cover" style="grid-area: 1 / 2 / 2 / 3;" />
+        <img src="gambar/gif/gold-bird.gif" alt="Gold Bird" loading="lazy" class="w-full h-full object-cover" style="grid-area: 1 / 3 / 2 / 4;" />
         
-        <img src="gambar/gif/lamp-gold.gif" alt="Lamp Gold" class="w-full h-full object-cover" style="grid-area: 2 / 1 / 3 / 2;" />
-        <img src="gambar/ikapalet.jpg" alt="Golden Explosion" class="w-full h-full object-cover" style="grid-area: 2 / 2 / 3 / 3;" />
+        <img src="gambar/gif/lamp-gold.gif" alt="Lamp Gold" loading="lazy" class="w-full h-full object-cover" style="grid-area: 2 / 1 / 3 / 2;" />
+        <img src="gambar/ikapalet.jpg" alt="Golden Explosion" loading="lazy" class="w-full h-full object-cover" style="grid-area: 2 / 2 / 3 / 3;" />
         <img src="gambar/gif/gold-hand.gif" alt="Game of Thrones" class="w-full h-full object-cover" style="grid-area: 2 / 3 / 3 / 4;" />
         
-        <img src="gambar/gif/crown-black.gif"  alt="Hexagon" class="w-full h-full object-cover" style="grid-area: 3 / 1 / 4 / 2;" />
-        <img src="gambar/gif/golden-sword.gif"  alt="Fractured Sphere" class="w-full h-full object-cover" style="grid-area: 3 / 2 / 4 / 3;" />
-        <img src="gambar/gif/gold-money.gif" alt="Fractured Sphere" class="w-full h-full object-cover" style="grid-area: 3 / 3 / 3 / 4;" />
+        <img src="gambar/gif/crown-black.gif"  alt="Hexagon" loading="lazy" class="w-full h-full object-cover" style="grid-area: 3 / 1 / 4 / 2;" />
+        <img src="gambar/gif/golden-sword.gif"  alt="Fractured Sphere" loading="lazy" class="w-full h-full object-cover" style="grid-area: 3 / 2 / 4 / 3;" />
+        <img src="gambar/gif/gold-money.gif" alt="Fractured Sphere" loading="lazy" class="w-full h-full object-cover" style="grid-area: 3 / 3 / 3 / 4;" />
         
         <style>
         .grid-container {
@@ -425,21 +454,21 @@
                 <!-- Baris pertama: 3 kolom -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mb-8">
                     <div class="relative text-center fade-in-bottom service-card">
-                        <img alt="360 Strategy Campaign" class="w-full object-contain" src="gambar/socmed-mark-baru.png" />
+                        <img alt="360 Strategy Campaign" class="w-full object-contain" loading="lazy" src="gambar/socmed-mark-baru.png" />
                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 hover-content">
                             <h2 class="text-2xl font-bold mb-4">Event Advertising</h2>
                             <p class="px-4" >Kami membantu Anda membuat iklan acara yang menarik dan efektif untuk menjangkau target audiens Anda.</p>
                         </div>
                     </div>
                     <div class="relative text-center fade-in-bottom service-card">
-                        <img alt="Video Commercials" class="w-full object-contain" src="gambar/deslog.png" />
+                        <img alt="Video Commercials" class="w-full object-contain" loading="lazy" src="gambar/deslog.png" />
                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 hover-content">
                             <h2 class="text-2xl font-bold mb-4">Event Organizer</h2>
                             <p class="px-4">Kami merencanakan dan melaksanakan berbagai jenis acara, mulai dari acara korporat, peluncuran produk, hingga acara pribadi seperti pernikahan dan ulang tahun.</p>
                         </div>
                     </div>
                     <div class="relative text-center fade-in-bottom service-card">
-                        <img alt="Digital & Social Media" class="w-full object-contain" src="gambar/deslog.png" />
+                        <img alt="Digital & Social Media" class="w-full object-contain" loading="lazy" src="gambar/deslog.png" />
                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 hover-content">
                             <h2 class="text-2xl font-bold mb-4">Marketing Strategies</h2>
                             <p class="px-4">Kami mengembangkan strategi pemasaran yang efektif untuk membantu Anda mencapai tujuan bisnis Anda.</p>
@@ -450,14 +479,14 @@
                 <!-- Baris kedua: 2 kolom -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full md:w-2/3">
                     <div class="relative text-center fade-in-bottom service-card">
-                        <img alt="Web Development" class="w-full object-contain" src="gambar/deslog.png" />
+                        <img alt="Web Development" class="w-full object-contain" loading="lazy" src="gambar/deslog.png" />
                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 hover-content">
                             <h2 class="text-2xl font-bold mb-4">Planning Target Market</h2>
                             <p class="px-4">Kami membantu Anda mengidentifikasi dan memahami target pasar Anda untuk memastikan pesan pemasaran Anda sampai kepada orang yang tepat.</p>
                         </div>
                     </div>
                     <div class="relative text-center fade-in-bottom service-card">
-                        <img alt="Data Analytics" class="w-full object-contain" src="gambar/deslog.png" />
+                        <img alt="Data Analytics" class="w-full object-contain" loading="lazy" src="gambar/deslog.png" />
                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 hover-content">
                             <h2 class="text-2xl font-bold mb-4">Social Media Management</h2>
                             <p class="px-4">Kami mengelola akun media sosial Anda untuk meningkatkan brand awareness dan engagement dengan pelanggan Anda.</p>
@@ -588,19 +617,19 @@
           <h2 class="section-title" style="color: #CFB53B;">KLIEN KAMI</h2>
           
           <div class="grid grid-cols-7 gap-2 px-4 place-items-center clients-grid">
-            <img src="gambar/logo-kerjasama/BCA.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
-            <img src="gambar/logo-kerjasama/mayora.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
-            <img src="gambar/logo-kerjasama/polairud_png.png" alt="Logo 2" class="logo-size-clients fade-in-bottom-clients">
-            <img src="gambar/logo-kerjasama/geprebensu_gtlo.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
-            <img src="gambar/logo-kerjasama/griyacentury.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
-            <img src="gambar/logo-kerjasama/gorelx.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
-            <img src="gambar/logo-kerjasama/orientaljaya.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
-            <img src="gambar/logo-kerjasama/ptsalemjaya.png" alt="Logo 1" class="logo-size-clients fade-in-bottom-clients">
-              <img src="gambar/logo-kerjasama/albaits.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
-              <img src="gambar/logo-kerjasama/elpizo.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
-              <img src="gambar/logo-kerjasama/teelevert.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
+            <img src="gambar/logo-kerjasama/BCA.png" loading="lazy" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
+            <img src="gambar/logo-kerjasama/mayora.png" loading="lazy" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
+            <img src="gambar/logo-kerjasama/polairud_png.png" loading="lazy" alt="Logo 2" class="logo-size-clients fade-in-bottom-clients">
+            <img src="gambar/logo-kerjasama/geprebensu_gtlo.png" loading="lazy" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
+            <img src="gambar/logo-kerjasama/griyacentury.png" loading="lazy" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
+            <img src="gambar/logo-kerjasama/gorelx.png" loading="lazy" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
+            <img src="gambar/logo-kerjasama/orientaljaya.png" loading="lazy" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
+            <img src="gambar/logo-kerjasama/ptsalemjaya.png" loading="lazy" alt="Logo 1" class="logo-size-clients fade-in-bottom-clients">
+              <img src="gambar/logo-kerjasama/albaits.png" loading="lazy" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
+              <img src="gambar/logo-kerjasama/elpizo.png" loading="lazy" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
+              <img src="gambar/logo-kerjasama/teelevert.png" loading="lazy" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
               <img src="gambar/logo-kerjasama/noella.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
-              <img src="gambar/logo-kerjasama/bawgortubruk.png" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
+              <img src="gambar/logo-kerjasama/bawgortubruk.png" loading="lazy" alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
           </div>
       </div>
       <style>
@@ -670,40 +699,40 @@
   <h2 class="section-title" style="color: #CFB53B;">Dokumentasi Kegiatan</h2>
   <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2">
     <div class="relative">
-       <img alt="Office shelf with decorative items" class="w-full h-auto object-cover" src="gambar/slider5.jpg" />
+       <img alt="Office shelf with decorative items" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider5.jpg" />
     </div>
     <div class="relative">
-       <img alt="Office meeting room with chairs and tables" class="w-full h-auto object-cover" src="gambar/slider4.jpg" />
+       <img alt="Office meeting room with chairs and tables" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider4.jpg" />
     </div>
     <div class="relative">
-       <img alt="Office meeting room with chairs and tables" class="w-full h-auto object-cover" src="gambar/slider13.jpg" />
+       <img alt="Office meeting room with chairs and tables" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider13.jpg" />
     </div>
     <div class="relative">
-       <img alt="Office workspace with desks and chairs" class="w-full h-auto object-cover" src="gambar/slider7.jpg" />
+       <img alt="Office workspace with desks and chairs" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider7.jpg" />
     </div>
     <div class="relative">
-       <img alt="Office lounge area with bean bags and TV" class="w-full h-auto object-cover" src="gambar/slider15.jpg" />
+       <img alt="Office lounge area with bean bags and TV" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider15.jpg" />
     </div>
     <div class="relative">
-       <img alt="Office meeting room with glass board" class="w-full h-auto object-cover" src="gambar/slider6.jpg" />
+       <img alt="Office meeting room with glass board" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider6.jpg" />
     </div>
     <div class="relative">
-       <img alt="Office meeting room with wooden wall and chairs" class="w-full h-auto object-cover" src="gambar/slider14.jpg" />
+       <img alt="Office meeting room with wooden wall and chairs" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider14.jpg" />
     </div>
     <div class="relative">
-       <img alt="Office lounge area with photo wall" class="w-full h-auto object-cover" src="gambar/slider8.jpg" />
+       <img alt="Office lounge area with photo wall"  loading="lazy" class="w-full h-auto object-cover" src="gambar/slider8.jpg" />
     </div>
     <div class="relative">
-      <img alt="Office lounge area with photo wall" class="w-full h-auto object-cover" src="gambar/slider16.jpg" />
+      <img alt="Office lounge area with photo wall" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider16.jpg" />
    </div>
    <div class="relative">
-    <img alt="Office lounge area with photo wall" class="w-full h-auto object-cover" src="gambar/slider17.jpg" />
+    <img alt="Office lounge area with photo wall" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider17.jpg" />
  </div>
  <div class="relative">
-  <img alt="Office lounge area with photo wall" class="w-full h-auto object-cover" src="gambar/slider9.jpg" />
+  <img alt="Office lounge area with photo wall" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider9.jpg" />
 </div>
 <div class="relative">
-  <img alt="Office lounge area with photo wall" class="w-full h-auto object-cover" src="gambar/slider13.jpg" />
+  <img alt="Office lounge area with photo wall" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider13.jpg" />
 </div>
  </div>
 </section>
@@ -712,7 +741,7 @@
    <!--POPUP-->
    <section class="fixed left-4 bottom-4">
     <button id="openPopup" class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-8 h-8">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" loading="lazy" alt="WhatsApp" class="w-8 h-8">
     </button>
 
     <div id="popup" class="backdrop-blur-md bg-transparent shadow-lg p-4 rounded-lg w-64 hidden absolute bottom-16"> 
@@ -759,6 +788,7 @@
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
+                    loading="lazy"
                 ></iframe>
             </div>
         </div>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>I'Kaya Creative Production</title>
-  <link rel="shortcut icon" href="gambar/ikaya.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="gambar/ikaya.jpg" loading="lazy" type="image/x-icon">
   <!-- CSS Libraries -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -18,14 +18,14 @@
 <body>
   <!-- Header / Navbar -->
   <header>
-    <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
+    <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full" style="text-align: center;">
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
           <!-- Logo and brand name -->
           <div class="flex space-x-7">
             <div>
               <a class="flex items-center py-4 px-2" href="#">
-                <img alt="I'Kaya Creative Production Logo" class="h-8 w-auto mr-2" src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" width="100" height="100"/>
+                <img alt="I'Kaya Creative Production Logo" class="h-8 w-auto mr-2" src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" loading="lazy" width="100" height="100"/>
                 <span class="font-semibold text-lg" style="white-space: nowrap; font-family: 'Playfair Display', serif; color: #CFB53B;">
                   I'Kaya Creative Production
                 </span>
@@ -91,6 +91,33 @@
           </li>
         </ul>
       </div>
+      <style>
+
+                    .mobile-menu {
+                        background-color: rgba(0, 0, 0, 0); /* Transparan sepenuhnya */
+                        backdrop-filter: blur(30px); /* Efek blur agar lebih elegan */
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .mobile-menu ul li a {
+                        color: white; /* Pastikan teks tetap terlihat */
+                    }
+
+                    .mobile-menu-button {
+                        z-index: 60; /* Pastikan tombol hamburger selalu di atas */
+                    }
+
+                    @media (max-width: 768px) {
+                        .mobile-menu {
+                            position: absolute;
+                            top: 60px; /* Pastikan posisi di bawah navbar */
+                            left: 0;
+                            width: 100%;
+                            padding: 10px 0;
+                        }
+                    }
+
+      </style>
     </nav>
   </header>
 
@@ -104,7 +131,7 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 bg-black">
     <!-- Blok 1: Gambar Besar -->
     <div class="md:col-span-2 relative fade-in-bottom">
-        <img src="gambar/slider4.jpg" class="w-full h-auto" alt="Photoshoot">
+        <img src="gambar/slider4.jpg" loading="lazy" class="w-full h-auto" alt="Photoshoot">
         <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
             <p class="text-white font-bold text-lg">PHOTOSHOOT</p>
             <a href="photoshoot.html">
@@ -117,7 +144,7 @@
 
     <!-- Blok 1: Dua Gambar Kecil -->
     <div class="relative flex items-center fade-in-bottom">
-        <img src="gambar/desain-logo/deslog-cover.jpg" class="w-full h-auto object-contain" alt="Desain Logo">
+        <img src="gambar/desain-logo/deslog-cover.jpg" loading="lazy" class="w-full h-auto object-contain" alt="Desain Logo">
         <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
             <p class="text-white font-bold text-lg">DESAIN LOGO</p>
             <a href="desainlogo.html">
@@ -129,7 +156,7 @@
     </div>
 
     <div class="relative flex items-center fade-in-bottom">
-        <img src="gambar/socmedman/smm_1.png" class="w-full h-auto object-contain" alt="Social Marketing Management">
+        <img src="gambar/socmedman/smm_1.png" loading="lazy" class="w-full h-auto object-contain" alt="Social Marketing Management">
         <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
             <p class="text-white font-bold text-lg">SOCIAL MARKETING MANAGEMENT</p>
             <a href="socmedman.html">
@@ -142,7 +169,7 @@
 
     <!-- Blok 2: Gambar Besar -->
     <div class="md:col-span-2 relative fade-in-bottom">
-        <img src="gambar/slider17.jpg" class="w-full h-auto" alt="Video Production">
+        <img src="gambar/slider17.jpg" loading="lazy" class="w-full h-auto" alt="Video Production">
         <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
             <p class="text-white font-bold text-lg">VIDEO PRODUCTION</p>
             <a href="videoproj.html">
@@ -155,14 +182,14 @@
 
     <!-- Blok 2: Dua Gambar Kecil -->
     <div class="relative flex items-center fade-in-bottom">
-        <img src="gambar/des-buku.png" class="w-full h-auto object-contain" alt="Desain Buku">
+        <img src="gambar/des-buku.png" loading="lazy" class="w-full h-auto object-contain" alt="Desain Buku">
         <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
             <p class="text-white font-bold text-lg">DESAIN BUKU</p>
         </div>
     </div>
 
     <div class="relative flex items-center fade-in-bottom">
-        <img src="gambar/keripik/tes1.jpg" class="w-full h-auto object-contain" alt="ID Card">
+        <img src="gambar/keripik/tes1.jpg" loading="lazy" class="w-full h-auto object-contain" alt="ID Card">
         <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
             <p class="text-white font-bold text-lg">DESAIN PRODUK</p>
             <a href="desainproduk.html">
@@ -175,7 +202,7 @@
 
     <!-- Blok 2: Gambar Besar -->
     <div class="md:col-span-2 relative fade-in-bottom">
-      <img src="gambar/mayora/corporate advertising design.jpg" class="w-full h-auto object-cover" alt="Video Production">
+      <img src="gambar/mayora/corporate advertising design.jpg" loading="lazy" class="w-full h-auto object-cover" alt="Video Production">
       <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
           <p class="text-white font-bold text-lg">CORPORATE ADVERTISING DESIGN MAYORA</p>
           <a href="mayora.html">
@@ -187,7 +214,7 @@
   </div>
 
   <div class="relative flex items-center fade-in-bottom">
-    <img src="gambar/kampanye-pol/KATALOK I'KAYA  (1).jpg" class="w-full h-auto object-cover" alt="ID Card">
+    <img src="gambar/kampanye-pol/KATALOK I'KAYA  (1).jpg" loading="lazy" class="w-full h-auto object-cover" alt="ID Card">
     <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
         <p class="text-white font-bold text-lg">KAMPANYE POLITIK</p>
         <a href="kampanyepol.html ">
@@ -199,7 +226,7 @@
 </div>
 
 <div class="relative flex items-center fade-in-bottom">
-  <img src="gambar/grabfood-display/gdis-cover.jpg" class="w-full h-auto object-cover" alt="ID Card">
+  <img src="gambar/grabfood-display/gdis-cover.jpg" loading="lazy" class="w-full h-auto object-cover" alt="ID Card">
   <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
       <p class="text-white font-bold text-lg">GRAB FOOD DISPLAY DESIGN</p>
       <a href="desainproduk.html">
@@ -212,7 +239,7 @@
 
  <!-- Blok 2: Gambar Besar -->
  <div class="md:col-span-2 relative fade-in-bottom">
-  <img src="gambar/bca-ioconcep/bca-cover.jpg" class="w-full h-auto object-cover" alt="Video Production">
+  <img src="gambar/bca-ioconcep/bca-cover.jpg" loading="lazy" class="w-full h-auto object-cover" alt="Video Production">
   <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
       <p class="text-white font-bold text-lg">IO CONCEPTOR BCA EXPO 2024</p>
       <a href="bcaexpo.html">
@@ -224,7 +251,7 @@
 </div>
 
 <div class="relative flex items-center fade-in-bottom">
-  <img src="gambar/desain web/des-web-cover.jpg" class="w-full h-auto object-cover" alt="ID Card">
+  <img src="gambar/desain web/des-web-cover.jpg" loading="lazy" class="w-full h-auto object-cover" alt="ID Card">
   <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 p-4">
       <p class="text-white font-bold text-lg">DESAIN WEB</p>
       
@@ -253,7 +280,7 @@
 
 <section class="fixed left-4 bottom-4">
   <button id="openPopup" class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-8 h-8" href="https://wa.me/+6282195031456" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" loading="lazy" alt="WhatsApp" class="w-8 h-8" href="https://wa.me/+6282195031456" target="_blank">
   </button>
 
   <div id="popup" class="backdrop-blur-md bg-transparent shadow-lg p-4 rounded-lg w-64 hidden absolute bottom-16"> 

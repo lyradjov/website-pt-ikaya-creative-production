@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I'Kaya Creative Production</title>
-    <link rel="shortcut icon" href="gambar/ikaya.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="gambar/ikaya.jpg" loading="lazy" type="image/x-icon">
     <!-- Linking Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <!-- Linking Swiper CSS -->
@@ -17,13 +17,13 @@
   <body>
     <!-- Header / Navbar -->
     <header id="">
-      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
+      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full" style="text-align: center;">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex justify-between">
             <div class="flex space-x-7">
               <div>
                 <a class="flex items-center py-4 px-2" href="#">
-                  <img alt="I'Kaya Creative Production Logo" class="h-8 w-auto mr-2" height="100" src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" width="100"/>
+                  <img alt="I'Kaya Creative Production Logo" class="h-8 w-auto mr-2" height="100" src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" loading="lazy" width="100"/>
                   <span class="font-semibold text-gray-500 text-lg " style="white-space: nowrap; font-family: 'Playfair Display', serif; color: #CFB53B;" >
                     I'Kaya Creative Production
                   </span>
@@ -120,6 +120,32 @@
   
   
           </script>
+          <style>
+            .mobile-menu {
+                background-color: rgba(0, 0, 0, 0); /* Transparan sepenuhnya */
+                backdrop-filter: blur(10px); /* Efek blur agar lebih elegan */
+                transition: all 0.3s ease-in-out;
+            }
+  
+            .mobile-menu ul li a {
+                color: white; /* Pastikan teks tetap terlihat */
+            }
+  
+            .mobile-menu-button {
+                z-index: 60; /* Pastikan tombol hamburger selalu di atas */
+            }
+  
+            @media (max-width: 768px) {
+                .mobile-menu {
+                    position: absolute;
+                    top: 60px; /* Pastikan posisi di bawah navbar */
+                    left: 0;
+                    width: 100%;
+                    padding: 10px 0;
+                }
+            }
+  
+          </style>
       </nav>
       
     </header>
@@ -250,6 +276,7 @@
     </main>
     <!-- Linking Swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
     <!-- Linking custom script -->
     <script src="script.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
