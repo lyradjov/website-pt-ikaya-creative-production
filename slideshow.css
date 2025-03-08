@@ -1,67 +1,60 @@
-
-
-.unique-slideshow-section {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.unique-slideshow-container {
-    position: relative;
-}
-
-.unique-slide {
-    display: none;
-    position: relative;
-    
-}
-
-.unique-slide img {
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; }
+.slideshow-container {
     width: 100%;
+    height: auto; /* Ubah dari 1080px ke auto */
+    max-width: 1920px;
+    overflow: hidden;
+  
 }
 
-.unique-text {
+header, .navbar {
+    min-height: auto; /* Atur agar tidak terlalu tinggi */
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.slide .text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
     background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 3rem;
     border-radius: 5px;
     text-align: center;
-    font-size: 1.5em; /* Default untuk mobile */
 }
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+.prev { left: 20px; }
+.next { right: 20px; }
 
-/* Untuk layar desktop (lebih dari 768px) */
-@media screen and (min-width: 768px) {
-    .unique-text {
-        font-size: 3em;
+@media (max-width: 768px) {
+    .slide img {
+        object-fit: contain;
     }
-}
-
-
-.unique-dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .unique-dot:hover {
-    background-color: #717171;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+    .slide .text {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
 }

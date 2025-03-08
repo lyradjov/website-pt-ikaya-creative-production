@@ -18,139 +18,62 @@
   <body>
     <!-- Header / Navbar -->
     <header id="">
-      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full" style="text-align: center;">
+      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
         <div class="max-w-6xl mx-auto px-4">
-          <div class="flex justify-between">
-            <div class="flex space-x-7">
-              <div>
-                <a class="flex items-center py-4 px-2" href="#">
-                  <img alt="I'Kaya Creative Production Logo" class="h-8 w-auto mr-2" height="100" src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" width="100"/>
-                  <span class="font-semibold text-gray-500 text-lg " style="white-space: nowrap; font-family: 'Playfair Display', serif; color: #CFB53B;" >
-                    I'Kaya Creative Production
-                  </span>
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <img src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" alt="Logo" class="h-10 w-auto mr-2">
+                    <span class="font-semibold text-lg text-yellow-400" style="font-family: 'Playfair Display', serif;">
+                        I'Kaya Creative Production
+                    </span>
                 </a>
-              </div>
-              <div class="hidden md:flex items-center space-x-1 text-white" >
-                <a class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300 text-white" href="index.html" style="font-family: 'Playfair Display', serif;">
-                  HOME
-                </a>
-
-                <a class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300 text-white" href="ourservices.html" style="font-family: 'Playfair Display', serif;">
-                  OUR SERVICES
-                </a>
-                
-                <a class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300 text-white" href="project.html" style="font-family: 'Playfair Display', serif;">
-                  IKAYA PROJECT
-                </a>
-                <a class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300 text-white" href="contact.html" style="font-family: 'Playfair Display', serif;">
-                  CONTACT
-                </a>
-               
-              </div>
+    
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-white hover:text-yellow-400 transition">HOME</a>
+                    <a href="ourservices.html" class="text-white hover:text-yellow-400 transition">OUR SERVICES</a>
+                    <a href="project.html" class="text-white hover:text-yellow-400 transition">IKAYA PROJECT</a>
+                    <a href="contact.html" class="text-white hover:text-yellow-400 transition">CONTACT</a>
+                </div>
+    
+                <!-- Ikon Sosial Media -->
+                <div class="hidden md:flex space-x-3">
+                    <a href="https://www.facebook.com/profile.php?id=100086158917296" target="_blank" class="text-white hover:text-yellow-400">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kayacreativeproduction/" target="_blank" class="text-white hover:text-yellow-400">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+    
+                <!-- Tombol Hamburger (Mobile) -->
+                <button class="md:hidden text-white focus:outline-none mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <div class="hidden md:flex items-center space-x-3">
-              <a class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-yellow-200 transition duration-300" href="https://www.facebook.com/profile.php?id=100086158917296&amp;ref=ig_profile_ac" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-yellow-200 transition duration-300" href="https://www.instagram.com/kayacreativeproduction/" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-            <div class="md:hidden flex items-center ">
-              <button class="outline-none mobile-menu-button ">
-                <i class="fas fa-bars text-white"></i>
-              </button>
-            </div>
-          </div>
         </div>
-        <div class="hidden mobile-menu">
-            <ul>
-                <li class="active text-white">
-                  <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="index.html">
-                    HOME
-                  </a>
-                </li>
-
-                <li class="active text-white">
-                  <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="ourservices.html">
-                    OUR SERVICES
-                  </a>
-                </li>
-                
-                <li>
-                  <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="project.html">
-                    IKAYA PROJECT
-                  </a>
-                </li>
-                <li>
-                  <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="contact.html">
-                    CONTACT
-                  </a>
-                </li>
-               
-              </ul>
+    
+        <!-- Menu Mobile -->
+        <div class="hidden mobile-menu bg-black text-center">
+            <a href="index.html" class="block py-3 text-white hover:bg-yellow-500">HOME</a>
+            <a href="ourservices.html" class="block py-3 text-white hover:bg-yellow-500">OUR SERVICES</a>
+            <a href="project.html" class="block py-3 text-white hover:bg-yellow-500">IKAYA PROJECT</a>
+            <a href="contact.html" class="block py-3 text-white hover:bg-yellow-500">CONTACT</a>
         </div>
-        <script>
-          
-          const mobileMenuButton = document.querySelector('.mobile-menu-button');
-          const mobileMenu = document.querySelector('.mobile-menu');
-  
-          mobileMenuButton.addEventListener('click', () => {
-              mobileMenu.classList.toggle('hidden');
-          });
-  
-          let currentSlide = 0;
-          const slides = document.querySelectorAll('.hero-slide');
-  
-          function showSlide(index) {
-              slides.forEach((slide, i) => {
-                  slide.classList.toggle('hidden', i !== index);
-              });
-          }
-  
-          function nextSlide() {
-              currentSlide = (currentSlide + 1) % slides.length;
-              showSlide(currentSlide);
-          }
-  
-          function prevSlide() {
-              currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-              showSlide(currentSlide);
-          }
-  
-          document.getElementById('nextSlide').addEventListener('click', nextSlide);
-          document.getElementById('prevSlide').addEventListener('click', prevSlide);
-  
-          setInterval(nextSlide, 5000);
-  
-  
-          </script>
-          <style>
-              .mobile-menu {
-        background-color: rgba(0, 0, 0, 0); /* Transparan sepenuhnya */
-        backdrop-filter: blur(30px); /* Efek blur agar lebih elegan */
-        transition: all 0.3s ease-in-out;
-    }
-
-    .mobile-menu ul li a {
-        color: white; /* Pastikan teks tetap terlihat */
-    }
-
-    .mobile-menu-button {
-        z-index: 60; /* Pastikan tombol hamburger selalu di atas */
-    }
-
-    @media (max-width: 768px) {
-        .mobile-menu {
-            position: absolute;
-            top: 60px; /* Pastikan posisi di bawah navbar */
-            left: 0;
-            width: 100%;
-            padding: 10px 0;
-        }
-    }
-
-          </style>
+    </nav>
+    
+    <!-- JavaScript untuk Mengaktifkan Menu Mobile -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.querySelector(".mobile-menu-button");
+            const mobileMenu = document.querySelector(".mobile-menu");
+    
+            menuButton.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+            });
+        });
+    </script>
       </nav>
       
     </header>

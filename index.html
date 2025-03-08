@@ -19,135 +19,131 @@
   <body>
     <!-- Header / Navbar -->
     <header id="">
-      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full" style="text-align: center;">
+      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
         <div class="max-w-6xl mx-auto px-4">
-          <div class="flex justify-between">
-            <div class="flex space-x-7">
-              <div>
-                <a class="flex items-center py-4 px-2" href="#">
-                 
-                  <img alt="I'Kaya Creative Production Logo" l class="h-8 w-auto mr-2" height="100" loading="lazy" src="gambar/logo I'KAYA ORI_20250217_153546_0000.png"  width="100"/>
-                  <span class="font-semibold text-gray-500 text-lg " style="white-space: nowrap; font-family: 'Playfair Display', serif; color: #CFB53B;" >
-                    I'Kaya Creative Production
-                  </span>
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <img src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" alt="Logo" class="h-10 w-auto mr-2">
+                    <span class="font-semibold text-lg text-yellow-400" style="font-family: 'Playfair Display', serif;">
+                        I'Kaya Creative Production
+                    </span>
                 </a>
-              </div>
-              <div class="hidden md:flex items-center space-x-1 text-white " >
-                <a class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300 text-white" href="index.html" style="font-family: 'Playfair Display', serif; ">
-                  HOME
-                </a>
-                <a class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300 text-white" href="ourservices.html" style="font-family: 'Playfair Display', serif;">
-                  OUR SERVICES
-                </a>
-               
-                <a class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300 text-white" href="project.html" style="font-family: 'Playfair Display', serif;">
-                  IKAYA PROJECT
-                </a>
-                <a class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300 text-white" href="contact.html" style="font-family: 'Playfair Display', serif;">
-                  CONTACT
-                </a>
-               
-              </div>
+    
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-white hover:text-yellow-400 transition">HOME</a>
+                    <a href="ourservices.html" class="text-white hover:text-yellow-400 transition">OUR SERVICES</a>
+                    <a href="project.html" class="text-white hover:text-yellow-400 transition">IKAYA PROJECT</a>
+                    <a href="contact.html" class="text-white hover:text-yellow-400 transition">CONTACT</a>
+                </div>
+    
+                <!-- Ikon Sosial Media -->
+                <div class="hidden md:flex space-x-3">
+                    <a href="https://www.facebook.com/profile.php?id=100086158917296" target="_blank" class="text-white hover:text-yellow-400">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kayacreativeproduction/" target="_blank" class="text-white hover:text-yellow-400">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+    
+                <!-- Tombol Hamburger (Mobile) -->
+                <button class="md:hidden text-white focus:outline-none mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <div class="hidden md:flex items-center space-x-3">
-              <a class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-yellow-200 transition duration-300" href="https://www.facebook.com/profile.php?id=100086158917296&amp;ref=ig_profile_ac" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-yellow-200 transition duration-300" href="https://www.instagram.com/kayacreativeproduction/" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-            <div class="md:hidden flex items-center ">
-              <button class="outline-none mobile-menu-button ">
-                <i class="fas fa-bars text-white"></i>
-              </button>
-            </div>
-          </div>
         </div>
-        <div class="hidden mobile-menu">
-          <ul>
-            <li class="active text-white">
-              <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="index.html">
-                HOME
-              </a>
-            </li>
-
-            <li class="active text-white">
-              <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="ourservices.html">
-                OUR SERVICES
-              </a>
-            </li>
-           
-            <li>
-              <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="project.html">
-                IKAYA PROJECT
-              </a>
-            </li>
-            <li>
-              <a class="block text-sm px-2 py-4 hover:bg-yellow-500 transition duration-300 text-white" href="contact.html">
-                CONTACT
-              </a>
-            </li>
-           
-          </ul>
-          
+    
+        <!-- Menu Mobile -->
+        <div class="hidden mobile-menu bg-black text-center">
+            <a href="index.html" class="block py-3 text-white hover:bg-yellow-500">HOME</a>
+            <a href="ourservices.html" class="block py-3 text-white hover:bg-yellow-500">OUR SERVICES</a>
+            <a href="project.html" class="block py-3 text-white hover:bg-yellow-500">IKAYA PROJECT</a>
+            <a href="contact.html" class="block py-3 text-white hover:bg-yellow-500">CONTACT</a>
         </div>
-        <style>
-          .mobile-menu {
-              background-color: rgba(0, 0, 0, 0); /* Transparan sepenuhnya */
-              backdrop-filter: blur(10px); /* Efek blur agar lebih elegan */
-              transition: all 0.3s ease-in-out;
-              width: 100%;
-          }
+    </nav>
+    
+    <!-- JavaScript untuk Mengaktifkan Menu Mobile -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.querySelector(".mobile-menu-button");
+            const mobileMenu = document.querySelector(".mobile-menu");
+    
+            menuButton.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+            });
+        });
+    </script>
+    
+    
+    <script>
+        // JavaScript untuk toggle mobile menu
+        document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".mobile-menu-button");
+        const mobileMenu = document.querySelector(".mobile-menu");
 
-          .mobile-menu ul li a {
-              color: white; /* Pastikan teks tetap terlihat */
-          }
-
-          .mobile-menu-button {
-              z-index: 60; /* Pastikan tombol hamburger selalu di atas */
-          }
-
-          @media (max-width: 768px) {
-              .mobile-menu {
-                  position: absolute;
-                  top: 60px; /* Pastikan posisi di bawah navbar */
-                  left: 0;
-                  width: 100%;
-                  padding: 10px 0;
-              }
-          }
-
-        </style>
-      </nav>
+        menuButton.addEventListener("click", function () {
+            if (mobileMenu.classList.contains("hidden")) {
+                mobileMenu.classList.remove("hidden");
+                mobileMenu.classList.add("block");
+            } else {
+                mobileMenu.classList.remove("block");
+                mobileMenu.classList.add("hidden");
+            }
+        });
+    });
+    </script>
+    
+    <style>
+        /* Efek transparan dan blur untuk menu mobile */
+        .mobile-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+    
+        .mobile-menu ul li a {
+            color: white;
+            font-size: 1.2em;
+        }
+    
+        @media (max-width: 768px) {
+            .mobile-menu {
+                position: absolute;
+                left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+    
       
     </header>
     <main>
+      <br>
+      <br>
       <!-- Hero section -->
-       
-      <section class="unique-slideshow-section" id="unique-slideshow">
-        <div class="unique-slideshow-container">
-            <div class="unique-slide fade">
-                <img src="batman.jpg" alt="Slide 1">
-                <div class="unique-text">Selamat Datang di Website Kami</div>
-            </div>
-            <div class="unique-slide fade">
-                <img src="narto.webp" alt="Slide 2">
-                <div class="unique-text">Selamat Datang di Website Kami</div>
-            </div>
-            <div class="unique-slide fade">
-                <img src="creed.jpg" alt="Slide 3">
-                <div class="unique-text">Selamat Datang di Website Kami</div>   
-            </div>
+     <section>
+      <div class="slideshow-container">
+        <div class="slide">
+            <img src="batman-n3.png" alt="Slide 1">
+            <div class="text">Selamat Datang di Website kami</div>
         </div>
-        <br>
-        <div style="text-align:center">
-            <span class="unique-dot"></span>
-            <span class="unique-dot"></span>
-            <span class="unique-dot"></span>
+        <div class="slide">
+            <img src="creed-n3.png" alt="Slide 2">
+            <div class="text">Selamat Datang di Website kami</div>
         </div>
-    
-      </section>
+        <div class="slide">
+            <img src="batman-n3.png" alt="Slide 3">
+            <div class="text">Selamat Datang di Website kami</div>
+        </div>
+        
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+     </section>
     
       <!-- About section -->
 <section class="ikaya-section py-12">
@@ -517,7 +513,7 @@
           <h2 class="text-xl font-bold text-white mb-2" style="color: #CFB53B; font-family: 'Playfair Display', serif;">
           Tim Profesional
           </h2>
-          <p class="text-white" style="ffont-family: 'Poppins', sans-serif;">
+          <p class="text-white" style="font-family: 'Poppins', sans-serif;">
           Tim kami terdiri dari para ahli yang berpengalaman di bidangnya masing-masing.
           </p>
         </div>

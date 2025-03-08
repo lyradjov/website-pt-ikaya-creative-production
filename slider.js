@@ -1,19 +1,39 @@
-let uniqueSlideIndex = 0;
-showUniqueSlides();
+document.addEventListener("DOMContentLoaded", function() {
+    let slideIndex = 0;
+    let slides = document.querySelectorAll(".slide");
+    let prevButton = document.querySelector(".prev");
+    let nextButton = document.querySelector(".next");
 
-function showUniqueSlides() {
-    let i;
-    let slides = document.getElementsByClassName("unique-slide");
-    let dots = document.getElementsByClassName("unique-dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+    function showSlide(index) {
+        if (index >= slides.length) slideIndex = 0;
+        if (index < 0) slideIndex = slides.length - 1;
+        
+        slides.forEach(slide => slide.style.display = "none");
+        slides[slideIndex].style.display = "block";
     }
-    uniqueSlideIndex++;
-    if (uniqueSlideIndex > slides.length) {uniqueSlideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+
+    function changeSlide(n) {
+        slideIndex += n;
+        showSlide(slideIndex);
     }
-    slides[uniqueSlideIndex-1].style.display = "block";  
-    dots[uniqueSlideIndex-1].className += " active";
-    setTimeout(showUniqueSlides, 5000); // Change image every 5 seconds
-}
+
+    function autoSlide() {
+        slideIndex++;
+        showSlide(slideIndex);
+        setTimeout(autoSlide, 3000);
+    }
+
+    // Menampilkan slide pertama
+    showSlide(slideIndex);
+
+    // Event listener untuk tombol prev dan next
+    prevButton.addEventListener("click", function() {
+        changeSlide(-1);
+    });
+
+    nextButton.addEventListener("click", function() {
+        changeSlide(1);
+    });
+
+    setTimeout(autoSlide, 3000);
+});
