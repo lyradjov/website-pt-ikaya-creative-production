@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>I'Kaya Creative Production</title>
+    <title>I'Kaya Creative Production - Creative Agency</title>
     <link rel="shortcut icon" href="gambar/ikaya.jpg" type="image/x-icon">
     <!-- Linking Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
@@ -32,10 +31,10 @@
     
                 <!-- Menu Desktop -->
                 <div class="hidden md:flex space-x-6">
-                    <a href="index.html" class="text-white hover:text-yellow-400 transition">HOME</a>
-                    <a href="ourservices.html" class="text-white hover:text-yellow-400 transition">OUR SERVICES</a>
-                    <a href="project.html" class="text-white hover:text-yellow-400 transition">IKAYA PROJECT</a>
-                    <a href="contact.html" class="text-white hover:text-yellow-400 transition">CONTACT</a>
+                    <a href="index.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">HOME</a>
+                    <a href="ourservices.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">OUR SERVICES</a>
+                    <a href="project.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">IKAYA PROJECT</a>
+                    <a href="contact.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">CONTACT</a>
                 </div>
     
                 <!-- Ikon Sosial Media -->
@@ -56,24 +55,25 @@
         </div>
     
         <!-- Menu Mobile -->
-        <div class="hidden mobile-menu bg-black text-center">
-            <a href="index.html" class="block py-3 text-white hover:bg-yellow-500">HOME</a>
-            <a href="ourservices.html" class="block py-3 text-white hover:bg-yellow-500">OUR SERVICES</a>
-            <a href="project.html" class="block py-3 text-white hover:bg-yellow-500">IKAYA PROJECT</a>
-            <a href="contact.html" class="block py-3 text-white hover:bg-yellow-500">CONTACT</a>
+        <div class="hidden mobile-menu bg-black/50 text-center backdrop-blur-md shadow-lg">
+          <a href="index.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">HOME</a>
+          <a href="ourservices.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">OUR SERVICES</a>
+          <a href="project.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">IKAYA PROJECT</a>
+          <a href="contact.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">CONTACT</a>
         </div>
+      
     </nav>
     
     <!-- JavaScript untuk Mengaktifkan Menu Mobile -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuButton = document.querySelector(".mobile-menu-button");
-            const mobileMenu = document.querySelector(".mobile-menu");
-    
-            menuButton.addEventListener("click", function () {
-                mobileMenu.classList.toggle("hidden");
-            });
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".mobile-menu-button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    menuButton.addEventListener("click", function () {
+      mobileMenu.classList.toggle("hidden");
+    });
+  });
     </script>
     
     
@@ -96,27 +96,38 @@
     </script>
     
     <style>
-        /* Efek transparan dan blur untuk menu mobile */
         .mobile-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            transition: all 0.3s ease-in-out;
-        }
-    
-        .mobile-menu ul li a {
-            color: white;
-            font-size: 1.2em;
-        }
-    
-        @media (max-width: 768px) {
-            .mobile-menu {
-                position: absolute;
-                left: 0;
-                width: 100%;
-            }
-        }
+    position: absolute;
+    top: 60px; /* sesuaikan dengan tinggi navbar */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* fallback transparan */
+    backdrop-filter: blur(10px); /* efek blur */
+    -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+    transition: all 0.3s ease-in-out;
+    z-index: 50; /* biar di atas konten lain */
+  }
+
+  .mobile-menu a {
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    padding: 12px;
+    transition: background 0.3s ease;
+  }
+
+  .mobile-menu a:hover {
+    background-color: #FACC15; /* hover warna kuning tailwind */
+    color: black;
+  }
+
+  @media (min-width: 769px) {
+    /* Hide mobile button on larger screens */
+    .mobile-menu-button {
+      display: none;
+    }
+  }
     </style>
     
       
@@ -139,6 +150,8 @@
             <img src="batman.jpg" alt="Slide 3">
             <div class="text" id="typewriter3">Selamat Datang di Website Kami</div>
           </div>
+
+         
         
           <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
           <button class="next" onclick="changeSlide(1)">&#10095;</button>
@@ -431,28 +444,28 @@
 
       <!--Layanan Kami-->
       <section id="golden-services" class="py-12 bg-black">
-        <div class="container mx-auto">
+        <div class="container mx-auto ">
           <h2 class="section-title" style="color: #CFB53B;">IKAYA SERVICE</h2>
           
             <div class="flex flex-col items-center px-5">
                 <!-- Baris pertama: 3 kolom -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mb-8">
                     <div class="relative text-center fade-in-bottom service-card">
-                        <img alt="360 Strategy Campaign" class="w-full object-contain" loading="lazy" src="gambar/socmed-mark-baru.png" />
+                        <img alt="360 Strategy Campaign" class="w-full object-contain" loading="lazy" src="gambar/ikaya-service/EA.png" />
                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 hover-content">
                             <h2 class="text-2xl font-bold mb-4">Event Advertising</h2>
                             <p class="px-4" >Kami membantu Anda membuat iklan acara yang menarik dan efektif untuk menjangkau target audiens Anda.</p>
                         </div>
                     </div>
                     <div class="relative text-center fade-in-bottom service-card">
-                        <img alt="Video Commercials" class="w-full object-contain" loading="lazy" src="gambar/deslog.png" />
+                        <img alt="Video Commercials" class="w-full object-cover" loading="lazy" src="gambar/ikaya-service/EO.png" />
                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 hover-content">
                             <h2 class="text-2xl font-bold mb-4">Event Organizer</h2>
                             <p class="px-4">Kami merencanakan dan melaksanakan berbagai jenis acara, mulai dari acara korporat, peluncuran produk, hingga acara pribadi seperti pernikahan dan ulang tahun.</p>
                         </div>
                     </div>
                     <div class="relative text-center fade-in-bottom service-card">
-                        <img alt="Digital & Social Media" class="w-full object-contain" loading="lazy" src="gambar/deslog.png" />
+                        <img alt="Digital & Social Media" class="w-full object-cover" loading="lazy" src="gambar/ikaya-service/MS.png" />
                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 hover-content">
                             <h2 class="text-2xl font-bold mb-4">Marketing Strategies</h2>
                             <p class="px-4">Kami mengembangkan strategi pemasaran yang efektif untuk membantu Anda mencapai tujuan bisnis Anda.</p>
@@ -463,14 +476,14 @@
                 <!-- Baris kedua: 2 kolom -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full md:w-2/3">
                     <div class="relative text-center fade-in-bottom service-card">
-                        <img alt="Web Development" class="w-full object-contain" loading="lazy" src="gambar/deslog.png" />
+                        <img alt="Web Development" class="w-full object-cover" loading="lazy" src="gambar/ikaya-service/PTM.png" />
                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 hover-content">
                             <h2 class="text-2xl font-bold mb-4">Planning Target Market</h2>
                             <p class="px-4">Kami membantu Anda mengidentifikasi dan memahami target pasar Anda untuk memastikan pesan pemasaran Anda sampai kepada orang yang tepat.</p>
                         </div>
                     </div>
                     <div class="relative text-center fade-in-bottom service-card">
-                        <img alt="Data Analytics" class="w-full object-contain" loading="lazy" src="gambar/deslog.png" />
+                        <img alt="Data Analytics" class="w-full object-contain" loading="lazy" src="gambar/socmedman/smm-cov.jpg" />
                         <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4 hover-content">
                             <h2 class="text-2xl font-bold mb-4">Social Media Management</h2>
                             <p class="px-4">Kami mengelola akun media sosial Anda untuk meningkatkan brand awareness dan engagement dengan pelanggan Anda.</p>
@@ -679,48 +692,40 @@
       
      
 <!--Testi-->
-<section class="slideshow-section" id="slideshow">
-  <h2 class="section-title" style="color: #CFB53B;">Dokumentasi Kegiatan</h2>
-  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2">
-    <div class="relative">
-       <img alt="Office shelf with decorative items" loading="lazy" class="w-full h-auto object-contain" src="gambar/slider5.jpg" />
-    </div>
-    <div class="relative">
-       <img alt="Office meeting room with chairs and tables" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider4.jpg" />
-    </div>
-    <div class="relative">
-       <img alt="Office meeting room with chairs and tables" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider13.jpg" />
-    </div>
-    <div class="relative">
-       <img alt="Office workspace with desks and chairs" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider7.jpg" />
-    </div>
-    <div class="relative">
-       <img alt="Office lounge area with bean bags and TV" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider15.jpg" />
-    </div>
-    <div class="relative">
-       <img alt="Office meeting room with glass board" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider6.jpg" />
-    </div>
-    <div class="relative">
-       <img alt="Office meeting room with wooden wall and chairs" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider14.jpg" />
-    </div>
-    <div class="relative">
-       <img alt="Office lounge area with photo wall"  loading="lazy" class="w-full h-auto object-cover" src="gambar/slider8.jpg" />
-    </div>
-    <div class="relative">
-      <img alt="Office lounge area with photo wall" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider16.jpg" />
-   </div>
-   <div class="relative">
-    <img alt="Office lounge area with photo wall" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider17.jpg" />
- </div>
- <div class="relative">
-  <img alt="Office lounge area with photo wall" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider9.jpg" />
-</div>
-<div class="relative">
-  <img alt="Office lounge area with photo wall" loading="lazy" class="w-full h-auto object-cover" src="gambar/slider13.jpg" />
-</div>
+<section class="slideshow-section py-12 bg-black" id="slideshow">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center text-4xl font-bold mb-8" style="font-family: 'Playfair Display', serif; color: #CFB53B;">
+      DOKUMENTASI KEGIATAN
+    </h2>
 
- </div>
+    <!-- Container untuk gambar-gambar -->
+    <div id="gallery" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      
+    </div>
+  </div>
+
+  <style>
+    .slideshow-section {
+      background-color: #000000;
+    }
+
+    .slideshow-section h2 {
+      color: #CFB53B;
+    }
+
+    .slideshow-section img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .slideshow-section img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </section>
+
+
+
+
 
 
    <!--POPUP-->
@@ -834,6 +839,7 @@
       </script>
     <script src="script.js"></script>
     <script src="slider.js"></script>
+    <script src="dokkegiatan.js"></script>
       
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>

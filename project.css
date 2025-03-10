@@ -53,3 +53,35 @@
     max-width: 100%; /* biar lebar penuh di mobile */
   }
 }
+
+.slide-in-left, .slide-in-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-left {
+  transform: translateX(-100px);
+}
+
+.slide-in-left.show,
+.slide-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-info h3 {
+  transition: color 0.3s ease;
+}
+
+.project-card:hover .project-info h3 {
+  color: #FFD700;
+}

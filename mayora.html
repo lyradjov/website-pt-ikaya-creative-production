@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>I'Kaya Creative Production</title>
+    <title>I'Kaya Creative Production - Creative Agency</title>
     <link rel="shortcut icon" href="gambar/ikaya.jpg" type="image/x-icon">
     <!-- Linking Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
@@ -72,10 +72,10 @@
         
                     <!-- Menu Desktop -->
                     <div class="hidden md:flex space-x-6">
-                        <a href="index.html" class="text-white hover:text-yellow-400 transition">HOME</a>
-                        <a href="ourservices.html" class="text-white hover:text-yellow-400 transition">OUR SERVICES</a>
-                        <a href="project.html" class="text-white hover:text-yellow-400 transition">IKAYA PROJECT</a>
-                        <a href="contact.html" class="text-white hover:text-yellow-400 transition">CONTACT</a>
+                        <a href="index.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">HOME</a>
+                        <a href="ourservices.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">OUR SERVICES</a>
+                        <a href="project.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">IKAYA PROJECT</a>
+                        <a href="contact.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">CONTACT</a>
                     </div>
         
                     <!-- Ikon Sosial Media -->
@@ -97,13 +97,48 @@
         
             <!-- Menu Mobile -->
             <div class="hidden mobile-menu bg-black text-center">
-                <a href="index.html" class="block py-3 text-white hover:bg-yellow-500">HOME</a>
-                <a href="ourservices.html" class="block py-3 text-white hover:bg-yellow-500">OUR SERVICES</a>
-                <a href="project.html" class="block py-3 text-white hover:bg-yellow-500">IKAYA PROJECT</a>
-                <a href="contact.html" class="block py-3 text-white hover:bg-yellow-500">CONTACT</a>
+                <a href="index.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">HOME</a>
+                <a href="ourservices.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">OUR SERVICES</a>
+                <a href="project.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">IKAYA PROJECT</a>
+                <a href="contact.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">CONTACT</a>
+      
             </div>
         </nav>
         
+        <style>
+            .mobile-menu {
+    position: absolute;
+    top: 60px; /* sesuaikan dengan tinggi navbar */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* fallback transparan */
+    backdrop-filter: blur(10px); /* efek blur */
+    -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+    transition: all 0.3s ease-in-out;
+    z-index: 50; /* biar di atas konten lain */
+  }
+
+  .mobile-menu a {
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    padding: 12px;
+    transition: background 0.3s ease;
+  }
+
+  .mobile-menu a:hover {
+    background-color: #FACC15; /* hover warna kuning tailwind */
+    color: black;
+  }
+
+  @media (min-width: 769px) {
+    /* Hide mobile button on larger screens */
+    .mobile-menu-button {
+      display: none;
+    }
+  }
+        </style>
         <!-- JavaScript untuk Mengaktifkan Menu Mobile -->
         <script>
             document.addEventListener("DOMContentLoaded", function () {
