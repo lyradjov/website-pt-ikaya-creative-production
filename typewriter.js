@@ -1,14 +1,19 @@
-const typewriterElements = document.querySelectorAll('.typewriter');
-const text = "Selamat datang di Website Kami"; // Teks yang ingin ditampilkan
-
-typewriterElements.forEach(element => {
+function typeWriter(elementId, text, delay = 100) {
+  const element = document.getElementById(elementId);
   let i = 0;
-  let interval = setInterval(() => {
+
+  function type() {
     if (i < text.length) {
       element.textContent += text.charAt(i);
       i++;
-    } else {
-      clearInterval(interval);
+      setTimeout(type, delay);
     }
-  }, 100); // Kecepatan mengetik (ms)
-});
+  }
+
+  type();
+}
+
+// Call the typeWriter function for each slide
+typeWriter("typewriter1", "Selamat Datang di Website kami");
+typeWriter("typewriter2", "Selamat Datang di Website kami");
+typeWriter("typewriter3", "Selamat Datang di Website kami");

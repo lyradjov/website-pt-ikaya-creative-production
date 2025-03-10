@@ -1,117 +1,55 @@
-relative {
-    position: relative;
-    overflow: hidden; /* Tambahkan overflow: hidden untuk mencegah gambar keluar dari wadah saat di-zoom */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr); /* 2 kolom saja */
+  gap: 40px; /* atau atur ke 100px kalau mau seperti sebelumnya */
+  max-width: 1200px; /* batas lebar container */
+  margin: 0 auto; /* biar center */
+  padding: 40px;
 }
 
-.relative img {
-    transition: transform 0.3s ease; /* Tambahkan transisi untuk efek halus */
+.project-card {
+  background-color: #1c1a17; /* Warna background serupa gambar */
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
 }
 
-.relative:hover img {
-    transform: scale(1.03); /* Efek zoom saat dihover */
+.project-card:hover {
+  transform: translateY(-8px);
 }
 
-.absolute {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 1rem;
-    transition: transform 0.3s ease; /* Tambahkan transisi untuk efek halus */
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.relative:hover .absolute {
-    transform: translateY(-5px); /* Efek pergeseran overlay saat dihover */
+.project-info {
+  padding: 24px;
+  color: #fff;
 }
 
-.nav-text-color a {
-    color: white; /* Warna menu navigasi */
-  }
-  
-  .nav-text-color a:hover {
-    color: #CFB53B; /* Warna hover */
-  }
+.project-info h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
 
-   /* Container Grid */
-   .grid-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    max-width: 1270px;
-    margin: 0 auto;
-  }
+.project-info p {
+  font-size: 16px;
+  line-height: 1.4;
+}
 
-  /* Baris Grid */
-  .grid-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    gap: 10px;
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* 1 kolom di mobile */
+    padding: 20px; /* opsional: biar lebih kecil padding-nya */
+    gap: 20px; /* opsional: jarak antar elemen di mobile */
   }
 
-  /* Item Grid */
-  .grid-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  .project-card {
+    max-width: 100%; /* biar lebar penuh di mobile */
   }
-
-  /* Gambar Kecil */
-  .grid-item.small {
-    aspect-ratio: 1414 / 2000;
-  }
-
-  /* Gambar Besar */
-  .grid-item.big {
-    grid-column: span 2;
-    aspect-ratio: 1270 / 720;
-  }
-
-  /* Overlay Teks */
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    color: white;
-    text-align: center;
-  }
-
-  /* Efek Hover pada Gambar */
-  .grid-item:hover img {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }
-
-  .grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-
-  /* Responsif untuk Mobile */
-  @media (max-width: 768px) {
-    .grid-row {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .grid-item.small,
-    .grid-item.big {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
-    .grid-item.big {
-      aspect-ratio: 16 / 9; /* Sesuaikan rasio untuk mobile */
-    }
-  }
-  
+}

@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     let slideIndex = 0;
     let slides = document.querySelectorAll(".slide");
-    let prevButton = document.querySelector(".prev");
-    let nextButton = document.querySelector(".next");
 
     function showSlide(index) {
         if (index >= slides.length) slideIndex = 0;
@@ -26,14 +24,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // Menampilkan slide pertama
     showSlide(slideIndex);
 
-    // Event listener untuk tombol prev dan next
-    prevButton.addEventListener("click", function() {
+    document.querySelector(".prev").addEventListener("click", function() {
         changeSlide(-1);
     });
 
-    nextButton.addEventListener("click", function() {
+    document.querySelector(".next").addEventListener("click", function() {
         changeSlide(1);
     });
 
     setTimeout(autoSlide, 3000);
 });
+
+

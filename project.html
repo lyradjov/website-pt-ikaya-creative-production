@@ -18,186 +18,215 @@
 <body>
   <!-- Header / Navbar -->
   <header>
-    <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
-      <div class="max-w-6xl mx-auto px-4">
-          <div class="flex justify-between items-center py-4">
-              <!-- Logo -->
-              <a href="#" class="flex items-center">
-                  <img src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" alt="Logo" class="h-10 w-auto mr-2">
-                  <span class="font-semibold text-lg text-yellow-400" style="font-family: 'Playfair Display', serif;">
-                      I'Kaya Creative Production
-                  </span>
-              </a>
-  
-              <!-- Menu Desktop -->
-              <div class="hidden md:flex space-x-6">
-                  <a href="index.html" class="text-white hover:text-yellow-400 transition">HOME</a>
-                  <a href="ourservices.html" class="text-white hover:text-yellow-400 transition">OUR SERVICES</a>
-                  <a href="project.html" class="text-white hover:text-yellow-400 transition">IKAYA PROJECT</a>
-                  <a href="contact.html" class="text-white hover:text-yellow-400 transition">CONTACT</a>
-              </div>
-  
-              <!-- Ikon Sosial Media -->
-              <div class="hidden md:flex space-x-3">
-                  <a href="https://www.facebook.com/profile.php?id=100086158917296" target="_blank" class="text-white hover:text-yellow-400">
-                      <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="https://www.instagram.com/kayacreativeproduction/" target="_blank" class="text-white hover:text-yellow-400">
-                      <i class="fab fa-instagram"></i>
-                  </a>
-              </div>
-  
-              <!-- Tombol Hamburger (Mobile) -->
-              <button class="md:hidden text-white focus:outline-none mobile-menu-button">
-                  <i class="fas fa-bars"></i>
-              </button>
-          </div>
-      </div>
-  
-      <!-- Menu Mobile -->
-      <div class="hidden mobile-menu bg-black text-center">
-          <a href="index.html" class="block py-3 text-white hover:bg-yellow-500">HOME</a>
-          <a href="ourservices.html" class="block py-3 text-white hover:bg-yellow-500">OUR SERVICES</a>
-          <a href="project.html" class="block py-3 text-white hover:bg-yellow-500">IKAYA PROJECT</a>
-          <a href="contact.html" class="block py-3 text-white hover:bg-yellow-500">CONTACT</a>
-      </div>
-  </nav>
-  
-  <!-- JavaScript untuk Mengaktifkan Menu Mobile -->
-  <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          const menuButton = document.querySelector(".mobile-menu-button");
-          const mobileMenu = document.querySelector(".mobile-menu");
-  
-          menuButton.addEventListener("click", function () {
-              mobileMenu.classList.toggle("hidden");
-          });
-      });
-  </script>
-    </nav>
+   <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <a href="#" class="flex items-center">
+                        <img src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" alt="Logo" class="h-10 w-auto mr-2">
+                        <span class="font-semibold text-lg text-yellow-400" style="font-family: 'Playfair Display', serif;">
+                            I'Kaya Creative Production
+                        </span>
+                    </a>
+        
+                    <!-- Menu Desktop -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="index.html" class="text-white hover:text-yellow-400 transition">HOME</a>
+                        <a href="ourservices.html" class="text-white hover:text-yellow-400 transition">OUR SERVICES</a>
+                        <a href="project.html" class="text-white hover:text-yellow-400 transition">IKAYA PROJECT</a>
+                        <a href="contact.html" class="text-white hover:text-yellow-400 transition">CONTACT</a>
+                    </div>
+        
+                    <!-- Ikon Sosial Media -->
+                    <div class="hidden md:flex space-x-3">
+                        <a href="https://www.facebook.com/profile.php?id=100086158917296" target="_blank" class="text-white hover:text-yellow-400">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kayacreativeproduction/" target="_blank" class="text-white hover:text-yellow-400">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+        
+                    <!-- Tombol Hamburger (Mobile) -->
+                    <button class="md:hidden text-white focus:outline-none mobile-menu-button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        
+            <!-- Menu Mobile -->
+            <div class="hidden mobile-menu bg-black text-center">
+                <a href="index.html" class="block py-3 text-white hover:bg-yellow-500">HOME</a>
+                <a href="ourservices.html" class="block py-3 text-white hover:bg-yellow-500">OUR SERVICES</a>
+                <a href="project.html" class="block py-3 text-white hover:bg-yellow-500">IKAYA PROJECT</a>
+                <a href="contact.html" class="block py-3 text-white hover:bg-yellow-500">CONTACT</a>
+            </div>
+        </nav>
+        
+        <!-- JavaScript untuk Mengaktifkan Menu Mobile -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuButton = document.querySelector(".mobile-menu-button");
+                const mobileMenu = document.querySelector(".mobile-menu");
+        
+                menuButton.addEventListener("click", function () {
+                    mobileMenu.classList.toggle("hidden");
+                });
+            });
+        </script>
+
+<script>
+  // JavaScript untuk toggle mobile menu
+  document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.querySelector(".mobile-menu-button");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  menuButton.addEventListener("click", function () {
+      if (mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.remove("hidden");
+          mobileMenu.classList.add("block");
+      } else {
+          mobileMenu.classList.remove("block");
+          mobileMenu.classList.add("hidden");
+      }
+  });
+});
+</script>
+        </nav>
   </header>
 
-  <main>
-    <br>
-    <br>
-
+  <main class="bg-black">
+   <br>
+   
+  
     <!-- Projects Section -->
     <!-- Projects Section -->
-    <section class="bg-black">
-      <div class="grid-container bg-black">
-        <!-- Baris 1 -->
-        <div class="grid-row">
-          <div class="grid-item small">
-            <img src="gambar/desain-logo/deslog-cover.jpg" loading="lazy" class="w-full h-full object-cover" alt="Desain Logo">
-            <div class="overlay">
-              <p class="text-white font-bold text-lg">DESAIN LOGO</p>
-              <a href="desainlogo.html">
-                <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
-                  Lihat Lebih Lanjut
-                </button>
-              </a>
-            </div>
-          </div>
-    
-          <div class="grid-item small">
-            <img src="gambar/socmedman/smm_1.png" loading="lazy" class="w-full h-full object-cover" alt="Social Marketing Management">
-            <div class="overlay">
-              <p class="text-white font-bold text-lg">SOCIAL MARKETING MANAGEMENT</p>
-              <a href="socmedman.html">
-                <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
-                  Lihat Lebih Lanjut
-                </button>
-              </a>
-            </div>
-          </div>
-    
-          <div class="grid-item big">
-            <img src="gambar/slider4.jpg" loading="lazy" class="w-full h-full object-cover" alt="Photoshoot">
-            <div class="overlay">
-              <p class="text-white font-bold text-lg">PHOTOSHOOT</p>
-              <a href="photoshoot.html">
-                <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
-                  Lihat Lebih Lanjut
-                </button>
-              </a>
-            </div>
+    <section class="grid-container">
+      <h2 class="section-title" style="color: #CFB53B;">IKAYA PROJECT</h2>
+      <!-- Row 1 -->
+      <div class="project-grid">
+  
+        <div class="project-card">
+          <img src="gambar/slider3.jpg" alt="Project 1">
+          <div class="project-info">
+            <h3>PHOTOSHOOT</h3>
+            <a href="photoshoot.html">
+              <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
+                Lihat Lebih Lanjut
+              </button>
+            </a>
+           
           </div>
         </div>
-    
-        <!-- Baris 2 -->
-        <div class="grid-row">
-          <div class="grid-item small">
-            <img src="gambar/des-buku.png" loading="lazy" class="w-full h-full object-cover" alt="Desain Buku">
-            <div class="overlay">
-              <p class="text-white font-bold text-lg">DESAIN BUKU</p>
-              <a href="#">
-                <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
-                  Lihat Lebih Lanjut
-                </button>
-              </a>
-            </div>
-          </div>
-    
-          <div class="grid-item small">
-            <img src="gambar/stikermasan.png" loading="lazy" class="w-full h-full object-cover" alt="Desain Produk">
-            <div class="overlay">
-              <p class="text-white font-bold text-lg">DESAIN PRODUK</p>
-              <a href="desainproduk.html">
-                <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
-                  Lihat Lebih Lanjut
-                </button>
-              </a>
-            </div>
-          </div>
-    
-          <div class="grid-item big">
-            <img src="gambar/bca-ioconcep/bca-cover.jpg" loading="lazy" class="w-full h-full object-cover" alt="Corporate Advertising Design Mayora">
-            <div class="overlay">
-              <p class="text-white font-bold text-lg">IO CONCEPTOR BCA EXPO 2024</p>
-              <a href="bcaexpo.html">
-                <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
-                  Lihat Lebih Lanjut
-                </button>
-              </a>
-            </div>
+      
+        <div class="project-card">
+          <img src="gambar/bca-ioconcep/KATALOG I'KAYA (1).jpg" alt="Project 2">
+          <div class="project-info">
+            <h3>IO CONCEPTOR BCA EXPO 2024</h3>
+            <a href="bcaexpo.html">
+              <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
+                Lihat Lebih Lanjut
+              </button>
+            </a>
           </div>
         </div>
-    
-        <!-- Baris 3 -->
-        <div class="grid-row">
-          <div class="grid-item small">
-            <img src="gambar/kampanye-pol/KATALOK I'KAYA  (1).jpg" loading="lazy" class="w-full h-full object-cover" alt="Kampanye Politik">
-            <div class="overlay">
-              <p class="text-white font-bold text-lg">KAMPANYE POLITIK</p>
-              <a href="#"></a>
-            </div>
+      
+        <div class="project-card">
+          <img src="gambar/mayora/mayora1.png" alt="Project 3">
+          <div class="project-info">
+            <h3>CORPORATE ADVERTISING DESIGN MAYORA</h3>
+            <a href="mayora.html">
+              <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
+                Lihat Lebih Lanjut
+              </button>
+            </a>
           </div>
-    
-          <div class="grid-item small">
-            <img src="gambar/grabfood-display/gdis-cover.jpg" loading="lazy" class="w-full h-full object-cover" alt="Grab Food Display Design">
-            <div class="overlay">
-              <p class="text-white font-bold text-lg">GRAB FOOD DISPLAY DESIGN</p>
-              <a href="#"></a>
-            </div>
-          </div>
-    
-          <div class="grid-item big">
-            <img src="gambar/polairud/corporate advertising design.jpg" loading="lazy" class="w-full h-full object-cover" alt="Corporate Advertising Design Mayora">
-            <div class="overlay">
-              <p class="text-white font-bold text-lg">POLAIRUD GORONTALO</p>
-              <a href="videoproj.html">
-                <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
-                  Lihat Lebih Lanjut
-                </button>
-              </a>
-            </div>
+        </div>
+      
+        <div class="project-card">
+          <img src="gambar/desain-logo/deslog-cover.jpg" alt="Project 4">
+          <div class="project-info">
+            <h3>DESAIN LOGO</h3>
+            <a href="desainlogo.html">
+              <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
+                Lihat Lebih Lanjut
+              </button>
+            </a>
           </div>
         </div>
 
+        <div class="project-card">
+          <img src="gambar/socmedman/smm-cov.jpg" alt="Project 4">
+          <div class="project-info">
+            <h3>SOCIAL MARKETING MANAGEMENT</h3>
+            <a href="socmedman.html">
+              <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
+                Lihat Lebih Lanjut
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="gambar/kampanye-pol/KATALOK I'KAYA  (1).jpg" alt="Project 4">
+          <div class="project-info">
+            <h3>KAMPANYE POLITIK</h3>
+          
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="gambar/polairud/polair.jpg" alt="Project 4">
+          <div class="project-info">
+            <h3>POLAIRUD GORONTALO</h3>
+            <a href="videoproj.html">
+              <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
+                Lihat Lebih Lanjut
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="gambar/desain web/des-web-cover.jpg" alt="Project 4">
+          <div class="project-info">
+            <h3>DESAIN WEB</h3>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="gambar/stikermasan.png" alt="Project 4">
+          <div class="project-info">
+            <h3>DESAIN PRODUK</h3>
+          
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="gambar/des-buku.png" alt="Project 4">
+          <div class="project-info">
+            <h3>DESAIN BUKU</h3>
+      
+          </div>
+      
+      </div>
+      
+
+      
+
+      
+
+      
+      
         
-    
+        
+        
+        <!-- Add another project here or leave empty for alignment -->
+        
     </section>
 
+
+<!--Whatsapp popup-->
 <section class="fixed left-4 bottom-4">
   <button id="openPopup" class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" loading="lazy" alt="WhatsApp" class="w-8 h-8" href="https://wa.me/+6282195031456" target="_blank">
