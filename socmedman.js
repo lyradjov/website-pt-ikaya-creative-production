@@ -1,11 +1,11 @@
 const photos = [
     { src: "gambar/socmedman/smm_1.png", alt: "post " },
     { src: "gambar/socmedman/smm_2.png", alt: "post " },
-    { src: "gambar/socmedman/smm_3.png", alt: "post " },
+    { src: "gambar/socmedman/smm_3b.png", alt: "post " },
    
     
    
-    // Tambahkan lebih banyak objek gambar di sini
+   
 ];
 
 const container = document.getElementById('photoshoot-container');
