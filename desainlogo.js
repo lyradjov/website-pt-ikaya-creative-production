@@ -1,7 +1,6 @@
 const photos = [
-    { src: "gambar/desain-logo/deslog-cover.jpg", alt: "post " },
-    { src: "gambar/desain-logo/deslog-cover.jpg", alt: "post " },
-    { src: "gambar/desain-logo/deslog-cover.jpg", alt: "post " },
+    { src: "gambar/desain-logo/deslog-cover1.jpg", alt: "post " },
+    
    
  
    

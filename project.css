@@ -1,14 +1,23 @@
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 2fr); /* 2 kolom saja */
-  gap: 40px; /* atau atur ke 100px kalau mau seperti sebelumnya */
-  max-width: 1200px; /* batas lebar container */
-  margin: 0 auto; /* biar center */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 40px;
 }
 
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
 .project-card {
-  background-color: #1c1a17; /* Warna background serupa gambar */
+  background-color: #1c1a17; 
   border-radius: 16px;
   overflow: hidden;
   display: flex;
@@ -69,6 +78,7 @@
   opacity: 1;
   transform: translateX(0);
 }
+
 
 .project-card {
   transition: transform 0.3s ease;

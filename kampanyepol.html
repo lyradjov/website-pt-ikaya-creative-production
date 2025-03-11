@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'Kaya Creative Production - Creative Agency</title>
+    <link rel="shortcut icon" href="gambar/ikaya.jpg" type="image/x-icon">
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Linking Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scrollanimation.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .instagram-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #333;
+        }
+        .instagram-header img {
+            height: 40px;
+        }
+        .instagram-post {
+            position: relative;
+        }
+        .instagram-post img {
+            border-radius: 4px;
+        }
+        .instagram-post::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.3s;
+        }
+        .instagram-post:hover::before {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .back-button {
+            background-color: #333;
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .back-button:hover {
+            background-color: gold;
+            color: black;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header id="">
+        <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <a href="#" class="flex items-center">
+                        <img src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" alt="Logo" class="h-10 w-auto mr-2">
+                        <span class="font-semibold text-lg text-yellow-400" style="font-family: 'Playfair Display', serif;">
+                            I'Kaya Creative Production
+                        </span>
+                    </a>
+        
+                    <!-- Menu Desktop -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="index.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">HOME</a>
+                        <a href="ourservices.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">OUR SERVICES</a>
+                        <a href="project.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">IKAYA PROJECT</a>
+                        <a href="contact.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">CONTACT</a>
+                    </div>
+        
+                    <!-- Ikon Sosial Media -->
+                    <div class="hidden md:flex space-x-3">
+                        <a href="https://www.facebook.com/profile.php?id=100086158917296" target="_blank" class="text-white hover:text-yellow-400">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kayacreativeproduction/" target="_blank" class="text-white hover:text-yellow-400">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+        
+                    <!-- Tombol Hamburger (Mobile) -->
+                    <button class="md:hidden text-white focus:outline-none mobile-menu-button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        
+            <!-- Menu Mobile -->
+            <div class="hidden mobile-menu bg-black text-center">
+                <a href="index.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">HOME</a>
+                <a href="ourservices.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">OUR SERVICES</a>
+                <a href="project.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">IKAYA PROJECT</a>
+                <a href="contact.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">CONTACT</a>
+            </div>
+        </nav>
+
+        <style>
+             .mobile-menu {
+    position: absolute;
+    top: 60px; /* sesuaikan dengan tinggi navbar */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* fallback transparan */
+    backdrop-filter: blur(10px); /* efek blur */
+    -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+    transition: all 0.3s ease-in-out;
+    z-index: 50; /* biar di atas konten lain */
+  }
+
+  .mobile-menu a {
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    padding: 12px;
+    transition: background 0.3s ease;
+  }
+
+  .mobile-menu a:hover {
+    background-color: #FACC15; /* hover warna kuning tailwind */
+    color: black;
+  }
+
+  @media (min-width: 769px) {
+    /* Hide mobile button on larger screens */
+    .mobile-menu-button {
+      display: none;
+    }
+  }
+        </style>
+        
+        <!-- JavaScript untuk Mengaktifkan Menu Mobile -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuButton = document.querySelector(".mobile-menu-button");
+                const mobileMenu = document.querySelector(".mobile-menu");
+        
+                menuButton.addEventListener("click", function () {
+                    mobileMenu.classList.toggle("hidden");
+                });
+            });
+        </script>
+        </nav>
+    </header>
+
+    <h1 class="text-2xl font-bold" style="color: #CFB53B; text-align: center;">DESAIN PRODUK</h1>
+
+    <main class="flex-grow ">
+        <section class="py-8 container mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-6 text-center" style="color: #CFB53B;">KAMPANYE POLITIK</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="photoshoot-container">
+                <!-- Gambar akan dimasukkan oleh JavaScript -->
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden cursor-pointer" onclick="closeLightbox()">
+            <img id="lightbox-img" class="max-h-screen max-w-full object-contain cursor-default" loading="lazy" onclick="event.stopPropagation()">
+            <button class="absolute top-4 right-4 text-white text-4xl" onclick="closeLightbox()">&times;</button>
+            <button class="absolute bottom-4 right-4 text-black text-2xl px-4 py-2 bg-[#CFB53B] rounded back-button hover:bg-[#FFD700] transition" onclick="closeLightbox()">Kembali</button>
+
+        </div>
+    </main>
+
+    <section class="fixed left-4 bottom-4">
+      <button id="openPopup" class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-8 h-8" href="https://wa.me/+6282195031456" target="_blank">
+      </button>
+    
+      <div id="popup" class="backdrop-blur-md bg-transparent shadow-lg p-4 rounded-lg w-64 hidden absolute bottom-16"> 
+          <h2 class="text-lg font-bold mb-2 text-white">Hubungi Kami</h2>
+          <p class="text-sm text-white">Silakan hubungi kami melalui WhatsApp atau Instagram.</p>
+          
+          <a href="https://wa.me/+6282195031456" target="_blank" class="block bg-whatsapp text-center py-2 mt-4 rounded-lg">
+            Chat WhatsApp
+        </a>
+        
+    
+          <button id="closePopup" class="mt-2 text-red-500 text-sm font-semibold hover:underline">
+              Tutup
+          </button>
+      </div>
+      <style>
+            a.bg-whatsapp {
+              background-color: #128C7E !important; 
+              color: white !important;
+              transition: background-color 0.3s ease-in-out;
+          }
+    
+          a.bg-whatsapp:hover {
+              background-color: #173623 !important; 
+          }
+    
+      </style>
+    </section>
+       
+
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text" style="font-family: 'Playfair Display', serif;">© 2024 I'Kaya Creative Production</p>
+            <div class="social-link-list">
+                <a href="https://www.facebook.com/profile.php?id=100086158917296&ref=ig_profile_ac" class="social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kayacreativeproduction/" class="social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Linking custom script -->
+     
+    <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="popupcontact.js"></script>
+    <script src="kampanyepol.js"></script>
+</body>
+</html>

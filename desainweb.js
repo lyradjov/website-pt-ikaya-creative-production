@@ -1,14 +1,10 @@
 const photos = [
-    { src: "gambar/photoshoot/foto1.1_krii.jpg", alt: "post " },
-    { src: "gambar/photoshoot/foto1.1_tengah.jpg", alt: " post " },
-    { src: "gambar/photoshoot/foto1.1_kanan.jpg", alt: " post " },
-    { src: "gambar/photoshoot/foto1.2_kiri.jpg", alt: "post " },
-    { src: "gambar/photoshoot/foto1.2_tengah.jpg", alt: "post " },
-    { src: "gambar/photoshoot/foto1.2_kanan.jpg", alt: "post " },
-    { src: "gambar/photoshoot/foto1.3_kiri.jpg", alt: "post " },
-    { src: "gambar/photoshoot/foto1.3_tengah.jpg", alt: " post " },
-    { src: "gambar/photoshoot/foto1.3_kanan.jpg", alt: " post " },
-    //tambah gambar trus
+    { src: "gambar/desain web/deswebb.png", alt: "post " },
+    
+   
+ 
+   
+    // Tambahkan lebih banyak objek gambar di sini
 ];
 
 const container = document.getElementById('photoshoot-container');
