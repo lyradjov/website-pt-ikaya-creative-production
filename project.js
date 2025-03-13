@@ -4,22 +4,22 @@ document.addEventListener("DOMContentLoaded", function() {
   const projects = [
     {
       title: 'PHOTOSHOOT',
-      image: 'gambar/slider3bb.png',
+      image: 'gambar/project-cov/photo.png',
       link: 'photoshoot.html',
     },
     {
       title: 'DESAIN LOGO',
-      image: 'gambar/desain-logo/deslog-cover11.png',
+      image: 'gambar/project-cov/deslog.png',
       link: 'desainlogo.html',
     },
     {
       title: 'CORPORATE ADVERTISING DESIGN MAYORA',
-      image: 'gambar/mayora/mayora1ng.png',
+      image: 'gambar/project-cov/majora.png',
       link: 'mayora.html',
     },
     {
       title: 'IO CONCEPTOR BCA EXPO 2024',
-      image: 'gambar/bca-ioconcep/bca-covng.png',
+      image: 'gambar/project-cov/bca.png',
       link: 'bcaexpo.html',
     },
     {
@@ -29,28 +29,28 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       title: 'KAMPANYE POLITIK',
-      image: 'gambar/kampanye-pol/kampapol-covng.png',
+      image: 'gambar/project-cov/kampa.png',
       link: 'kampanyepol.html',
     },
     {
       title: 'POLAIRUD GORONTALO',
-      image: 'gambar/polairud/polairr.png',
+      image: 'gambar/project-cov/polair.png',
       link: 'videoproj.html',
     },
     {
       title: 'DESAIN WEB',
-      image: 'gambar/desain web/deswebb.png',
+      image: 'gambar/project-cov/webdes.png',
       link: 'desainweb.html',
     },
     {
       title: 'DESAIN PRODUK',
-      image: 'gambar/stikermasan.png',
+      image: 'gambar/project-cov/desduk.png',
       link: 'desainproduk.html',
     },
     {
-      title: 'DESAIN BUKU',
-      image: 'gambar/des-buku.png',
-      link: 'test.html',
+      title: 'DESAIN COVER BUKU',
+      image: 'gambar/project-cov/desbuk.png',
+      link: 'descovbuk.html',
     },
   ];
 

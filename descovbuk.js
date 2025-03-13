@@ -1,9 +1,6 @@
 const photos = [
-    { src: "gambar/keripik/keripik1.jpeg", alt: "post " },
-    { src: "gambar/keripik/keripik2.jpg", alt: "post " },
-    { src: "gambar/keripik/keripik3.jpg", alt: "post " },
-    { src: "gambar/keripik/keripik4.jpg", alt: "post " },
-  
+    { src: "gambar/des-buku.png", alt: "post " },
+   
    
     // Tambahkan lebih banyak objek gambar di sini
 ];
