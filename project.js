@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       title: 'SOCIAL MARKETING MANAGEMENT',
-      image: 'gambar/socmedman/smm-covng.png',
+      image: 'gambar/socmedman/socmed-cov-edit.png',
       link: 'socmedman.html',
     },
     {

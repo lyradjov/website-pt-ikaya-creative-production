@@ -1,5 +1,5 @@
 const photos = [
-    { src: "gambar/desain web/deswebb.png", alt: "post " },
+    { src: "gambar/desain web/webdes.png", alt: "post " },
     
    
  
