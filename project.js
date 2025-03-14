@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const projects = [
     {
       title: 'PHOTOSHOOT',
-      image: 'gambar/project-cov/photo.png',
+      image: 'gambar/project-cov/foto.png',
       link: 'photoshoot.html',
     },
     {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       title: 'CORPORATE ADVERTISING DESIGN MAYORA',
-      image: 'gambar/project-cov/majora.png',
+      image: 'gambar/project-cov/mayor.png',
       link: 'mayora.html',
     },
     {
