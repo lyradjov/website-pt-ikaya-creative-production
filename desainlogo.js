@@ -1,10 +1,17 @@
 const photos = [
-    { src: "gambar/desain-logo/deslog-cover1.jpg", alt: "post " },
+    
+    { src: "gambar/desain-logo/alldays.png", alt: "post " },
+    { src: "gambar/desain-logo/elpizo.png", alt: "post " },
+    { src: "gambar/desain-logo/gepben.png", alt: "post " },
+    { src: "gambar/desain-logo/gricen.png", alt: "post " },
+    { src: "gambar/desain-logo/gruprumah.png", alt: "post " },
+    { src: "gambar/desain-logo/salemjayaa.png", alt: "post " },
+    { src: "gambar/desain-logo/lovi.png", alt: "post " },
+    { src: "gambar/desain-logo/noellaa.png", alt: "post " },
+    { src: "gambar/desain-logo/oriental.png", alt: "post " },
+    { src: "gambar/desain-logo/teelov.png", alt: "post " },
     
    
- 
-   
-    // Tambahkan lebih banyak objek gambar di sini
 ];
 
 const container = document.getElementById('photoshoot-container');
