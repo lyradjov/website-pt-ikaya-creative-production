@@ -11,7 +11,7 @@ const photos = [
     { src: "gambar/photoshoot/Lois 03.jpg", alt: " post " },
     { src: "gambar/photoshoot/Lois 05-1.jpg", alt: " post " },
     { src: "gambar/photoshoot/Lois 06.jpg", alt: " post " },
-    { src: "gambar/photoshoot/R&M 03.jpg", alt: " post " },
+    { src: "gambar/photoshoot/R&M 3.jpg", alt: " post " },
     { src: "gambar/photoshoot/Grid R&M 01.jpg", alt: " post " },
     { src: "gambar/photoshoot/R&M 10.jpg", alt: " post " },
     { src: "gambar/photoshoot/R&M 18.jpg", alt: " post " },
