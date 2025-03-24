@@ -1,14 +1,14 @@
 const photos = [
     
-    { src: "gambar/desain-logo/alldays.png", alt: "post " },
-    { src: "gambar/desain-logo/elpizo.png", alt: "post " },
-    { src: "gambar/desain-logo/gepben.png", alt: "post " },
-    { src: "gambar/desain-logo/gricen.png", alt: "post " },
-    { src: "gambar/desain-logo/gruprumah.png", alt: "post " },
-    { src: "gambar/desain-logo/salemjayaa.png", alt: "post " },
-    { src: "gambar/desain-logo/lovi.png", alt: "post " },
-    { src: "gambar/desain-logo/noellaa.png", alt: "post " },
-    { src: "gambar/desain-logo/oriental.png", alt: "post " },
+    { src: "gambar/desain-logo/alldays.jpg", alt: "post " },
+    { src: "gambar/desain-logo/elpizo.jpg", alt: "post " },
+    { src: "gambar/desain-logo/gepben.jpg", alt: "post " },
+    { src: "gambar/desain-logo/gricen.jpg", alt: "post " },
+    { src: "gambar/desain-logo/gruprumah.jpg", alt: "post " },
+    { src: "gambar/desain-logo/salemjayaa.jpg", alt: "post " },
+    { src: "gambar/desain-logo/lovi.jpg", alt: "post " },
+    { src: "gambar/desain-logo/noellaa.jpg", alt: "post " },
+    { src: "gambar/desain-logo/oriental.jpg", alt: "post " },
     { src: "gambar/desain-logo/teelov.png", alt: "post " },
     
    
