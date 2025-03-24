@@ -9,7 +9,7 @@ const photos = [
     { src: "gambar/desain-logo/lovi.jpg", alt: "post " },
     { src: "gambar/desain-logo/noellaa.jpg", alt: "post " },
     { src: "gambar/desain-logo/oriental.jpg", alt: "post " },
-    { src: "gambar/desain-logo/teelov.png", alt: "post " },
+    { src: "gambar/desain-logo/teelov.jpg", alt: "post " },
     
    
 ];
