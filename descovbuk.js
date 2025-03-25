@@ -1,5 +1,5 @@
 const photos = [
-    { src: "gambar/des-buku.png", alt: "post " },
+    { src: "gambar/desbuk/25.jpg", alt: "post " },
    
    
     // Tambahkan lebih banyak objek gambar di sini

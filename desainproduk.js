@@ -1,8 +1,29 @@
 const photos = [
-    { src: "gambar/keripik/keripik1.jpeg", alt: "post " },
-    { src: "gambar/keripik/keripik2.jpg", alt: "post " },
-    { src: "gambar/keripik/keripik3.jpg", alt: "post " },
-    { src: "gambar/keripik/keripik4.jpg", alt: "post " },
+    { src: "gambar/keripik/20.jpg", alt: "post " },
+    { src: "gambar/keripik/21.jpg", alt: "post " },
+    { src: "gambar/keripik/22.jpg", alt: "post " },
+    { src: "gambar/keripik/24.jpg", alt: "post " },
+    { src: "gambar/keripik/35.jpg", alt: "post " },
+    { src: "gambar/keripik/36.jpg", alt: "post " },
+    { src: "gambar/keripik/37.jpg", alt: "post " },
+    { src: "gambar/keripik/38.jpg", alt: "post " },
+    { src: "gambar/keripik/39.jpg", alt: "post " },
+    { src: "gambar/keripik/40.jpg", alt: "post " },
+    { src: "gambar/keripik/41.jpg", alt: "post " },
+    { src: "gambar/keripik/42.jpg", alt: "post " },
+    { src: "gambar/keripik/43.jpg", alt: "post " },
+    { src: "gambar/keripik/44.jpg", alt: "post " },
+    { src: "gambar/keripik/45.jpg", alt: "post " },
+    { src: "gambar/keripik/46.jpg", alt: "post " },
+    { src: "gambar/keripik/47.jpg", alt: "post " },
+    { src: "gambar/keripik/48.jpg", alt: "post " },
+    { src: "gambar/keripik/49.jpg", alt: "post " },
+    { src: "gambar/keripik/50.jpg", alt: "post " },
+    { src: "gambar/keripik/51.jpg", alt: "post " },
+    { src: "gambar/keripik/52.jpg", alt: "post " },
+    { src: "gambar/keripik/53.jpg", alt: "post " },
+    { src: "gambar/keripik/54.jpg", alt: "post " },
+   
   
    
     // Tambahkan lebih banyak objek gambar di sini

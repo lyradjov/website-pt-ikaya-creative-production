@@ -1,7 +1,9 @@
 const photos = [
-    { src: "gambar/socmedman/smm_1.png", alt: "post " },
-    { src: "gambar/socmedman/smm_2.png", alt: "post " },
-    { src: "gambar/socmedman/smm_3b.png", alt: "post " },
+    { src: "gambar/socmedman/16.jpg", alt: "post " },
+    { src: "gambar/socmedman/17.jpg", alt: "post " },
+    { src: "gambar/socmedman/18.jpg", alt: "post " },
+    { src: "gambar/socmedman/19.jpg", alt: "post " },
+    
    
     
    

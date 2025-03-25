@@ -1,5 +1,5 @@
 const photos = [
-    { src: "gambar/kampanye-pol/kampapol-cov.jpg", alt: "post " },
+    { src: "gambar/kampanye-pol/32.jpg", alt: "post " },
    
    
     // Tambahkan lebih banyak objek gambar di sini
