@@ -147,6 +147,8 @@
 
         <div class="relative group overflow-hidden">
          <img src="gambar/bca-ioconcep/34.jpg" alt="">
+
+         
         </div>
         
 
@@ -158,6 +160,12 @@
       <!-- Instagram Button -->
       
     </div>
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden cursor-pointer" onclick="closeLightbox()">
+      <img id="lightbox-img" class="max-h-screen max-w-full object-contain cursor-default" loading="lazy" onclick="event.stopPropagation()">
+      <button class="absolute top-4 right-4 text-white text-4xl" onclick="closeLightbox()">&times;</button>
+      <button class="absolute bottom-4 right-4 text-black text-2xl px-4 py-2 bg-[#CFB53B] rounded back-button hover:bg-[#FFD700] transition" onclick="closeLightbox()">Kembali</button>
+
+  </div>
   </section>
 
   <section class="fixed left-4 bottom-4">

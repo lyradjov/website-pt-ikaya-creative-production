@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
       image: 'gambar/project-cov/desbuk.png',
       link: 'descovbuk.html',
     },
+    
   ];
 
   const projectGrid = document.querySelector('.project-grid');
