@@ -1,4 +1,7 @@
 const photos = [
+    { src: "gambar/photoshoot/butik1.jpg", alt: "post " },
+    { src: "gambar/photoshoot/butik2.jpg", alt: "post " },
+    { src: "gambar/photoshoot/butik3.jpg", alt: "post " },
     { src: "gambar/photoshoot/foto1.1_krii.jpg", alt: "post " },
     { src: "gambar/photoshoot/foto1.1_tengah.jpg", alt: " post " },
     { src: "gambar/photoshoot/foto1.1_kanan.jpg", alt: " post " },
