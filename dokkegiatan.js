@@ -1,6 +1,6 @@
 const images = [
     { src: "gambar/slider1.jpg", alt: "Office shelf with decorative items" },
-    { src: "gambar/slider2.jpg", alt: "Office meeting room with chairs and tables" },
+   
     { src: "gambar/slider3.jpg", alt: "Office meeting room with chairs and tables" },
     { src: "gambar/slider4.jpg", alt: "Office workspace with desks and chairs" },
     { src: "gambar/slider5.jpg", alt: "Office lounge area with bean bags and TV" },
@@ -17,6 +17,15 @@ const images = [
     { src: "gambar/slider17.jpg", alt: "Office lounge area with photo wall" },
     { src: "gambar/slider11.jpg", alt: "Office lounge area with photo wall" },
     { src: "gambar/slider2.jpg", alt: "Office meeting room with chairs and tables" },
+    { src: "gambar/dokke/1.jpg", alt: "Office meeting room with chairs and tables" },
+    { src: "gambar/dokke/2.jpg", alt: "Office meeting room with chairs and tables" },
+    { src: "gambar/dokke/3.jpg", alt: "Office meeting room with chairs and tables" },
+    { src: "gambar/dokke/4.jpg", alt: "Office meeting room with chairs and tables" },
+    { src: "gambar/dokke/5.jpg", alt: "Office meeting room with chairs and tables" },
+    { src: "gambar/dokke/6.jpg", alt: "Office meeting room with chairs and tables" },
+    { src: "gambar/dokke/7.jpg", alt: "Office meeting room with chairs and tables" },
+    { src: "gambar/dokke/8.jpg", alt: "Office meeting room with chairs and tables" },
+    { src: "gambar/dokke/9.jpg", alt: "Office meeting room with chairs and tables" },
     
   ];
 
