@@ -1,21 +1,20 @@
 const images = [
-    { src: "gambar/slider1.jpg", alt: "Office shelf with decorative items" },
-   
+    { src: "gambar/dokke/19.jpg", alt: "Office shelf with decorative items" },
     { src: "gambar/slider3.jpg", alt: "Office meeting room with chairs and tables" },
-    { src: "gambar/slider4.jpg", alt: "Office workspace with desks and chairs" },
+    { src: "gambar/dokke/18.jpg", alt: "Office workspace with desks and chairs" },
     { src: "gambar/slider5.jpg", alt: "Office lounge area with bean bags and TV" },
     { src: "gambar/dokke/13.jpg", alt: "Office meeting room with glass board" },
-    { src: "gambar/slider7.jpg", alt: "Office meeting room with wooden wall and chairs" },
-    { src: "gambar/slider8.jpg", alt: "Office lounge area with photo wall" },
+    { src: "gambar/dokke/17.jpg", alt: "Office meeting room with wooden wall and chairs" },
+    { src: "gambar/dokke/15.jpg", alt: "Office lounge area with photo wall" },
     { src: "gambar/slider9.jpg", alt: "Office lounge area with photo wall" },
     { src: "gambar/slider10.jpg", alt: "Office lounge area with photo wall" },
     { src: "gambar/slider11.jpg", alt: "Office lounge area with photo wall" },
     { src: "gambar/slider13.jpg", alt: "Office lounge area with photo wall" },
     { src: "gambar/slider14.jpg", alt: "Office lounge area with photo wall" },
     { src: "gambar/slider15.jpg", alt: "Office lounge area with photo wall" },
-    { src: "gambar/slider16.jpg", alt: "Office lounge area with photo wall" },
+    { src: "gambar/dokke/14.jpg", alt: "Office lounge area with photo wall" },
     { src: "gambar/slider17.jpg", alt: "Office lounge area with photo wall" },
-    { src: "gambar/slider11.jpg", alt: "Office lounge area with photo wall" },
+    { src: "gambar/dokke/16.jpg", alt: "Office lounge area with photo wall" },
     { src: "gambar/slider2.jpg", alt: "Office meeting room with chairs and tables" },
     { src: "gambar/dokke/1.jpg", alt: "Office meeting room with chairs and tables" },
     { src: "gambar/dokke/2.jpg", alt: "Office meeting room with chairs and tables" },
@@ -28,7 +27,7 @@ const images = [
     { src: "gambar/dokke/9.jpg", alt: "Office meeting room with chairs and tables" },
     { src: "gambar/dokke/10.jpg", alt: "Office meeting room with chairs and tables" },
     { src: "gambar/dokke/11.jpg", alt: "Office meeting room with chairs and tables" },
-    { src: "gambar/dokke/12.jpg", alt: "Office meeting room with chairs and tables" },
+   
     
   ];
 
