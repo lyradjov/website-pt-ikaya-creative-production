@@ -23,7 +23,7 @@ const photos = [
     { src: "gambar/keripik/49.jpg", alt: "post " },
     { src: "gambar/keripik/50.jpg", alt: "post " },
     { src: "gambar/keripik/51.jpg", alt: "post " },
-    { src: "gambar/keripik/52.jpg", alt: "post " },
+    { src: "gambar/keripik/gelang.png", alt: "post " },
     { src: "gambar/keripik/53.jpg", alt: "post " },
     { src: "gambar/keripik/54.jpg", alt: "post " },
    
