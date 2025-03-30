@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
       link: 'photoshoot.html',
     },
     {
-      title: 'DESAIN LOGO',
+      title: 'LOGO DESIGN',
       image: 'gambar/project-cov/deslog.png',
       link: 'desainlogo.html',
     },
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
       link: 'socmedman.html',
     },
     {
-      title: 'KAMPANYE POLITIK',
+      title: 'POLITICAL CAMPAIGN',
       image: 'gambar/project-cov/kampa.png',
       link: 'kampanyepol.html',
     },
@@ -38,17 +38,17 @@ document.addEventListener("DOMContentLoaded", function() {
       link: 'videoproj.html',
     },
     {
-      title: 'DESAIN WEB',
+      title: 'WEB DESIGN',
       image: 'gambar/project-cov/webdes.png',
       link: 'desainweb.html',
     },
     {
-      title: 'DESAIN PRODUK',
+      title: 'PRODUCT DESIGN',
       image: 'gambar/project-cov/desduk.png',
       link: 'desainproduk.html',
     },
     {
-      title: 'DESAIN COVER BUKU',
+      title: 'BOOK COVER DESIGN',
       image: 'gambar/project-cov/desbuk.png',
       link: 'descovbuk.html',
     },
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <h3>${project.title}</h3>
         ${project.link ? `<a href="${project.link}">
           <button class="bg-yellow-500 text-black px-4 py-2 mt-2 rounded-lg shadow-md hover:bg-yellow-400 transition">
-            Lihat Lebih Lanjut
+            See more...
           </button>
         </a>` : ''}
       </div>
