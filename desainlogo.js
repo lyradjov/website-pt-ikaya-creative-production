@@ -1,16 +1,16 @@
 const photos = [
-    
-    { src: "gambar/desain-logo/alldays.jpg", alt: "post " },
+    { src: "gambar/desain-logo/fitela.png", alt: "post " },
     { src: "gambar/desain-logo/nelpizo.png", alt: "post " },
+    { src: "gambar/desain-logo/alldays.jpg", alt: "post " },
     { src: "gambar/desain-logo/ngricen.png", alt: "post " },
-    { src: "gambar/desain-logo/gruprumah.jpg", alt: "post " },
     { src: "gambar/desain-logo/salemjayaa.jpg", alt: "post " },
+    { src: "gambar/desain-logo/gruprumah.jpg", alt: "post " },
     { src: "gambar/desain-logo/lovi.jpg", alt: "post " },
     { src: "gambar/desain-logo/noellaa.jpg", alt: "post " },
     { src: "gambar/desain-logo/noriental.png", alt: "post " },
+    { src: "gambar/desain-logo/gorelx.png", alt: "post " },
     { src: "gambar/desain-logo/nteelov.png", alt: "post " },
-    
-   
+    { src: "gambar/desain-logo/bawgor.png", alt: "post " },
 ];
 
 const container = document.getElementById('photoshoot-container');
