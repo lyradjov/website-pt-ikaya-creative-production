@@ -53,15 +53,17 @@
 
 @media (max-width: 768px) {
   .project-grid {
-    grid-template-columns: 1fr; /* 1 kolom di mobile */
-    padding: 20px; /* opsional: biar lebih kecil padding-nya */
-    gap: 20px; /* opsional: jarak antar elemen di mobile */
+    grid-template-columns: repeat(2, 1fr); /* Buat 2 kolom */
+    padding: 20px; 
+    gap: 20px; 
   }
 
   .project-card {
-    max-width: 100%; /* biar lebar penuh di mobile */
+    max-width: 100%;
   }
 }
+
+
 
 .slide-in-left, .slide-in-right {
   opacity: 0;

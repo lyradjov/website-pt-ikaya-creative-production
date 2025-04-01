@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       title: 'PRODUCT DESIGN',
-      image: 'gambar/project-cov/desduk.png',
+      image: 'gambar/project-cov/desprod1.jpg',
       link: 'desainproduk.html',
     },
     {
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       title: 'KEMENKUMHAM GORONTALO',
-      image: 'gambar/project-cov/',
+      image: 'gambar/project-cov/kumham1.jpg',
       link: 'kemkumham.html',
     },
     
