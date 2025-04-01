@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'Kaya Creative Production - Creative Agency</title>
+    <link rel="shortcut icon" href="gambar/logo I'KAYA ORI_20250217_153546_0000.png" type="image/x-icon">
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Linking Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scrollanimation.js"></script>
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header id="">
+      <nav class="bg-black shadow-lg fixed top-0 left-0 right-0 z-50 w-full">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <img src="gambar/logo I'KAYA ORI_20250217_153546_0000.png" alt="Logo" class="h-10 w-auto mr-2">
+                    <span class="font-semibold text-lg text-yellow-400" style="color: #CFB53B; font-family: 'Oswald', sans-serif">
+                        I'Kaya Creative Production
+                    </span>
+                </a>
+    
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-6">
+                  <a href="index.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.2rem;">HOME</a>
+                  <a href="visimisi.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.2rem;">VISION,MISSION & VALUES</a>
+                  <a href="ourservices.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.2rem;">OUR SERVICES</a>
+                  <a href="project.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.2rem;">IKAYA PROJECT</a>
+                  <a href="contact.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.2rem;">CONTACT</a>
+                </div>
+    
+                <!-- Ikon Sosial Media -->
+                <div class="hidden md:flex space-x-3">
+                    <a href="https://www.facebook.com/profile.php?id=100086158917296" target="_blank" class="text-white hover:text-yellow-400">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kayacreativeproduction/" target="_blank" class="text-white hover:text-yellow-400">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@KayaCreativeProductionOfficial" target="_blank" class="text-white hover:text-yellow-400">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@kayacreativeproduction?_t=ZS-8v03NdjWHuG&_r=1" target="_blank" class="text-white hover:text-yellow-400">
+                      <i class="fab fa-tiktok"></i>
+                     </a>
+                     <a href="https://www.threads.net/@kayacreativeproduction" target="_blank" class="text-white hover:text-yellow-400">
+                      <i class="fab fa-threads"></i>
+                     </a>
+                </div>
+    
+                <!-- Tombol Hamburger (Mobile) -->
+                <button class="md:hidden text-white focus:outline-none mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Menu Mobile -->
+        <div class="hidden mobile-menu bg-black text-center">
+          <a href="index.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">HOME</a>
+          <a href="visimisi.html" class="text-white hover:text-yellow-400 transition" style="font-family: 'Oswald', sans-serif; font-size: 1.2rem;">VISION,MISSION & VALUES</a>
+          <a href="ourservices.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">OUR SERVICES</a>
+          <a href="project.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">IKAYA PROJECT</a>
+          <a href="contact.html" class="block py-3 text-white hover:bg-yellow-500" style="font-family: 'Oswald', sans-serif; font-size: 1.3rem;">CONTACT</a>
+        </div>
+    </nav>
+
+    <style>
+      .mobile-menu {
+    position: absolute;
+    top: 60px; /* sesuaikan dengan tinggi navbar */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* fallback transparan */
+    backdrop-filter: blur(10px); /* efek blur */
+    -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+    transition: all 0.3s ease-in-out;
+    z-index: 50; /* biar di atas konten lain */
+  }
+
+  .mobile-menu a {
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    padding: 12px;
+    transition: background 0.3s ease;
+  }
+
+  .mobile-menu a:hover {
+    background-color: #FACC15; /* hover warna kuning tailwind */
+    color: black;
+  }
+
+  @media (min-width: 769px) {
+    /* Hide mobile button on larger screens */
+    .mobile-menu-button {
+      display: none;
+    }
+  }
+    </style>
+    
+    <!-- JavaScript untuk Mengaktifkan Menu Mobile -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.querySelector(".mobile-menu-button");
+            const mobileMenu = document.querySelector(".mobile-menu");
+    
+            menuButton.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+            });
+        });
+    </script>
+      
+    </header>
+    <main>
+      <!-- Hero section -->
+       
+      <!-- About section -->
+     
+        
+        <style>
+           .fade-in-left {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .fade-in-left.visible, .fade-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        </style>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const leftElements = document.querySelectorAll('.fade-in-left');
+            const rightElements = document.querySelectorAll('.fade-in-right');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            leftElements.forEach(element => {
+                observer.observe(element);
+            });
+
+            rightElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+        </script>
+       </section>
+
+      <br>
+        
+      <section class="py-8 bg-black min-h-screen">
+        <div class="container mx-auto px-4">
+            <br>
+            <h2 class="text-2xl font-bold mb-6 text-center" style="color: #CFB53B; font-family: 'Oswald', sans-serif"><u>VIDEO KEMENKUMHAM GORONTALO</u></h2>
+            
+        
+            <div class="relative w-full overflow-hidden" style="padding-bottom: 56.25%; /* 16:9 aspect ratio */">
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full" 
+                    src="https://www.youtube.com/embed/SK-AHOfmer4?si=IMMkj4TgUIFQ67hy" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+
+  <section class="fixed left-4 bottom-4">
+    <button id="openPopup" class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-8 h-8" href="https://wa.me/+6282195031456" target="_blank">
+    </button>
+  
+    <div id="popup" class="backdrop-blur-md bg-transparent shadow-lg p-4 rounded-lg w-64 hidden absolute bottom-16"> 
+      <h2 class="text-lg font-bold mb-2 text-white">Contact Us.</h2>
+      <p class="text-sm text-white">Please contact us via WhatsApp.</p>
+        
+        <a href="https://wa.me/+6282195031456" target="_blank" class="block bg-whatsapp text-center py-2 mt-4 rounded-lg">
+          Chat WhatsApp
+      </a>
+      
+  
+        <button id="closePopup" class="mt-2 text-red-500 text-sm font-semibold hover:underline">
+            Tutup
+        </button>
+    </div>
+    <style>
+          a.bg-whatsapp {
+            background-color: #128C7E !important; 
+            color: white !important;
+            transition: background-color 0.3s ease-in-out;
+        }
+  
+        a.bg-whatsapp:hover {
+            background-color: #173623 !important; 
+        }
+  
+    </style>
+  </section>
+     
+  
+
+    
+     
+      <!-- Footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text" style="font-family: 'Playfair Display', serif;">© 2023 I'Kaya Creative Production</p>
+          <div class="social-link-list">
+            <a href=" https://www.facebook.com/profile.php?id=100086158917296&ref=ig_profile_ac" class="social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kayacreativeproduction/" class="social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@KayaCreativeProductionOfficial" class="social-link" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@kayacreativeproduction?_t=ZS-8v03NdjWHuG&_r=1" class="social-link" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.threads.net/@kayacreativeproduction" class="social-link" target="_blank"><i class="fa-brands fa-threads"></i></a>
+          </div>
+       
+        </div>
+       
+      </footer>
+    </main>
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="popupcontact.js"></script>
+  </body>
+</html>

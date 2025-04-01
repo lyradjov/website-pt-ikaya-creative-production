@@ -52,6 +52,11 @@ document.addEventListener("DOMContentLoaded", function() {
       image: 'gambar/project-cov/desbuk.png',
       link: 'descovbuk.html',
     },
+    {
+      title: 'KEMENKUMHAM GORONTALO',
+      image: 'gambar/project-cov/',
+      link: 'kemkumham.html',
+    },
     
   ];
 
