@@ -1,8 +1,9 @@
 const photos = [
-    { src: "gambar/kampanye-pol/32.jpg", alt: "post " },
+    { src: "gambar/kampanye-pol/kpol.jpg", alt: "post " },
+ 
    
    
-    // Tambahkan lebih banyak objek gambar di sini
+  
 ];
 
 const container = document.getElementById('photoshoot-container');
@@ -16,7 +17,7 @@ photos.forEach(photo => {
     const img = document.createElement('img');
     img.src = photo.src;
     img.alt = photo.alt;
-    img.className = "w-full h-full object-cover transform transition duration-300 hover:scale-105";
+    img.className = "w-full h-full object-contain transform transition duration-300 hover:scale-105";
 
     anchor.appendChild(img);
     container.appendChild(anchor);
