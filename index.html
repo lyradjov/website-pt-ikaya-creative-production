@@ -607,7 +607,7 @@
       <div class="container mx-auto text-center">
           <h2 class="section-title font-bold mb-8" style="color: #CFB53B; font-family: 'Oswald', sans-serif">OUR CLIENT</h2>
           
-          <div class="grid grid-cols-7 gap-2 px-4 place-items-center clients-grid">
+          <div class="flex flex-wrap justify-center items-center gap-4 px-4 clients-grid">
             <img src="gambar/logo-kerjasama/BCA.png"  alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
             <img src="gambar/logo-kerjasama/mayora.png"  alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
             <img src="gambar/logo-kerjasama/polairud_png.png"  alt="Logo 2" class="logo-size-clients fade-in-bottom-clients">
@@ -621,8 +621,56 @@
               <img src="gambar/logo-kerjasama/elpizo.png"  alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
              
               <img src="gambar/logo-kerjasama/teelevert.png"  alt="Logo 3" class="logo-size-clients fade-in-bottom-clients">
-             
-              
+        </div>
+        
+        <style>
+            /* Ukuran logo default */
+            .logo-size-clients {
+                width: 150px; /* Ukuran untuk desktop */
+                height: auto;
+                padding: 5px;
+                object-fit: contain;
+            }
+        
+            /* Untuk tablet (misalnya 768px ke bawah) */
+            @media (max-width: 768px) {
+                .logo-size-clients {
+                    width: 120px; /* Sedikit lebih kecil untuk tablet */
+                }
+            }
+        
+          
+            @media (max-width: 640px) {
+                .clients-grid {
+                    gap: 10px; /* Jarak antar logo lebih kecil */
+                }
+                .logo-size-clients {
+                    width: calc(33.33% - 20px); /* 3 logo per baris dengan jarak */
+                    min-width: 100px; 
+                    max-width: 120px; 
+                }
+            }
+        
+            /* Untuk mobile  */
+            @media (max-width: 400px) {
+                .logo-size-clients {
+                    width: calc(33.33% - 10px);
+                    min-width: 80px;
+                }
+            }
+        
+           
+            .fade-in-bottom-clients {
+                opacity: 0;
+                transform: translateY(40px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+            .fade-in-bottom-clients.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+        
           </div>
       </div>
       <style>
