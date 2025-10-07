@@ -12,39 +12,49 @@ document.addEventListener("DOMContentLoaded", function() {
       image: 'gambar/project-cov/deslog.png',
       link: 'desainlogo.html',
     },
+       {
+      title: 'DESAIN INTERIOR',
+      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-20.jpg',
+      link: 'desainlogo.html',
+    },
     {
       title: 'CORPORATE ADVERTISING DESIGN MAYORA',
-      image: 'gambar/project-cov/mayor.png',
+      image: 'update/apdet/dc64eaeb-0e5d-498d-a28e-71b0f961f1ce-10.jpg',
       link: 'mayora.html',
     },
     {
       title: 'IO CONCEPTOR BCA EXPO 2024',
-      image: 'gambar/project-cov/bca.png',
+      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-24.jpg',
+      link: 'bcaexpo.html',
+    },
+    {
+      title: 'JENDELA DUNIA LITERASI',
+      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-26.jpg',
       link: 'bcaexpo.html',
     },
     {
       title: 'SOCIAL MARKETING MANAGEMENT',
-      image: 'gambar/socmedman/socmed-cov-edit.png',
+      image: 'update/apdetu/5e8e10b8-a6a4-4438-85cb-842ef6893818-22.jpg',
       link: 'socmedman.html',
     },
     {
       title: 'POLITICAL CAMPAIGN',
-      image: 'gambar/project-cov/kampa.png',
+      image: 'update/apdet/dc64eaeb-0e5d-498d-a28e-71b0f961f1ce-14.jpg',
       link: 'kampanyepol.html',
     },
     {
       title: 'POLAIRUD GORONTALO',
-      image: 'gambar/project-cov/polair.png',
+      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-22.jpg',
       link: 'videoproj.html',
     },
     {
       title: 'WEB DESIGN',
-      image: 'gambar/project-cov/webdes.png',
+      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-21.jpg',
       link: 'desainweb.html',
     },
     {
       title: 'PRODUCT DESIGN',
-      image: 'gambar/project-cov/desprod1.jpg',
+      image: 'update/apdetu/desprod1.jpg',
       link: 'desainproduk.html',
     },
     {
@@ -54,7 +64,32 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       title: 'KEMENKUMHAM GORONTALO',
-      image: 'gambar/project-cov/kumham1.jpg',
+      image: 'update/apdetu/5e8e10b8-a6a4-4438-85cb-842ef6893818-12.jpg',
+      link: 'kemkumham.html',
+    },
+    {
+      title: 'FITELA',
+      image: 'update/apdetu/5e8e10b8-a6a4-4438-85cb-842ef6893818-13.jpg',
+      link: 'kemkumham.html',
+    },
+    {
+      title: 'YUEN BUTIK',
+      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-28.jpg',
+      link: 'kemkumham.html',
+    },
+    {
+      title: 'PEMKOT MAKASSAR',
+      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-27.jpg',
+      link: 'kemkumham.html',
+    },
+     {
+      title: 'BALAI DESA KIPM',
+      image: 'update/apdetu/5e8e10b8-a6a4-4438-85cb-842ef6893818-17.jpg',
+      link: 'kemkumham.html',
+    },
+     {
+      title: 'EO PRODUCT - EXTRAJOSS',
+      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-23.jpg',
       link: 'kemkumham.html',
     },
     

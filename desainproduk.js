@@ -1,4 +1,16 @@
 const photos = [
+    { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0002.jpg", alt: "post " },
+    { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0003.jpg", alt: "post " },
+     { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0004.jpg", alt: "post " },
+     { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0005.jpg", alt: "post " },
+      { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0006.jpg", alt: "post " },
+       { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0007.jpg", alt: "post " },
+        { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0008.jpg", alt: "post " },
+         { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0009.jpg", alt: "post " },
+          { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0010.jpg", alt: "post " },
+           { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0011.jpg", alt: "post " },
+            { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0012.jpg", alt: "post " },
+
     { src: "gambar/keripik/hampers1.jpg", alt: "post " },
     { src: "gambar/keripik/hampers2.jpg", alt: "post " },
     { src: "gambar/keripik/hampers3.jpg", alt: "post " },
