@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
        {
       title: 'DESAIN INTERIOR',
       image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-20.jpg',
-      link: 'desainlogo.html',
+      link: 'desaininterior.html',
     },
     {
       title: 'CORPORATE ADVERTISING DESIGN MAYORA',
@@ -23,14 +23,19 @@ document.addEventListener("DOMContentLoaded", function() {
       link: 'mayora.html',
     },
     {
-      title: 'IO CONCEPTOR BCA EXPO 2024',
+      title: 'EO CONCEPTOR BCA EXPO 2024',
       image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-24.jpg',
       link: 'bcaexpo.html',
+    },
+     {
+      title: 'EO CONCEPTOR BCA EXPO 2025',
+      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-25.jpg',
+      link: 'bcaexpo25.html',
     },
     {
       title: 'JENDELA DUNIA LITERASI',
       image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-26.jpg',
-      link: 'bcaexpo.html',
+      link: 'jendulit.html',
     },
     {
       title: 'SOCIAL MARKETING MANAGEMENT',
@@ -70,27 +75,27 @@ document.addEventListener("DOMContentLoaded", function() {
     {
       title: 'FITELA',
       image: 'update/apdetu/5e8e10b8-a6a4-4438-85cb-842ef6893818-13.jpg',
-      link: 'kemkumham.html',
+      link: 'fitela.html',
     },
     {
       title: 'YUEN BUTIK',
       image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-28.jpg',
-      link: 'kemkumham.html',
+      link: 'yuenbutik.html',
     },
     {
       title: 'PEMKOT MAKASSAR',
       image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-27.jpg',
-      link: 'kemkumham.html',
+      link: 'pemkotmks.html',
     },
      {
       title: 'BALAI DESA KIPM',
       image: 'update/apdetu/5e8e10b8-a6a4-4438-85cb-842ef6893818-17.jpg',
-      link: 'kemkumham.html',
+      link: 'kipm.html',
     },
      {
       title: 'EO PRODUCT - EXTRAJOSS',
       image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-23.jpg',
-      link: 'kemkumham.html',
+      link: 'extrajoss.html',
     },
     
   ];
