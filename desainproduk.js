@@ -1,4 +1,5 @@
 const photos = [
+    { src: "gambar/keripik/55.png", alt: "post " },
     { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0002.jpg", alt: "post " },
     { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0003.jpg", alt: "post " },
      { src: "gambar/keripik/Catalogue  I'KAYA.pdf (1)_page-0004.jpg", alt: "post " },
@@ -38,6 +39,8 @@ const photos = [
     { src: "gambar/keripik/gelang.png", alt: "post " },
     { src: "gambar/keripik/53.jpg", alt: "post " },
     { src: "gambar/keripik/54.jpg", alt: "post " },
+    { src: "gambar/keripik/55.png", alt: "post " },
+
    
   
    

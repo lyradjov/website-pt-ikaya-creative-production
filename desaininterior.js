@@ -1,5 +1,19 @@
 const photos = [
-    { src: "update/apdet/80c06309-6831-465b-b993-162571af1eb5-20.jpg", alt: "post " },
+    
+    { src: "gambar/desain interior/20.png", alt: "post " },
+    { src: "gambar/desain interior/21.png", alt: "post " },
+    { src: "gambar/desain interior/22.png", alt: "post " },
+    { src: "gambar/desain interior/23.png", alt: "post " },
+    { src: "gambar/desain interior/24.png", alt: "post " },
+    { src: "gambar/desain interior/25.png", alt: "post " },
+    { src: "gambar/desain interior/26.png", alt: "post " },
+    { src: "gambar/desain interior/27.png", alt: "post " },
+    { src: "gambar/desain interior/28.png", alt: "post " },
+    { src: "gambar/desain interior/29.png", alt: "post " },
+    { src: "gambar/desain interior/30.png", alt: "post " },
+
+    
+
     
 ];
 

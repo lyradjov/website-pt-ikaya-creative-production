@@ -3,6 +3,7 @@ const photos = [
     { src: "gambar/mayora/29.jpg", alt: "post " },
     { src: "gambar/mayora/30.jpg", alt: "post " },
     { src: "gambar/mayora/31.jpg", alt: "post " },
+    { src: "gambar/mayora/32.png", alt: "post " },
   
    
     // Tambahkan lebih banyak objek gambar di sini
