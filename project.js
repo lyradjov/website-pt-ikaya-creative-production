@@ -22,16 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
       image: 'update/apdet/dc64eaeb-0e5d-498d-a28e-71b0f961f1ce-10.jpg',
       link: 'mayora.html',
     },
-    {
-      title: 'EO CONCEPTOR BCA EXPO 2024',
-      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-24.jpg',
-      link: 'bcaexpo.html',
-    },
+
      {
-      title: 'EO CONCEPTOR BCA EXPO 2025',
-      image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-25.jpg',
-      link: 'bcaexpo25.html',
+      title: 'PAGELARAN SENI BUDAYA 2025',
+      image: 'gambar/pasebud/IMG_8537.PNG',
+      link: 'pasebud.html',
     },
+   
     {
       title: 'JENDELA DUNIA LITERASI',
       image: 'update/apdet/80c06309-6831-465b-b993-162571af1eb5-26.jpg',

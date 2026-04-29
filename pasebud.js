@@ -1,20 +1,10 @@
 const photos = [
-    
-    { src: "gambar/desain interior/20.png", alt: "post " },
-    { src: "gambar/desain interior/IMG_8539.png", alt: "post " },
-    { src: "gambar/desain interior/IMG_8540.png", alt: "post " },
-    { src: "gambar/desain interior/IMG_8541.png", alt: "post " },
-    { src: "gambar/desain interior/IMG_8542.png", alt: "post " },
-    { src: "gambar/desain interior/IMG_8543.png", alt: "post " },
-    { src: "gambar/desain interior/IMG_8544.png", alt: "post " },
-    { src: "gambar/desain interior/IMG_8545.png", alt: "post " },
-    { src: "gambar/desain interior/28.png", alt: "post " },
-    { src: "gambar/desain interior/29.png", alt: "post " },
-    { src: "gambar/desain interior/30.png", alt: "post " },
+    { src: "gambar/pasebud/IMG_8537.PNG", alt: "post " },
+     { src: "gambar/pasebud/IMG_8538.PNG", alt: "post " },
 
-    
-
-    
+   
+   
+    // Tambahkan lebih banyak objek gambar di sini
 ];
 
 const container = document.getElementById('photoshoot-container');
